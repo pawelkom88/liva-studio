@@ -3,64 +3,101 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --heading-font: "Odibee Sans";
-  --main-font: "Nunito";
-  --primary-clr: #164a41;
-  --secondary-clr: #f1b24a;
-  --teriary-clr: #9dc88d;
+  /* --heading-font: "steelfish";
+  --main-font: "Nunito"; */
+  --primary-clr: #454543;
+  --secondary-clr: #c8b5a6;
+  --teriary-clr: #f6f6f48d;
   --text-clr: #fff;
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
+@font-face {
+  font-family: "steelfish";
+  src: url("/assets/fonts/steelfish.woff2");
+  src: url("/assets/fonts/steelfish_bd.ttf");
 }
 
-body {
-  font-size: 14px;
-  color: #000;
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+body {
+  font-size: 16px;
+
+  text-rendering: optimizeSpeed;
+}
+
 .swiper {
   width: 100%;
-  height: calc(100vh - 92px);
+  height: calc(100vh - 192px);
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
-/* .swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
+
+.swiper-slide {
+  max-width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  max-width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  max-width: 40%;
+}
+
+@media (max-width: 860px) {
+  .swiper-slide,
+  .swiper-slide:nth-child(2n),
+  .swiper-slide:nth-child(3n) {
+    max-width: 100%;
+  }
+}
 
 .swiper-pagination {
   position: absolute;
-  margin-top: 10rem;
 }
 
 .swiper-pagination-fraction {
+  font-size: clamp(1rem, 0.5rem + 0.5vw, 1.25rem);
   color: #fff;
+  margin-bottom: 0.2rem;
 }
