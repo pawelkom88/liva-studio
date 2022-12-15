@@ -1,31 +1,37 @@
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, A11y, EffectFade} from "swiper";
+import useMatchMedia from "../../hooks/useMatchMedia";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import { projectList } from "../../helpers/data";
 import Image from "next/legacy/image";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-import {projectList} from "../../data";
 
 export default function HeroSlider() {
+  const { matches } = useMatchMedia("(max-width: 860px)");
   return (
-    <div className="relative">
+    <section className="relative">
       <Swiper
+        slidesPerView={matches ? "1" : "auto"}
+        spaceBetween={30}
         navigation={{
           prevEl: ".prev",
           nextEl: ".next",
         }}
-        effect="fade"
-        slidesPerView={"auto"}
-        spaceBetween={30}
         pagination={{
           type: "fraction",
+          clickable: true,
         }}
-        modules={[Pagination, EffectFade, Navigation, A11y]}
+        modules={[Pagination, Navigation]}
         className="mySwiper">
         {projectList.map(item => {
           return (
             <SwiperSlide key={item.title}>
+              <h1 className="absolute m-auto left-0 right-0 top-[50%] z-50 font-steelfish text-white text-5xl">
+                {item.title}
+              </h1>
+
               <Image
+                className="brightness-75"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
@@ -36,8 +42,6 @@ export default function HeroSlider() {
           );
         })}
       </Swiper>
-      <div className="prev absolute bottom-2 left-[40%] z-50 w-10 h-10 bg-red-200">1</div>
-      <div className="next absolute bottom-2 right-[40%] z-50 w-10 h-10 bg-red-200">2</div>
-    </div>
+    </section>
   );
 }
