@@ -1,9 +1,10 @@
-import {NavMobile} from "./NavMobile";
+import { NavMobile } from "./NavMobile";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="px-4 py-2 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <nav className="relative flex items-center justify-between lg:justify-center lg:space-x-16">
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
@@ -35,9 +36,12 @@ export default function Nav() {
           </li>
         </ul>
         <Link href="/" aria-label="Company" title="Company" className="inline-flex items-center">
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-            Company LOGO
-          </span>
+          <Image
+            className="rounded-full"
+            width={50}
+            height={50}
+            src="/assets/images/logo.jpg"
+            alt="Liva Studio logo"></Image>
         </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>

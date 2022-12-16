@@ -26,10 +26,9 @@ export default function HeroSlider() {
         {projectList.map(item => {
           return (
             <SwiperSlide key={item.title}>
-              <h1 className="absolute m-auto left-0 right-0 top-[50%] z-50 font-steelfish text-white text-5xl">
+              <h1 className="absolute m-auto left-0 right-0 top-[50%] z-50  text-white heading-styles">
                 {item.title}
               </h1>
-
               <Image
                 className="brightness-75"
                 layout="fill"
@@ -37,6 +36,9 @@ export default function HeroSlider() {
                 objectPosition="center"
                 src={item.image}
                 alt={item.title}
+                placeholder="blur"
+                blurDataURL={item.tiny}
+                quality={50}
               />
             </SwiperSlide>
           );

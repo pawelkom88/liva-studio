@@ -1,5 +1,5 @@
-import {MenuMobile} from "./MenuMobile";
-import {useState} from "react";
+import { MenuMobile } from "./MenuMobile";
+import { useState } from "react";
 
 export function NavMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
