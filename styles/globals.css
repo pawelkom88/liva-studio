@@ -101,3 +101,13 @@ body {
   color: #fff;
   margin-bottom: 0.2rem;
 }
+
+@layer components {
+  .heading-styles {
+    @apply text-xl font-bold font-steelfish text-3xl sm:text-5xl uppercase text-gray-800 tracking-wider;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
