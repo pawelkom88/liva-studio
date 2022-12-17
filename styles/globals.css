@@ -112,3 +112,19 @@ body {
     @apply flex justify-center items-center;
   }
 }
+
+.fade-in-link {
+  animation: fadeIn 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
