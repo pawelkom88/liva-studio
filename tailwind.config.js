@@ -16,6 +16,8 @@ module.exports = {
       screens: {
         mini: { max: "450px" },
         // => @media (max-width: 450px) { ... }
+        large: { max: "1024px" },
+        // => @media (max-width: 450px) { ... }
         xxl: { min: "2000px" },
         // => @media (max-width: 1950px) { ... }
       },

@@ -49,10 +49,9 @@ html {
 body {
   position: relative;
 }
-
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-
   text-rendering: optimizeSpeed;
 }
 
@@ -93,18 +92,20 @@ body {
 }
 
 .swiper-pagination {
+  font-family: "steelfish", sans-serif;
+  letter-spacing: 2px;
   position: absolute;
 }
 
 .swiper-pagination-fraction {
-  font-size: clamp(1rem, 0.5rem + 0.5vw, 1.25rem);
+  font-size: clamp(1.2rem, 0.5rem + 0.7vw, 1.45rem);
   color: #fff;
   margin-bottom: 0.2rem;
 }
 
 @layer components {
   .heading-styles {
-    @apply text-xl font-bold font-steelfish text-3xl sm:text-5xl uppercase text-gray-800 tracking-wider;
+    @apply font-bold font-steelfish text-3xl sm:text-5xl uppercase text-gray-800 tracking-wider;
   }
 
   .flex-center {
