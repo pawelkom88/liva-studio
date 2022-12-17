@@ -1,4 +1,5 @@
 import About from "@components/about/About";
+import CallToAction from "@components/cta/CallToAction";
 import Faq from "@components/faq/Faq";
 import Footer from "@components/footer/Footer";
 import HeroSlider from "@components/hero/HeroSlider";
@@ -11,14 +12,14 @@ export default function Home() {
     <>
       <Nav />
       <HeroSlider />
-      <main className="max-w-7xl mx-auto px-4 sm:p-0">
+      <main className="max-w-7xl mx-auto px-2 sm:p-0">
         <About />
         <OurOffer />
-
         <Press />
         <Faq />
-        <Footer />
+        <CallToAction />
       </main>
+        <Footer />
     </>
   );
 }
