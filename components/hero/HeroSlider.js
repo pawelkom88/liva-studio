@@ -1,6 +1,6 @@
 import useMatchMedia from "../../hooks/useMatchMedia";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { projectList } from "../../helpers/data";
 import Image from "next/legacy/image";
 import "swiper/css";
@@ -13,15 +13,11 @@ export default function HeroSlider() {
       <Swiper
         slidesPerView={matches ? "1" : "auto"}
         spaceBetween={30}
-        navigation={{
-          prevEl: ".prev",
-          nextEl: ".next",
-        }}
         pagination={{
           type: "fraction",
           clickable: true,
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         className="mySwiper">
         {projectList.map(item => {
           return (
