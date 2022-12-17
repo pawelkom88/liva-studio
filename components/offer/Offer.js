@@ -1,24 +1,35 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 
-export default function Offer({ details }) {
+export default function Offer({ details, idx }) {
   const { title, image, content, link } = details;
 
   return (
-    <article className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <article className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12 lg:py-16 my-2">
       <div className="grid gap-10 md:grid-cols-2">
-        <div className="order-1 lg:pr-10 flex justify-center flex-col">
+        <div
+          className={`
+            lg:order-${
+              idx % 2 !== 0 ? "1" : "2"
+            } large:order-2 lg:pr-10 flex justify-center flex-col`}>
           <h5 className="mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
             {title}
           </h5>
           <hr className="mb-5 border-gray-300" />
           <p className="mb-6 text-gray-900">{content}</p>
           <div className="flex items-center space-x-4">
-            <Link href={link}>more</Link>
+            <Link
+              className="underline font-medium hover:text-[color:var(--secondary-clr)]"
+              href={link}>
+              more
+            </Link>
+            <svg className="inline-block w-2" fill="currentColor" viewBox="0 0 12 12">
+              <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+            </svg>
           </div>
         </div>
-        <div className="order-2">
-          <Image width={600} height={400} src={image} alt={title} />
+        <div className={`lg:order-${idx % 2 === 0 ? "1" : "2"} large:order-1`}>
+          <Image className="object-cover" width={600} height={450} src={image} alt={title} />
         </div>
       </div>
     </article>

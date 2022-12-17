@@ -1,6 +1,13 @@
+import Button from "@components/button/Button";
 import Image from "next/legacy/image";
 
 export default function About() {
+  const btnStyles = {
+    background: "bg-[color:var(--secondary-clr)]",
+    border: "border-[color:var(--secondary-clr)]",
+    textHover: "hover:text-[color:var(--secondary-clr)]",
+  };
+
   return (
     <section className="relative">
       <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
@@ -22,7 +29,7 @@ export default function About() {
             <div className="p-8 sm:p-16 lg:p-12 xl:p-24">
               <h2 className="heading-styles">Welcome to Liva studio</h2>
 
-              <p className="mt-4 text-gray-800">
+              <p className="mt-8 text-gray-800">
                 A portrait and lifestyle photographer, based in New Zealand. My style is very candid
                 and non-obtrusive. I love to observe my subjects and capture them in a very natural,
                 honest and uncontrived way. I prefer shooting in natural light as it always
@@ -30,12 +37,9 @@ export default function About() {
                 to present a message, emotion or moment. While my photography style is very simple,
                 minimalistic and soft, I’m a fairly bold, spontaneous and curious person.
               </p>
-
-              <a
-                href="#"
-                className="mt-8 inline-block bg-[color:var(--secondary-clr)] px-12 py-3 text-sm text-white font-bold hover:bg-transparent border border-[color:var(--secondary-clr)] hover:border hover:text-[color:var(--secondary-clr)] focus:outline-none focus:ring active:text-indigo-500 uppercase">
+              <Button styles={btnStyles} href="/">
                 contact us
-              </a>
+              </Button>
             </div>
           </div>
         </div>

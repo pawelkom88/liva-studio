@@ -4,71 +4,59 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="px-4 py-2 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <nav className="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+    <div className="p-4 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link
               href="/"
               aria-label="Our product"
               title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Product
+              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              Offer
             </Link>
           </li>
+
           <li>
             <Link
               href="/"
               aria-label="Our product"
               title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Pricing
+              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              Portfolio
             </Link>
           </li>
         </ul>
-        <Link href="/" aria-label="Company" title="Company" className="inline-flex items-center">
+        <Link className="hidden lg:flex-center" href="/" aria-label="Company" title="Company">
           <Image
             className="rounded-full"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             src="/assets/images/logo.jpg"
-            alt="Liva Studio logo"></Image>
+            alt="Liva Studio logo"
+          />
         </Link>
-        <ul className="flex items-center hidden space-x-8 lg:flex">
+        <Link className="hidden large:block" href="/">
+          <h1 className="heading-styles text-2xl tracking-widest">Liva Studio</h1>
+        </Link>
+        <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link
               href="/"
-              aria-label="About us"
-              title="About us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+              aria-label="Our product"
+              title="Our product"
+              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               About us
             </Link>
           </li>
+
           <li>
             <Link
               href="/"
-              aria-label="Sign in"
-              title="Sign in"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Sign in
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              aria-label="Sign up"
-              title="Sign up"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Sign up
+              aria-label="Our product"
+              title="Our product"
+              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              Contact
             </Link>
           </li>
         </ul>
