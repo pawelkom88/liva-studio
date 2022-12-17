@@ -1,10 +1,13 @@
-import { NavMobile } from "./NavMobile";
+import { useState } from "react";
+import NavMobile from "./NavMobile";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="p-4 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="relative p-4 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
@@ -37,7 +40,12 @@ export default function Nav() {
           />
         </Link>
         <Link className="hidden large:block" href="/">
-          <h1 className="heading-styles text-2xl tracking-widest">Liva Studio</h1>
+          <h1
+            className={`${
+              isOpen ? "text-white" : "text-[color:var(--primary-clr)]"
+            } relative z-50 heading-styles text-2xl tracking-widest transition-colors ease-in-out duration-200`}>
+            Liva Studio
+          </h1>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
@@ -60,7 +68,7 @@ export default function Nav() {
             </Link>
           </li>
         </ul>
-        <NavMobile />
+        <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />
       </nav>
     </div>
   );
