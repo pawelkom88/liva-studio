@@ -1,6 +1,6 @@
 export const projectList = [
   {
-    title: "Cutting Edge Project",
+    title: "Maternity sessions",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/319903721_2376488525853048_5419000301901099010_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=iq6fdxqB0S8AX9NTxPO&_nc_ht=scontent.flhr6-1.fna&oh=00_AfB5IWy3Qhl8zl2a9nSAN17cNjEhhggi5zKGTkMEs6OAIw&oe=63A25495",
     tiny: "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/319903721_2376488525853048_5419000301901099010_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=iq6fdxqB0S8AX9NTxPO&_nc_ht=scontent.flhr6-1.fna&oh=00_AfB5IWy3Qhl8zl2a9nSAN17cNjEhhggi5zKGTkMEs6OAIw&oe=63A25495",
@@ -8,7 +8,7 @@ export const projectList = [
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
   },
   {
-    title: "Featured Artist 3D",
+    title: "Baby photography",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/318431555_814473343309184_8680954521691650359_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WABWaTQnhxkAX-CexOK&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBZhwH80tpTKXOiWJUDY9PikKcPhl1YCnS9OEMihc1Cpw&oe=63A10F32",
     tiny: "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/318431555_814473343309184_8680954521691650359_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WABWaTQnhxkAX-CexOK&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBZhwH80tpTKXOiWJUDY9PikKcPhl1YCnS9OEMihc1Cpw&oe=63A10F32",
