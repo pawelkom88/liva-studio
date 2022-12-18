@@ -16,7 +16,9 @@
     "prettier-plugin-tailwindcss": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swiper": "^8.4.5"
+    "react-grid-gallery": "^1.0.0",
+    "swiper": "^8.4.5",
+    "yet-another-react-lightbox": "^2.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
