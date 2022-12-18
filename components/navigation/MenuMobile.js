@@ -1,47 +1,36 @@
 import Link from "next/link";
 
-export function MenuMobile() {
+export function MenuMobile({ setIsOpen }) {
   return (
     <div className="fixed inset-0 z-40 w-full h-full flex justify-center items-center bg-[color:var(--secondary-clr)] opacity-100 duration-700">
       <nav className="w-full  flex flex-col text-white text-center text-xl font-light space-y-3">
         <ul className="space-y-4 overflow-hidden">
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
 
-          <li className="fade-in-link">
+          <li onClick={() => setIsOpen(false)} className="fade-in-link">
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
+              href="/offer"
+              aria-label="Our offer"
+              title="Our offer"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Product
+              Offer
             </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li className="fade-in-link ">
+          <li onClick={() => setIsOpen(false)} className="fade-in-link ">
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
+              href="/portfolio"
+              aria-label="Our portfolio"
+              title="Our portfolio"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Features
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-
-          <li className="fade-in-link">
-            <Link
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Pricing
+              Portfolio
             </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
 
-          <li className="fade-in-link">
+          <li onClick={() => setIsOpen(false)} className="fade-in-link">
             <Link
-              href="/"
+              href="/about-us"
               aria-label="About us"
               title="About us"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
@@ -50,13 +39,13 @@ export function MenuMobile() {
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
 
-          <li className="fade-in-link">
+          <li onClick={() => setIsOpen(false)} className="fade-in-link">
             <Link
-              href="/"
-              aria-label="Sign in"
-              title="Sign in"
+              href="/contact"
+              aria-label="Contact"
+              title="Contact"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Sign in
+              Contact
             </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
