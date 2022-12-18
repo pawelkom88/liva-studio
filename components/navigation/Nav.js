@@ -12,25 +12,29 @@ export default function Nav() {
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              href="/offer"
+              aria-label="Our offer"
+              title="Our offer"
+              className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Offer
             </Link>
           </li>
 
           <li>
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
+              href="/portfolio"
+              aria-label="Our portfolio"
+              title="Our portfolio"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Portfolio
             </Link>
           </li>
         </ul>
-        <Link className="hidden lg:flex-center" href="/" aria-label="Company" title="Company">
+        <Link
+          className="hidden lg:flex-center"
+          href="/"
+          aria-label="Company logo"
+          title="Company logo">
           <Image
             className="rounded-full"
             width={75}
@@ -41,6 +45,7 @@ export default function Nav() {
         </Link>
         <Link className="hidden large:block" href="/">
           <h1
+            onClick={() => setIsOpen(false)}
             className={`${
               isOpen ? "text-white" : "text-[color:var(--primary-clr)]"
             } relative z-50 heading-styles text-2xl tracking-widest transition-colors ease-in-out duration-200`}>
@@ -50,9 +55,9 @@ export default function Nav() {
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
+              href="/about-us"
+              aria-label="About us"
+              title="About us"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               About us
             </Link>
@@ -60,9 +65,9 @@ export default function Nav() {
 
           <li>
             <Link
-              href="/"
-              aria-label="Our product"
-              title="Our product"
+              href="/contact"
+              aria-label="Contact"
+              title="Contact"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Contact
             </Link>
