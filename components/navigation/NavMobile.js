@@ -1,13 +1,13 @@
-// import { useState } from "react";
 import { MenuMobile } from "./MenuMobile";
 
-export default function NavMobile({isOpen, setIsOpen}) {
-  // const [isOpen, setIsOpen] = useState(false);
+export default function NavMobile({ isOpen, setIsOpen }) {
   const genericHamburgerLine = `h-[2px] w-6 my-[1px] bg-[color:var(--primary-clr)] transition ease transform duration-300`;
 
   return (
     <nav className="lg:hidden">
-      <button className="relative flex-center flex-col h-12 w-12 group z-50" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className="relative flex-center flex-col h-12 w-12 group z-50"
+        onClick={() => setIsOpen(!isOpen)}>
         <div
           className={`${genericHamburgerLine} ${
             isOpen
@@ -28,7 +28,7 @@ export default function NavMobile({isOpen, setIsOpen}) {
           }`}
         />
       </button>
-      {isOpen && <MenuMobile />}
+      {isOpen && <MenuMobile setIsOpen={setIsOpen}/>}
     </nav>
   );
 }
