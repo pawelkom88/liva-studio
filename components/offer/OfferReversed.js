@@ -1,17 +1,17 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 
-export default function Offer({ details }) {
+export default function Offer({ details}) {
   const { title, image, content, link } = details;
 
   return (
     <article className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12 lg:py-16 my-2">
       <div className="grid gap-10 md:grid-cols-2">
-        <div className="lg:order-1 large:order-2 lg:pr-10 flex justify-center flex-col">
+        <div className="lg:order-2 large:order-2 lg:pr-10 flex justify-center flex-col">
           <h5 className="mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
             {title}
           </h5>
-          <hr className="mb-5 border-[color:var(--secondary-clr)]" />
+          <hr className="mb-5 border-gray-300" />
           <p className="mb-6 text-gray-900">{content}</p>
           <div className="flex items-center space-x-4">
             <Link
@@ -24,7 +24,7 @@ export default function Offer({ details }) {
             </svg>
           </div>
         </div>
-        <div className="lg:order-2 large:order-1">
+        <div className="lg:order-1 large:order-1">
           <Image className="object-cover" width={600} height={450} src={image} alt={title} />
         </div>
       </div>
