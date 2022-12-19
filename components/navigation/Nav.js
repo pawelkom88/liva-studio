@@ -11,12 +11,25 @@ export default function Nav() {
       <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
-            <Link
-              href="/offer"
+            <a
+              href="https://wedwojestudio.pl/oferta/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Our offer"
               title="Our offer"
               className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Offer
+            </a>
+          </li>
+          <li>
+            <Link
+              href="https://wedwojestudio.pl/oferta/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our offer"
+              title="Our offer"
+              className="uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              Link
             </Link>
           </li>
           <li>
@@ -59,6 +72,15 @@ export default function Nav() {
               title="About us"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               About us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              aria-label="Blog"
+              title="Blog"
+              className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              Blog
             </Link>
           </li>
           <li>
