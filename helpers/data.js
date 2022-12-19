@@ -93,4 +93,5 @@ export const portfolioCategories = [
   { id: 3, name: "Boudoir" },
   { id: 4, name: "Wedding" },
   { id: 5, name: "Lifestyle" },
+  { id: 6, name: "All" },
 ];
