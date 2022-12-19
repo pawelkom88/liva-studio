@@ -5,10 +5,14 @@ import HeroSlider from "@components/hero/HeroSlider";
 import OurOffer from "@components/our-offer/OurOffer";
 import Press from "@components/press/Press";
 import Wrapper from "@components/wrapper/Wrapper";
+import PageSeo from "../seo/PageSeo";
+
+import { mainPageSeo } from "../seo/seo";
 
 export default function Home() {
   return (
     <>
+     <PageSeo seo={mainPageSeo} />
       <HeroSlider />
       <Wrapper>
         <About />

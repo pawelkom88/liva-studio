@@ -6,6 +6,8 @@ export default function NavMobile({ isOpen, setIsOpen }) {
   return (
     <nav className="lg:hidden">
       <button
+        aria-label="Open Menu"
+        title="Open Menu"
         className="relative flex-center flex-col h-12 w-12 group z-50"
         onClick={() => setIsOpen(!isOpen)}>
         <div
@@ -28,7 +30,7 @@ export default function NavMobile({ isOpen, setIsOpen }) {
           }`}
         />
       </button>
-      {isOpen && <MenuMobile setIsOpen={setIsOpen}/>}
+      {isOpen && <MenuMobile setIsOpen={setIsOpen} />}
     </nav>
   );
 }
