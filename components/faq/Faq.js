@@ -1,4 +1,7 @@
+import FaqSuccessElement from "./faqSuccessElement";
+import FaqElement from "./FaqElement";
 import Image from "next/image";
+import { faqElements } from "@helpers/data";
 
 export default function Faq() {
   return (
@@ -8,134 +11,13 @@ export default function Faq() {
         <div className="grid gap-6 row-gap-10 lg:grid-cols-2">
           <div className="relative flex items-center bg-[color:var(--teriary-clr)] p-4">
             <span className="hidden lg:absolute lg:inset-y-0 lg:-right-16 lg:block lg:w-16 lg:bg-[color:var(--teriary-clr)]"></span>
-
             <div className="lg:py-6 lg:pr-16">
-              <div className="flex">
-                <div className="flex flex-col items-center mr-4">
-                  <div>
-                    <div className="flex items-center justify-center w-10 h-10 border rounded-full">
-                      <svg
-                        className="w-4 text-gray-600"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        viewBox="0 0 24 24">
-                        <line fill="none" strokeMiterlimit="10" x1="12" y1="2" x2="12" y2="22" />
-                        <polyline fill="none" strokeMiterlimit="10" points="19,15 12,22 5,15" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="w-px h-full bg-gray-300" />
-                </div>
-
-                <div className="pt-1 pb-8">
-                  <p className="mb-2 text-lg font-bold">Step 1</p>
-                  <p className="text-gray-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, deleniti!
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex flex-col items-center mr-4">
-                  <div>
-                    <div className="flex items-center justify-center w-10 h-10 border rounded-full">
-                      <svg
-                        className="w-4 text-gray-600"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        viewBox="0 0 24 24">
-                        <line fill="none" strokeMiterlimit="10" x1="12" y1="2" x2="12" y2="22" />
-                        <polyline fill="none" strokeMiterlimit="10" points="19,15 12,22 5,15" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="w-px h-full bg-gray-300" />
-                </div>
-                <div className="pt-1 pb-8">
-                  <p className="mb-2 text-lg font-bold">Step 2</p>
-                  <p className="text-gray-700">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, in.
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex flex-col items-center mr-4">
-                  <div>
-                    <div className="flex items-center justify-center w-10 h-10 border rounded-full">
-                      <svg
-                        className="w-4 text-gray-600"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        viewBox="0 0 24 24">
-                        <line fill="none" strokeMiterlimit="10" x1="12" y1="2" x2="12" y2="22" />
-                        <polyline fill="none" strokeMiterlimit="10" points="19,15 12,22 5,15" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="w-px h-full bg-gray-300" />
-                </div>
-                <div className="pt-1 pb-8">
-                  <p className="mb-2 text-lg font-bold">Step 3</p>
-                  <p className="text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi!
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex flex-col items-center mr-4">
-                  <div>
-                    <div className="flex items-center justify-center w-10 h-10 border rounded-full">
-                      <svg
-                        className="w-4 text-gray-600"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        viewBox="0 0 24 24">
-                        <line fill="none" strokeMiterlimit="10" x1="12" y1="2" x2="12" y2="22" />
-                        <polyline fill="none" strokeMiterlimit="10" points="19,15 12,22 5,15" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="w-px h-full bg-gray-300" />
-                </div>
-                <div className="pt-1 pb-8">
-                  <p className="mb-2 text-lg font-bold">Step 4</p>
-                  <p className="text-gray-700">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, id!
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex flex-col items-center mr-4">
-                  <div>
-                    <div className="flex items-center justify-center w-10 h-10 border rounded-full">
-                      <svg className="w-6 text-green-700" stroke="currentColor" viewBox="0 0 24 24">
-                        <polyline
-                          fill="none"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeMiterlimit="10"
-                          points="6,12 10,16 18,8"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="pt-1">
-                  <p className="mb-2 text-lg font-bold text-green-700">Success</p>
-                  <p className="text-gray-700" />
-                </div>
-              </div>
+              {faqElements.map(({ id, content }) => (
+                <FaqElement key={id} stepNumber={id} content={content} />
+              ))}
+              <FaqSuccessElement />
             </div>
           </div>
-
           <div className="relative sm:h-96 my-auto">
             <Image
               width={596}

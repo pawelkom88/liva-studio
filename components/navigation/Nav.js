@@ -19,7 +19,6 @@ export default function Nav() {
               Offer
             </Link>
           </li>
-
           <li>
             <Link
               href="/portfolio"
@@ -62,12 +61,11 @@ export default function Nav() {
               About us
             </Link>
           </li>
-
           <li>
             <Link
               href="/contact"
-              aria-label="Contact"
-              title="Contact"
+              aria-label="Contact us"
+              title="Contact us"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Contact
             </Link>

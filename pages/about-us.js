@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-import Wrapper from "@components/wrapper/Wrapper";
-import Button from "@components/button/Button";
-import Modal from "@components/modal/Modal";
+import Wrapper from "@components/UI/wrapper/Wrapper";
+import Button from "@components/UI/button/Button";
+import Modal from "@components/UI/modal/Modal";
 
 const btnStyles = {
   background: "bg-[color:var(--primary-clr)]",

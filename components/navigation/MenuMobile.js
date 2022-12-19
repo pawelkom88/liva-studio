@@ -6,7 +6,6 @@ export function MenuMobile({ setIsOpen }) {
       <nav className="w-full  flex flex-col text-white text-center text-xl font-light space-y-3">
         <ul className="space-y-4 overflow-hidden">
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-
           <li onClick={() => setIsOpen(false)} className="fade-in-link">
             <Link
               href="/offer"
@@ -38,7 +37,6 @@ export function MenuMobile({ setIsOpen }) {
             </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-
           <li onClick={() => setIsOpen(false)} className="fade-in-link">
             <Link
               href="/contact"
