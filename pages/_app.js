@@ -7,16 +7,22 @@ import "@fontsource/roboto";
 import { DefaultSeo } from "next-seo";
 import { SEO, additionalLinkTags } from "../seo/seo.config";
 
-function MyApp({ Component, pageProps }) {
+import { AnimatePresence } from "framer-motion";
+import PageTransition from "@components/UI/page-transition/PageTransition";
 
+function MyApp({ Component, pageProps, router }) {
   const { openGraph, twitter } = SEO;
 
   return (
     <>
-    <DefaultSeo openGraph={openGraph} twitter={twitter} additionalLinkTags={additionalLinkTags} />
-      <Nav />
-      <Component {...pageProps} />
-      <Footer />
+      <DefaultSeo openGraph={openGraph} twitter={twitter} additionalLinkTags={additionalLinkTags} />
+      <AnimatePresence exitBeforeEnter initial={true}>
+        <PageTransition transitionKey={router.route}>
+          <Nav />
+          <Component {...pageProps} />
+          <Footer />
+        </PageTransition>
+      </AnimatePresence>
     </>
   );
 }
