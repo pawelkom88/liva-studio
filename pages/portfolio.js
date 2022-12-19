@@ -20,11 +20,16 @@ export default function Portfolio() {
   const { matches } = useMatchMedia("(max-width: 1024px)");
   const [index, setIndex] = useState(-1);
   const [isBlurred, setisBlurred] = useState(true);
-  console.log(category);
 
   function getCategory(selectedCategory) {
-    const filteredImages = images.filter(({ category }) => category === selectedCategory);
+    let filteredImages;
 
+    if (selectedCategory === "All") {
+      filteredImages = images;
+    } else {
+      filteredImages = images.filter(({ category }) => category === selectedCategory);
+    }
+    console.log(filteredImages);
     setCategory(filteredImages);
   }
 
@@ -75,7 +80,12 @@ export default function Portfolio() {
               enableImageSelection={false}
               thumbnailStyle={isBlurred && { filter: "blur(10px)" }}
             />
-            <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
+            <Lightbox
+              slides={category}
+              open={index >= 0}
+              index={index}
+              close={() => setIndex(-1)}
+            />
           </Wrapper>
         ) : (
           <Wrapper>
@@ -86,7 +96,12 @@ export default function Portfolio() {
               rowHeight={200}
               thumbnailStyle={isBlurred && { filter: "blur(10px)" }}
             />
-            <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
+            <Lightbox
+              slides={category}
+              open={index >= 0}
+              index={index}
+              close={() => setIndex(-1)}
+            />
           </Wrapper>
         )}
       </div>
