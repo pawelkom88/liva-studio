@@ -79,3 +79,18 @@ export const offerList = [
     link: "link",
   },
 ];
+
+export const faqElements = [
+  { id: 1, content: "lorem ipsum 123" },
+  { id: 2, content: "lorem ipsum 123" },
+  { id: 3, content: "lorem ipsum 123" },
+  { id: 4, content: "lorem ipsum 123" },
+];
+
+export const portfolioCategories = [
+  { id: 1, name: "Maternity" },
+  { id: 2, name: "Newborn" },
+  { id: 3, name: "Boudoir" },
+  { id: 4, name: "Wedding" },
+  { id: 5, name: "Lifestyle" },
+];
