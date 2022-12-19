@@ -1,4 +1,4 @@
-import Wrapper from "@components/wrapper/Wrapper";
+import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
 
 export default function contact() {

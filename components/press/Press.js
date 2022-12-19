@@ -45,7 +45,6 @@ export default function Press() {
                 alt=""
               />
             </div>
-
             <Image
               width={256}
               height={256}
