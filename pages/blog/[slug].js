@@ -1,7 +1,6 @@
 // import Image from "next/image";
 // import Link from "next/link";
 
-
 // import { createClient } from "contentful";
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -312,3 +311,8 @@
 // //     <Link href="../blog">back to blog</Link>
 // //   </span>
 // // </>
+import React from "react";
+
+export default function BlogArticle() {
+  return <div>Hello</div>;
+}
