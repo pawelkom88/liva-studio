@@ -16,6 +16,7 @@ const nextConfig = {
       "c6.staticflickr.com",
       "c7.staticflickr.com",
       "c8.staticflickr.com",
+      "images.ctfassets.net",
     ],
   },
 };
