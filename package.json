@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.16.2",
+    "@contentful/rich-text-types": "^16.0.2",
     "@fontsource/roboto": "^4.5.8",
+    "contentful": "^9.2.14",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "framer-motion": "^7.10.2",
