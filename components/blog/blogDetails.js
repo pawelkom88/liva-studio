@@ -4,9 +4,11 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { options } from "@helpers/contentful";
 
 export default function BlogDetails({ post }) {
-  const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post.fields;
-  const { url } = thumbnail.fields.file;
-  const { width, height } = featuredImage.fields.file.details.image;
+  if (!post) return <div>Loading</div>;
+
+  const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
+  const { url } = thumbnail?.fields?.file;
+  const { width, height } = featuredImage?.fields?.file.details.image;
 
   return (
     <article className="overflow-hiddenbg-white lg:max-w-lg">

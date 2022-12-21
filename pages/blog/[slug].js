@@ -40,9 +40,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetails({ post }) {
-  const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post.fields;
-  const { url } = thumbnail.fields.file;
-  const { width, height } = featuredImage.fields.file.details.image;
+  const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
+  const { url } = thumbnail.fields?.file;
+  const { width, height } = featuredImage?.fields.file.details.image;
   return (
     <Wrapper>
       <article className="px-4 md:px-16 break-words">
