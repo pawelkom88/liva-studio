@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('https://scontent.flhr6-1.fna.fbcdn.net/v/t31.18172-8/12828557_229562794053994_8492425959911579265_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=QXfGnkbZBF0AX-GaF4t&_nc_ht=scontent.flhr6-1.fna&oh=00_AfA_T74FU58PhToYEHjyL9FYH-anclMiVtpJx0cpH9AkNw&oe=63C64D10')",
+        hero: "url('/assets/images/loading.webp')",
       },
       colors: {
         "primary-clr": "var(--primary-clr)",

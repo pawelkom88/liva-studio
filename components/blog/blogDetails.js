@@ -25,10 +25,9 @@ export default function BlogDetails({ post }) {
           {date.replace("T", " at ").slice(0, 19)}
         </div>
         <h2 className="text-2xl font-bold leading-5 my-4">{title}</h2>
-
-        <p className="mb-4 text-[color:var(--primary-clr)] p-2">
+        <div className="mb-4 text-[color:var(--primary-clr)] p-2">
           {documentToReactComponents(content, options)}
-        </p>
+        </div>
         <Link href={"/blog/" + slug}>read more</Link>
       </div>
     </article>

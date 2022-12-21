@@ -13,7 +13,7 @@ export default function contact() {
             className="object-cover h-full w-full"
             src={contactSectionImage.original}
             placeholder="blur"
-            blurDataURL="/public/assets/images/loading.webp"
+            blurDataURL="/assets/images/loading.webp"
             alt="Liva studio"
           />
         </div>
