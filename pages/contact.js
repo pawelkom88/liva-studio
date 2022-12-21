@@ -11,9 +11,9 @@ export default function contact() {
             width={853}
             height={927}
             className="object-cover h-full w-full"
-            src={contactSectionImage.original}
+            src={contactSectionImage?.original}
             placeholder="blur"
-            blurDataURL="/assets/images/loading.webp"
+            blurDataURL={contactSectionImage?.tiny}
             alt="Liva studio"
           />
         </div>
