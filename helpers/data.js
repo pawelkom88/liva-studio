@@ -9,9 +9,8 @@ export const projectList = [
   },
   {
     title: "Baby photography",
-    image:
-      "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/318431555_814473343309184_8680954521691650359_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WABWaTQnhxkAX-CexOK&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBZhwH80tpTKXOiWJUDY9PikKcPhl1YCnS9OEMihc1Cpw&oe=63A10F32",
-    tiny: "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/318431555_814473343309184_8680954521691650359_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WABWaTQnhxkAX-CexOK&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBZhwH80tpTKXOiWJUDY9PikKcPhl1YCnS9OEMihc1Cpw&oe=63A10F32",
+    image: "/public/assets/images/loading.webp",
+    tiny: "/public/assets/images/loading.webp",
     description:
       "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
   },
@@ -49,7 +48,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/300854558_1759223354421256_4845859852264147584_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Nv2F611pumUAX_0z53H&_nc_ht=scontent.flhr6-1.fna&oh=00_AfB2bAtwA2DRdT7zCOtHUS2wScKrVss2_X4zqqkiWtc9LQ&oe=63A0CC87",
-    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
+    tiny: "/public/assets/images/loading.webp",
     link: "link",
   },
   {
@@ -59,7 +58,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/292165742_1724268144583444_309880858522910030_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=Oz9phXnckcYAX85cZZ7&_nc_ht=scontent.flhr6-1.fna&oh=00_AfAPwhyNblhi7rCz9FdZYpB4xE19bSRf71r9NNM4n4mQOw&oe=63A0FC13",
-    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
+    tiny: "/public/assets/images/loading.webp",
     link: "link",
   },
   {
@@ -69,7 +68,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/288131653_1709107996099459_7136673036089854972_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_ohc=lAKFn1V68FMAX_VCLnu&_nc_ht=scontent.flhr6-1.fna&oh=00_AfC9jnK9wTGWFHa7hkHHa-gtWgYnCT_kvzU4-J6BJbpccQ&oe=63A15A37",
-    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
+    tiny: "/public/assets/images/loading.webp",
     link: "link",
   },
   {
@@ -79,7 +78,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/284347270_1695924194084506_5228830735952217347_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=vq8lo2vYI6AAX9t28Dq&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBVp-Lq5fsMS91ttXsK2BqPVIPltvf_BxGyrgGxiBPkcQ&oe=63A1D442",
-    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
+    tiny: "/public/assets/images/loading.webp",
     link: "link",
   },
 ];
