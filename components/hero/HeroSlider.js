@@ -35,7 +35,7 @@ export default function HeroSlider() {
                 placeholder="blur"
                 blurDataURL={item.tiny}
                 quality={100}
-                loading='eager'
+                loading="eager"
               />
             </SwiperSlide>
           );

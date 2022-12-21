@@ -1,5 +1,6 @@
 import Button from "@components/UI/button/Button";
 import Image from "next/legacy/image";
+import { aboutUsHome } from "@helpers/data";
 
 const btnStyles = {
   background: "bg-[color:var(--secondary-clr)]",
@@ -17,8 +18,10 @@ export default function About() {
               <Image
                 objectFit="cover"
                 layout="fill"
-                src="https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/293219047_1729850147358577_148018764642219458_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=9-LZ9q2R5gAAX_qoBR-&_nc_ht=scontent.flhr6-1.fna&oh=00_AfARUs5vmBXps144s0AUQ0DZRBYU8odnWFfGW5tDms3zzw&oe=63A1C7BE"
-                alt=""
+                src={aboutUsHome.original}
+                placeholder="blur"
+                blurDataURL={aboutUsHome.tiny}
+                alt="Liva studio - Artur and Magda"
               />
             </div>
           </div>

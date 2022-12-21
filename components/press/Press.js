@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import { pressImage } from "@helpers/data";
 
 export default function Press() {
-
   return (
     <section className="-mt-8 lg:mt-0 mb-12">
       <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -34,23 +34,29 @@ export default function Press() {
                 width={160}
                 height={192}
                 className="relative -mr-8 object-cover mb-6 rounded shadow-lg h-48 xl:h-72 w-48 xl:w-72 z-10"
-                src="https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/278243342_1667298410280418_7852507031280963432_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=SI6Y_kioZuMAX-jMG5k&_nc_ht=scontent.flhr6-1.fna&oh=00_AfDO2gsmW_0L35SSFIhZAta39SKUsp45DUtj_AA0Fmfe0Q&oe=63A2660D"
-                alt=""
+                src={pressImage[0].original}
+                placeholder="blur"
+                blurDataURL={pressImage[0].tiny}
+                alt={pressImage[0].alt}
               />
               <Image
                 width={228}
                 height={228}
                 className="-mr-6 object-cover  rounded shadow-lg h-32 xl:h-44 w-32 xl:w-44"
-                src="https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/292083784_1724267224583536_286574393802491749_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=pu9MeKkIlZAAX-QP07r&_nc_ht=scontent.flhr6-1.fna&oh=00_AfCAmxma8767Wf811eiCSkepIxzEBvEfDTvrdGNdr0NTAA&oe=63A2B80D"
-                alt=""
+                src={pressImage[1].original}
+                placeholder="blur"
+                blurDataURL={pressImage[1].tiny}
+                alt={pressImage[1].alt}
               />
             </div>
             <Image
               width={256}
               height={256}
               className="object-cover rounded shadow-lg h-64 xl:h-96 w-64 xl:w-96"
-              src="https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/289968917_1718155045194754_8451991120748487385_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=lX7pbW1NqPEAX-3NSgN&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBJwbTIRP1D5XJVe74_Zj1RUD_c-mxnf6KUZNuK1TvIEA&oe=63A34CC9"
-              alt=""
+              src={pressImage[2].original}
+              placeholder="blur"
+              blurDataURL={pressImage[2].tiny}
+              alt={pressImage[2].alt}
             />
           </div>
         </div>
