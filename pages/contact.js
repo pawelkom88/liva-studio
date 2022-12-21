@@ -1,5 +1,6 @@
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
+import { contactSectionImage } from "@helpers/data";
 
 export default function contact() {
   return (
@@ -10,7 +11,7 @@ export default function contact() {
             width={853}
             height={927}
             className="object-cover h-full w-full"
-            src="https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/288237363_1709862762690649_8429051679825839490_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=QvTGsjgjjvwAX8XDmVq&_nc_oc=AQnnY-1Yxt16U6lE3DiLw55WcgjYff9m6YIyDLLIjTBM9N0rItUshOAeZPEHuLjxd0E&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBh9tWcO0VtLmiVyKhD4mnc4B_HWIr5QqJp9O-HPkAXqg&oe=63A39E2B"
+            src={contactSectionImage.original}
             placeholder="blur"
             blurDataURL="/public/assets/images/loading.webp"
             alt="Liva studio"

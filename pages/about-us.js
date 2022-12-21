@@ -3,6 +3,7 @@ import Image from "next/image";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Button from "@components/UI/button/Button";
 import Modal from "@components/UI/modal/Modal";
+import { aboutUsPage } from "@helpers/data";
 
 const btnStyles = {
   background: "bg-[color:var(--primary-clr)]",
@@ -29,9 +30,6 @@ export default function AboutUs() {
         </div>
       </div>
       <Wrapper>
-        {/* break */}
-        {/* break */}
-        {/* break */}
         <div className="relative flex flex-col px-6 mx-auto space-y-6 lg:h-[30rem] lg:flex-row lg:items-center justify-center xl:justify-start">
           <div className="hidden xl:block w-full lg:w-1/2 xl:ml-12">
             <div className="absolute top-28 lg:max-w-lg text-[color:var(--primary-clr)] opacity-75 uppercase">
@@ -53,7 +51,7 @@ export default function AboutUs() {
               className="lg:opacity-75 brightness-75 hover:opacity-100 transition-opacity ease-linear duration-300"
               width={500}
               height={750}
-              src="https://scontent.flhr6-1.fna.fbcdn.net/v/t31.18172-8/16716075_407777419565863_3743065345732881934_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=9XnrL5TiPlsAX-keSMg&_nc_ht=scontent.flhr6-1.fna&oh=00_AfCz_Dwm3wb5ADLnGd0KxPQDeQShl4pSJ82r21CndhymXg&oe=63C65011"
+              src={aboutUsPage.original}
               placeholder="blur"
               blurDataURL="/public/assets/images/loading.webp"
               alt="Artur"
