@@ -49,6 +49,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/300854558_1759223354421256_4845859852264147584_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Nv2F611pumUAX_0z53H&_nc_ht=scontent.flhr6-1.fna&oh=00_AfB2bAtwA2DRdT7zCOtHUS2wScKrVss2_X4zqqkiWtc9LQ&oe=63A0CC87",
+    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
     link: "link",
   },
   {
@@ -58,6 +59,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/292165742_1724268144583444_309880858522910030_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=Oz9phXnckcYAX85cZZ7&_nc_ht=scontent.flhr6-1.fna&oh=00_AfAPwhyNblhi7rCz9FdZYpB4xE19bSRf71r9NNM4n4mQOw&oe=63A0FC13",
+    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
     link: "link",
   },
   {
@@ -67,6 +69,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/288131653_1709107996099459_7136673036089854972_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_ohc=lAKFn1V68FMAX_VCLnu&_nc_ht=scontent.flhr6-1.fna&oh=00_AfC9jnK9wTGWFHa7hkHHa-gtWgYnCT_kvzU4-J6BJbpccQ&oe=63A15A37",
+    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
     link: "link",
   },
   {
@@ -76,6 +79,7 @@ export const offerList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
     image:
       "https://scontent.flhr6-1.fna.fbcdn.net/v/t39.30808-6/284347270_1695924194084506_5228830735952217347_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=vq8lo2vYI6AAX9t28Dq&_nc_ht=scontent.flhr6-1.fna&oh=00_AfBVp-Lq5fsMS91ttXsK2BqPVIPltvf_BxGyrgGxiBPkcQ&oe=63A1D442",
+    tiny: "https://i0.wp.com/www.cssscript.com/wp-content/uploads/2014/07/A-Tiny-Javascript-Library-To-Lazy-Load-Images.jpg?fit=406%2C308&ssl=1",
     link: "link",
   },
 ];
