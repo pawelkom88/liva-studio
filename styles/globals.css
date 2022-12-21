@@ -3,8 +3,6 @@
 @import "tailwindcss/utilities";
 
 :root {
-  /* --heading-font: "steelfish";
-  --main-font: "Nunito"; */
   --primary-clr: #454543;
   --secondary-clr: #c8b5a6;
   --teriary-clr: #f6f6f48d;
@@ -12,9 +10,10 @@
 }
 
 @font-face {
-  font-family: "steelfish";
+  font-family: "steelfish", san-serif;
   src: url("/assets/fonts/steelfish.woff2");
   src: url("/assets/fonts/steelfish_bd.ttf");
+  font-display: swap;
 }
 
 /* reset */

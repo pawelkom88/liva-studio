@@ -1,8 +1,8 @@
 export const projectList = [
   {
     title: "Maternity sessions",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.web",
+    image: "/assets/images/loading.webp",
+    tiny: "/assets/images/loading.web",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
   },
