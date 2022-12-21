@@ -40,6 +40,8 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetails({ post }) {
+  if (!post) return <div>Loading</div>;
+
   const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
   const { url } = thumbnail.fields?.file;
   const { width, height } = featuredImage?.fields.file.details.image;
