@@ -91,8 +91,8 @@ export const aboutUsPage = {
 };
 
 export const contactSectionImage = {
-  original: "/assets/images/contact-section-image.jpg",
-  tiny: "/assets/images/contact-section-image.jpg",
+  original: "/assets/images/contact-section-image.webp",
+  tiny: "/assets/images/contact-section-image.webp",
 };
 
 export const pressImage = [
