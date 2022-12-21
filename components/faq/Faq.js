@@ -6,7 +6,7 @@ import { faqElements } from "@helpers/data";
 export default function Faq() {
   return (
     <article>
-      <h4 className="heading-styles text-center">HOW IT WORKS ?</h4>
+      <h5 className="heading-styles text-center">HOW IT WORKS ?</h5>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-6 row-gap-10 lg:grid-cols-2">
           <div className="relative flex items-center bg-[color:var(--teriary-clr)] p-4">

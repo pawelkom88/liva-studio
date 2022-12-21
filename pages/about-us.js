@@ -40,11 +40,11 @@ export default function AboutUs() {
             </div>
           </div>
           <div className="flex items-center justify-center xl:justify-start w-full lg:h-96 xl:pl-56 pt-16">
-            <h1 className="heading-styles tracking-wider text-7xl lg:text-9xl text-left">
+            <h2 className="heading-styles tracking-wider text-7xl lg:text-9xl text-left">
               <span>Hello!</span>
               <span className="block py-2 ml-8">We are Liva</span>
               <span className="block py-2 ml-16">Studio</span>
-            </h1>
+            </h2>
           </div>
         </div>
 

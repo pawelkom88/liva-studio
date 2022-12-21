@@ -29,7 +29,6 @@ export default function Portfolio() {
     } else {
       filteredImages = images.filter(({ category }) => category === selectedCategory);
     }
-    console.log(filteredImages);
     setCategory(filteredImages);
   }
 

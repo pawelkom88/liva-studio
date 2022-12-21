@@ -8,9 +8,9 @@ export default function Offer({ details}) {
     <article className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12 lg:py-16 my-2">
       <div className="grid gap-10 md:grid-cols-2">
         <div className="lg:order-2 large:order-2 lg:pr-10 flex justify-center flex-col">
-          <h5 className="mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
+          <h3 className="mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
             {title}
-          </h5>
+          </h3>
           <hr className="mb-5 border-gray-300" />
           <p className="mb-6 text-gray-900">{content}</p>
           <div className="flex items-center space-x-4">
