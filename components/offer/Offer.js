@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function Offer({ details }) {
-  const { title, image, content, link } = details;
+  const { title, image, content, link, tiny } = details;
 
   return (
     <article className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12 lg:py-16 my-2">
@@ -25,7 +25,15 @@ export default function Offer({ details }) {
           </div>
         </div>
         <div className="lg:order-2 large:order-1">
-          <Image className="object-cover" width={600} height={450} src={image} alt={title} />
+          <Image
+            className="object-cover"
+            width={600}
+            height={450}
+            src={image}
+            placeholder="blur"
+            blurDataURL={tiny}
+            alt={title}
+          />
         </div>
       </div>
     </article>

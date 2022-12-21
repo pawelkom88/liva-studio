@@ -47,11 +47,6 @@ export default function AboutUs() {
             </h2>
           </div>
         </div>
-
-        {/* break */}
-        {/* break */}
-        {/* break */}
-
         <div className="relative flex flex-col-reverse px-4 xl:pt-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-12 md:px-8 sm:max-w-xl md:max-w-full my-16">
           <div className="relative z-10 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-12 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center order-1">
             <Image
@@ -59,6 +54,8 @@ export default function AboutUs() {
               width={500}
               height={750}
               src="https://scontent.flhr6-1.fna.fbcdn.net/v/t31.18172-8/16716075_407777419565863_3743065345732881934_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=9XnrL5TiPlsAX-keSMg&_nc_ht=scontent.flhr6-1.fna&oh=00_AfCz_Dwm3wb5ADLnGd0KxPQDeQShl4pSJ82r21CndhymXg&oe=63C65011"
+              placeholder="blur"
+              blurDataURL="https://scontent.flhr6-1.fna.fbcdn.net/v/t31.18172-8/16716075_407777419565863_3743065345732881934_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=9XnrL5TiPlsAX-keSMg&_nc_ht=scontent.flhr6-1.fna&oh=00_AfCz_Dwm3wb5ADLnGd0KxPQDeQShl4pSJ82r21CndhymXg&oe=63C65011"
               alt="Artur"
             />
             <div
@@ -69,7 +66,6 @@ export default function AboutUs() {
               </svg>
             </div>
           </div>
-
           <div className="relative flex justify-end max-w-xl mx-auto xl:pr-16 lg:max-w-screen-xl">
             <div className="lg:pr-5 lg:max-w-lg lg:mb-0">
               <div className="max-w-xl mb-6">
