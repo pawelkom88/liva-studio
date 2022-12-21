@@ -28,37 +28,39 @@ export default function Press() {
               </svg>
             </div>
           </div>
-          <div className="flex-center order-2">
-            <div className="flex flex-col items-end ">
+          {pressImage && (
+            <div className="flex-center order-2">
+              <div className="flex flex-col items-end ">
+                <Image
+                  width={160}
+                  height={192}
+                  className="relative -mr-8 object-cover mb-6 rounded shadow-lg h-48 xl:h-72 w-48 xl:w-72 z-10"
+                  src={pressImage[0].original}
+                  placeholder="blur"
+                  blurDataURL={pressImage[0].tiny}
+                  alt={pressImage[0].alt}
+                />
+                <Image
+                  width={228}
+                  height={228}
+                  className="-mr-6 object-cover  rounded shadow-lg h-32 xl:h-44 w-32 xl:w-44"
+                  src={pressImage[1].original}
+                  placeholder="blur"
+                  blurDataURL={pressImage[1].tiny}
+                  alt={pressImage[1].alt}
+                />
+              </div>
               <Image
-                width={160}
-                height={192}
-                className="relative -mr-8 object-cover mb-6 rounded shadow-lg h-48 xl:h-72 w-48 xl:w-72 z-10"
-                src={pressImage[0].original}
+                width={256}
+                height={256}
+                className="object-cover rounded shadow-lg h-64 xl:h-96 w-64 xl:w-96"
+                src={pressImage[2].original}
                 placeholder="blur"
-                blurDataURL={pressImage[0].tiny}
-                alt={pressImage[0].alt}
-              />
-              <Image
-                width={228}
-                height={228}
-                className="-mr-6 object-cover  rounded shadow-lg h-32 xl:h-44 w-32 xl:w-44"
-                src={pressImage[1].original}
-                placeholder="blur"
-                blurDataURL={pressImage[1].tiny}
-                alt={pressImage[1].alt}
+                blurDataURL={pressImage[2].tiny}
+                alt={pressImage[2].alt}
               />
             </div>
-            <Image
-              width={256}
-              height={256}
-              className="object-cover rounded shadow-lg h-64 xl:h-96 w-64 xl:w-96"
-              src={pressImage[2].original}
-              placeholder="blur"
-              blurDataURL={pressImage[2].tiny}
-              alt={pressImage[2].alt}
-            />
-          </div>
+          )}
         </div>
       </div>
     </section>

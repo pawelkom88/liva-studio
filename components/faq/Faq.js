@@ -23,9 +23,9 @@ export default function Faq() {
               width={596}
               height={384}
               className="inset-0 object-cover w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
-              src={faqImage.original}
+              src={faqImage?.original}
               placeholder="blur"
-              blurDataURL={faqImage.tiny}
+              blurDataURL={faqImage?.tiny}
               alt="faq image"
             />
           </div>

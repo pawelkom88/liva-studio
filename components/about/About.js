@@ -18,9 +18,9 @@ export default function About() {
               <Image
                 objectFit="cover"
                 layout="fill"
-                src={aboutUsHome.original}
+                src={aboutUsHome?.original}
                 placeholder="blur"
-                blurDataURL={aboutUsHome.tiny}
+                blurDataURL={aboutUsHome?.tiny}
                 alt="Liva studio - Artur and Magda"
               />
             </div>

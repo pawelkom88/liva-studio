@@ -51,9 +51,9 @@ export default function AboutUs() {
               className="lg:opacity-75 brightness-75 hover:opacity-100 transition-opacity ease-linear duration-300"
               width={500}
               height={750}
-              src={aboutUsPage.original}
+              src={aboutUsPage?.original}
               placeholder="blur"
-              blurDataURL="/public/assets/images/loading.webp"
+              blurDataURL="/assets/images/loading.webp"
               alt="Artur"
             />
             <div
