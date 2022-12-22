@@ -5,9 +5,27 @@ import HeroSlider from "@components/hero/HeroSlider";
 import OurOffer from "@components/our-offer/OurOffer";
 import Press from "@components/press/Press";
 import Wrapper from "@components/UI/wrapper/Wrapper";
-import PageSeo from "../seo/PageSeo";
 
+import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
+
+import dynamic from "next/dynamic";
+
+const DynamicOurOffer = dynamic(() => import("@components/our-offer/OurOffer"), {
+  loading: () => "Loading...",
+});
+
+const DynamicPress = dynamic(() => import("@components/our-offer/OurOffer"), {
+  loading: () => "Loading...",
+});
+
+const DynamicFaq = dynamic(() => import("@components/faq/Faq"), {
+  loading: () => "Loading...",
+});
+
+const DynamicCallToAction = dynamic(() => import("@components/cta/CallToAction"), {
+  loading: () => "Loading...",
+});
 
 export default function Home() {
   return (
@@ -16,10 +34,10 @@ export default function Home() {
       <HeroSlider />
       <Wrapper>
         <About />
-        <OurOffer />
-        <Press />
-        <Faq />
-        <CallToAction />
+        <DynamicOurOffer />
+        <DynamicPress />
+        <DynamicFaq />
+        <DynamicCallToAction />
       </Wrapper>
     </>
   );
