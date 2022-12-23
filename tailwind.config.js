@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    purge: ["./pages/**/*.{js,ts,jsx,tsx}"],
+    purge: [
+      "./pages/**/*.tsx",
+      "./pages/**/*.js",
+      "./pages/**/*.ts",
+      "./components/**/*.tsx",
+      "./components/**/*.js",
+      "./components/**/*.ts",
+    ],
     safelist: ["primary-clr", "secondary-clr", "teriary-clr", "--text-clr"],
     fontFamily: {
       steelfish: ["steelfish", "sans-serif"],
