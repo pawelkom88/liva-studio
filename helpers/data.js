@@ -10,7 +10,7 @@ export const projectList = [
     title: "Baby photography",
     image: "/assets/images/loading.webp",
     tiny: "/assets/images/loading.webp",
-    alt: "",
+    alt: "Desc",
     description:
       "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
   },
@@ -18,7 +18,7 @@ export const projectList = [
     title: "Interactive AI",
     image: "/assets/images/loading.webp",
     tiny: "/assets/images/loading.webp",
-    alt: "",
+    alt: "Desc",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. Proin rhoncus magna lectus, nec consequat augue ultricies eu.",
   },
@@ -26,7 +26,7 @@ export const projectList = [
     title: "Slices of Sky",
     image: "/assets/images/loading.webp",
     tiny: "/assets/images/loading.webp",
-    alt: "",
+    alt: "Desc",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
   },
@@ -34,7 +34,7 @@ export const projectList = [
     title: "Micro Worlds",
     image: "/assets/images/loading.webp",
     tiny: "/assets/images/loading.webp",
-    alt: "",
+    alt: "Desc",
     description:
       "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
   },
