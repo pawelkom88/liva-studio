@@ -19,7 +19,7 @@ export async function getStaticProps() {
 export default function BlogArticle({ posts }) {
   return (
     <>
-      <h1 className="heading-styles text-center mt-8">Welcome on our blog</h1>
+      <h1 className="heading-styles text-center mt-8">Welcome to our blog</h1>
       <main className="max-w-7xl mx-auto px-4 sm:p-0 flex-center flex-wrap gap-8 my-16">
         {posts?.length === 0 && <h3>There are no posts</h3>}
         {posts?.map(post => (
