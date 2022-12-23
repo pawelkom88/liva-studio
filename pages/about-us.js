@@ -67,11 +67,11 @@ export default function AboutUs() {
           <div className="relative flex justify-end max-w-xl mx-auto xl:pr-16 lg:max-w-screen-xl">
             <div className="lg:pr-5 lg:max-w-lg lg:mb-0">
               <div className="max-w-xl mb-6">
-                <h2 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none mt-8">
+                <h3 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none mt-8">
                   I seek connection, the relationships, the laughs,
                   <br className="hidden md:block" />
                   the real you & real me.
-                </h2>
+                </h3>
                 <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
                   I discovered wedding photography about 7 years ago, after having worked in the
                   portrait and commercial industry for 2 years. The emotions, the tension and
