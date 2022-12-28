@@ -1,20 +1,20 @@
 import HeroSlider from "@components/hero/HeroSlider";
 import Wrapper from "@components/UI/wrapper/Wrapper";
-
+import Reviews from "@components/reviews/Reviews";
 import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
 
 import dynamic from "next/dynamic";
 
-const DynamicAbout = dynamic(() => import("@components/about/About"), {
-  loading: () => "Loading...",
-});
-
 const DynamicOurOffer = dynamic(() => import("@components/our-offer/OurOffer"), {
   loading: () => "Loading...",
 });
 
-const DynamicPress = dynamic(() => import("@components/our-offer/OurOffer"), {
+const DynamicReviews = dynamic(() => import("@components/reviews/Reviews"), {
+  loading: () => "Loading...",
+});
+
+const DynamicPress = dynamic(() => import("@components/press/Press"), {
   loading: () => "Loading...",
 });
 
@@ -32,8 +32,8 @@ export default function Home() {
       <PageSeo seo={mainPageSeo} />
       <HeroSlider />
       <Wrapper>
-        <DynamicAbout />
         <DynamicOurOffer />
+        <DynamicReviews />
         <DynamicPress />
         <DynamicFaq />
         <DynamicCallToAction />

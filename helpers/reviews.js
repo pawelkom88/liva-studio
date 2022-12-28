@@ -1,0 +1,38 @@
+export const reviews = [
+  {
+    id: 1,
+    name: "John Smith",
+    image: "/assets/images/maternity.webp",
+    alt: "reviewers avatar",
+    joined: "10/12/2022",
+    stars: [1, 2, 3, 4],
+    content: "content",
+  },
+  {
+    id: 2,
+    name: "John Smith",
+    image: "/assets/images/maternity.webp",
+    alt: "reviewers avatar",
+    joined: "10/12/2022",
+    stars: [1, 2, 3, 4, 5],
+    content: "content",
+  },
+  {
+    id: 3,
+    name: "John Smith",
+    image: "/assets/images/maternity.webp",
+    alt: "reviewers avatar",
+    joined: "10/12/2022",
+    stars: [1, 2, 3],
+    content: "content",
+  },
+  {
+    id: 4,
+    name: "John Smith",
+    image: "/assets/images/maternity.webp",
+    alt: "reviewers avatar",
+    joined: "10/12/2022",
+    stars: [1, 2, 3, 4, 5],
+    content: "content",
+  },
+];
