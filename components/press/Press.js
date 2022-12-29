@@ -4,10 +4,10 @@ import { pressImage } from "@helpers/data";
 
 export default function Press() {
   return (
-    <section className="-mt-8 lg:mt-0 mb-12">
+    <section className="mt-16 lg:m-8 lg:mt-0 mb-12">
       <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid large:gap-20 gap-10 lg:grid-cols-2">
-          <div className="flex flex-col justify-center items-center md:pr-8 xl:pr-0 lg:max-w-lg order-1">
+          <div className="flex flex-col justify-center items-center md:pr-8 xl:pr-0 lg:max-w-lg order-2">
             <div className="max-w-xl mb-6 text-left large:flex-center large:flex-col">
               <h4 className="max-w-lg mb-6 large:text-center heading-styles tracking-tight text-[color:var(--primary-clr)] sm:leading-loose">
                 OUR LATES ON INSTAGRAM
@@ -29,7 +29,7 @@ export default function Press() {
             </div>
           </div>
           {pressImage && (
-            <div className="flex-center order-2">
+            <div className="flex-center order-1">
               <div className="flex flex-col items-end ">
                 <Image
                   width={160}
