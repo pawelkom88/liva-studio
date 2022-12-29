@@ -1,6 +1,6 @@
 import HeroSlider from "@components/hero/HeroSlider";
 import Wrapper from "@components/UI/wrapper/Wrapper";
-import Reviews from "@components/reviews/Reviews";
+import PortfolioOffer from "@components/portfolio-offer/PortfolioOffer";
 import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
 
@@ -32,6 +32,7 @@ export default function Home() {
       <PageSeo seo={mainPageSeo} />
       <HeroSlider />
       <Wrapper>
+        <PortfolioOffer />
         <DynamicOurOffer />
         <DynamicReviews />
         <DynamicPress />
