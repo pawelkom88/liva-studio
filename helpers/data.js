@@ -1,39 +1,39 @@
 export const projectList = [
   {
-    title: "Maternity sessions",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    title: "BRISTOL Photography studio",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
   },
   {
     title: "Baby photography",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "Desc",
     description:
       "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
   },
   {
     title: "Interactive AI",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "Desc",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. Proin rhoncus magna lectus, nec consequat augue ultricies eu.",
   },
   {
     title: "Slices of Sky",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "Desc",
     description:
       "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
   },
   {
     title: "Micro Worlds",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "Desc",
     description:
       "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
@@ -46,8 +46,8 @@ export const offerList = [
     title: "Title1",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     link: "link",
   },
@@ -56,8 +56,8 @@ export const offerList = [
     title: "Title2",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     link: "link",
   },
@@ -66,8 +66,8 @@ export const offerList = [
     title: "Title3",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     link: "link",
   },
@@ -76,8 +76,8 @@ export const offerList = [
     title: "Title4",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    image: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     link: "link",
   },
@@ -85,7 +85,7 @@ export const offerList = [
 
 export const faqImage = {
   original: "/assets/images/maternity.webp",
-  tiny: '"/assets/images/loading.webp"',
+  tiny: '"/assets/images/maternity.webp"',
   alt: "",
 };
 
@@ -109,20 +109,20 @@ export const contactSectionImage = {
 
 export const pressImage = [
   {
-    original: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    original: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     alt: "desc",
   },
   {
-    original: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    original: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     alt: "desc",
   },
   {
-    original: "/assets/images/loading.webp",
-    tiny: "/assets/images/loading.webp",
+    original: "/assets/images/maternity.webp",
+    tiny: "/assets/images/maternity.webp",
     alt: "",
     alt: "desc",
   },
