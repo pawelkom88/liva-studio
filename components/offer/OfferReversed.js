@@ -11,7 +11,7 @@ export default function Offer({ details }) {
           <h3 className="mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
             {title}
           </h3>
-          <hr className="mb-5 border-gray-300" />
+          <hr className="mb-5 border-[color:var(--secondary-clr)]" />
           <p className="mb-6 text-gray-900">{content}</p>
           <div className="flex items-center space-x-4">
             <Link
