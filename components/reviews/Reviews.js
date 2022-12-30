@@ -23,7 +23,7 @@ export default function Reviews() {
   }
 
   return (
-    <section className="bg-[color:var(--teriary-clr)] px-16">
+    <section className="bg-[color:var(--teriary-clr)] lg:px-16 py-8">
       <div className="mx-auto max-w-[1340px] px-4 sm:px-6 sm:py-24 md:py-16 lg:mr-0 lg:pl-8 lg:pr-0">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
           <article className="mx-auto max-w-xl text-center sm:text-left">
@@ -33,8 +33,8 @@ export default function Reviews() {
               <SliderBtn onClick={nextSlide} aria="Next slide" iconDirection="next" />
             </div>
           </article>
-          <div className="-mx-6 h-[275px] lg:col-span-2 lg:mx-0">
-            <blockquote className="flex h-full flex-col justify-between bg-white p-12 shadow-lg">
+          <div className="w-full -mx-6 h-[435px] lg:h-[275px] lg:col-span-2 lg:mx-0">
+            <blockquote className="flex h-full flex-col justify-between bg-white p-8 shadow-lg">
               <div>
                 <div className="flex items-center justify-start gap-0.5">
                   <div className="w-20">
