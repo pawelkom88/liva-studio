@@ -26,7 +26,25 @@ const DynamicCallToAction = dynamic(() => import("@components/cta/CallToAction")
   loading: () => "Loading...",
 });
 
-export default function Home() {
+import { createClient } from "contentful";
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  });
+
+  const response = await client.getEntries({ content_type: "reviews", select: "fields" });
+
+  return {
+    props: {
+      reviews: response.items,
+    },
+    revalidate: 60,
+  };
+}
+
+export default function Home({ reviews }) {
   return (
     <>
       <PageSeo seo={mainPageSeo} />
@@ -34,7 +52,9 @@ export default function Home() {
       <Wrapper>
         <PortfolioOffer />
         <DynamicOurOffer />
-        <DynamicReviews />
+      </Wrapper>
+      <DynamicReviews reviews={reviews} />
+      <Wrapper>
         <DynamicPress />
         <DynamicFaq />
         <DynamicCallToAction />
