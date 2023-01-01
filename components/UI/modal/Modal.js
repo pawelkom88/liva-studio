@@ -1,4 +1,4 @@
-export default function Modal({ setIsOpen }) {
+export default function Modal({ setIsOpen, onKeyUp }) {
   return (
     <>
       <div className="flex-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none px-4 lg:px-0">
@@ -9,11 +9,11 @@ export default function Modal({ setIsOpen }) {
                 <source src={"/assets/video/video.mp4"} type="video/mp4" />
               </video>
             </div>
-
             <button
-              className="text-[color:var(--primary-clr)] background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+              className="text-[color:var(--primary-clr)] background-transparent font-bold uppercase px-6 py-2 text-sm mr-1 mb-1"
               type="button"
-              onClick={() => setIsOpen(false)}>
+              onClick={() => setIsOpen(false)}
+              onKeyDown={onKeyUp}>
               Close
             </button>
           </div>
