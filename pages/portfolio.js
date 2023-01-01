@@ -11,7 +11,7 @@ const slides = images.map(({ original, title }) => ({
 }));
 
 const btnStyles =
-  "inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-[color:var(--primary-clr)] bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base focus:outline-none hover:border-[color:var(--primary-clr)]";
+  "inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-[color:var(--primary-clr)] bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base hover:border-[color:var(--primary-clr)]";
 
 export default function Portfolio() {
   const [category, setCategory] = useState(slides);

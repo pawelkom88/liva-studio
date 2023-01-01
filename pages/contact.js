@@ -55,7 +55,7 @@ export default function contact() {
                 type="text"
                 name="name"
                 id="name"
-                className="w-full px-4 py-2 mt-1 text-sm outline-none border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
                 placeholder="Your name"
               />
             </div>
@@ -70,7 +70,7 @@ export default function contact() {
                 type="text"
                 name="email"
                 id="email"
-                className="w-full px-4 py-2 mt-1 text-sm outline-none border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
                 placeholder="jonn@doe.com"
               />
             </div>
@@ -85,14 +85,14 @@ export default function contact() {
                 type="text"
                 name="message"
                 id="message"
-                className="w-full px-4 py-2 mt-1 text-sm outline-none border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
                 placeholder="What can we help you with ?"
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="hover:text-[color:var(--primary-clr)] border-[color:var(--primary-clr)] bg-[color:var(--primary-clr)] mt-8 inline-block  px-12 py-3 text-sm text-white font-bold hover:bg-transparent border hover:border  focus:outline-none focus:ring active:text-indigo-500 uppercase">
+                className="hover:text-[color:var(--primary-clr)] border-[color:var(--primary-clr)] bg-[color:var(--primary-clr)] mt-8 inline-block  px-12 py-3 text-sm text-white font-bold hover:bg-transparent border hover:border  focus: focus:ring active:text-indigo-500 uppercase">
                 Send
               </button>
             </div>
