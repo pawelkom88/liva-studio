@@ -143,3 +143,12 @@ export const portfolioCategories = [
   { id: 5, name: "Lifestyle" },
   { id: 6, name: "All" },
 ];
+
+export const offerGrid = [
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+  { id: 1, title: "Maternity", desc: "lorem ipsum", link: "/offer/maternity", bg: "bg-offer" },
+];

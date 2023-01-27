@@ -15,7 +15,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('/assets/images/loading.webp')",
+        aboutUs: "url('/assets/images/loading.webp')",
+        offer: "url('/assets/images/contact-section-image.webp')",
       },
       colors: {
         "primary-clr": "var(--primary-clr)",

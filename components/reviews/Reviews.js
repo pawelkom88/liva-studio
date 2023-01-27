@@ -23,7 +23,7 @@ export default function Reviews({ reviews }) {
   }
   return (
     <section className="bg-[color:var(--teriary-clr)] py-8 mx-auto">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 sm:py-24 md:py-16  lg:pl-8 lg:pr-0">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 sm:py-24 md:py-16  lg:pl-8 ">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
           <article className="mx-auto max-w-xl text-center sm:text-left">
             <h2 className="heading-styles text-center">Read reviews from our customers</h2>
