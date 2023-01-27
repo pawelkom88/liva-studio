@@ -1,10 +1,7 @@
 import Button from "@components/UI/button/Button";
 
-const btnStyles = {
-  background: "bg-[color:var(--primary-clr)]",
-  border: "border-[color:var(--primary-clr)]",
-  textHover: "hover:text-[color:var(--primary-clr)]",
-};
+const btnStyles =
+  "hover:text-[color:var(--primary-clr)] border-[color:var(--primary-clr)] bg-[color:var(--primary-clr)] mt-8 inline-block px-12 py-3 text-sm text-white font-bold hover:bg-transparent border hover:border  focus:ring active:text-indigo-500 uppercase";
 
 export default function CallToAction() {
   return (
