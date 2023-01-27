@@ -19,15 +19,13 @@ export function MenuMobile({ setIsOpen }) {
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
           <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <a
-              href="https://wedwojestudio.pl/oferta/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/offer/"
               aria-label="Client space"
               title="Client space"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
               Client space
-            </a>
+            </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
           <li onClick={() => setIsOpen(false)} className="fade-in-link ">

@@ -11,15 +11,13 @@ export default function Nav() {
       <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
-            <a
-              href="https://wedwojestudio.pl/oferta/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/offer/"
               aria-label="Our offer"
               title="Our offer"
               className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Offer
-            </a>
+            </Link>
           </li>
           <li>
             <Link
