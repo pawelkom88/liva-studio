@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hero from "@components/hero/Hero";
 import Image from "next/image";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Button from "@components/UI/button/Button";
@@ -20,19 +21,10 @@ export default function AboutUs() {
 
   return (
     <>
-      <div className="w-full bg-top bg-cover h-[38rem] lg:h-[calc(100vh-139px)] bg-hero">
-        <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
-          <div className="text-center">
-            <h1 className="heading-styles text-white tracking-wider lg:text-6xl">
-              Portrait &<span className="block py-4">Lifestyle Photography</span>
-            </h1>
-            <p className="max-w-sm lg:max-w-2xl mt-4 text-white text-md lg:text-xl px-4">
-              Our style is very candid and non-obtrusive. I love to observe my subjects and capture
-              them in a very natural, honest and uncontrived way.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Hero heroImg='bg-aboutUs' heading="Portrait & Lifestyle Photography">
+        Our style is very candid and non-obtrusive. I love to observe my subjects and capture them
+        in a very natural, honest and uncontrived way.
+      </Hero>
       <Wrapper>
         <div className="relative flex flex-col px-6 mx-auto space-y-6 lg:h-[30rem] lg:flex-row lg:items-center justify-center xl:justify-start">
           <div className="hidden xl:block w-full lg:w-1/2 xl:ml-12">
