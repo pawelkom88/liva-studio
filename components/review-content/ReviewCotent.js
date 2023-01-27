@@ -6,9 +6,9 @@ export default function ReviewCotent({ review }) {
   const { url } = avatar[0].fields?.file;
 
   return (
-    <div className="w-full h-[435px] lg:h-[375px] lg:col-span-2">
+    <div className="w-full h-[435px] lg:h-[375px] lg:col-span-2 ">
       <blockquote className="flex h-full flex-col justify-between bg-white p-8 shadow-lg">
-        <div>
+        
           <div className="flex items-center justify-start gap-0.5">
             <Image
               width={80}
@@ -37,7 +37,7 @@ export default function ReviewCotent({ review }) {
             </time>
             <p className="mt-4 italic leading-relaxed">{content}</p>
           </div>
-        </div>
+        
         <footer className="mt-8 text-sm text-gray-500">&mdash; {name}</footer>
       </blockquote>
     </div>
