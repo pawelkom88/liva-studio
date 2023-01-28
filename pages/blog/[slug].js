@@ -14,9 +14,10 @@ const client = createClient({
 export async function getStaticPaths() {
   const response = await client.getEntries();
   const paths = response.items.map(item => {
-    return { slug: item.fields.slug };
+    return {
+      params: { slug: item?.fields?.slug || ''},
+    };
   });
-
   return { paths, fallback: true };
 }
 
@@ -29,7 +30,7 @@ export async function getStaticProps({ params }) {
   if (!items.length) {
     return {
       redirect: {
-        destination: "/",
+        destination: "/404",
         permanent: false,
       },
     };
