@@ -14,9 +14,7 @@ const client = createClient({
 export async function getStaticPaths() {
   const response = await client.getEntries();
   const paths = response.items.map(item => {
-    return {
-      params: { slug: item.fields.slug },
-    };
+    return { slug: item.fields.slug };
   });
 
   return { paths, fallback: true };
