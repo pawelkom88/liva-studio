@@ -51,15 +51,12 @@ export default function BlogDetails({ post }) {
         <h1 className="heading-styles text-center my-8">{title}</h1>
         <figure>
           <Image
-            className="w-full h-64 object-cover"
+            className="w-full h-[25rem] aspect-video object-cover"
             src={"https:" + url}
             alt={title}
             width={width}
             height={height}
           />
-          <figcaption className="text-xs">
-            <i>Image source: {"https:" + url}</i>
-          </figcaption>
         </figure>
         <div className="my-4 md:text-lg">{documentToReactComponents(content, options)}</div>
         <div className="my-4">
