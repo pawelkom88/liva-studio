@@ -1,7 +1,8 @@
 import Nav from "@components/navigation/Nav";
 import Footer from "@components/footer/Footer";
 
-import "@styles/globals.css";
+// import "@styles/globals.css";
+import '../styles/globals.css'
 import "@fontsource/roboto";
 
 import { DefaultSeo } from "next-seo";
