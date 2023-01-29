@@ -7,25 +7,25 @@ export function MenuMobile({ setIsOpen }) {
         <ul className="space-y-4 overflow-hidden">
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
           <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <a
-              href="https://wedwojestudio.pl/oferta/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/offer/"
               aria-label="Our offer"
               title="Our offer"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
               Offer
-            </a>
+            </Link>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
           <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <Link
+            <a
               href="/offer/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Client space"
               title="Client space"
               className="text-2xl tracking-wider text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
               Client space
-            </Link>
+            </a>
           </li>
           <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
           <li onClick={() => setIsOpen(false)} className="fade-in-link ">

@@ -9,7 +9,7 @@ export default function Faq() {
         <div className="flex-center flex-col">
           <strong className="my-2">Tell us what you need</strong>
           <a
-            href="https://wedwojestudio.pl/oferta/"
+            href="/offer"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Our offer"
@@ -31,7 +31,7 @@ export default function Faq() {
         <div className="flex-center flex-col">
           <strong className="my-2">Choose your photos</strong>
           <a
-            href="https://wedwojestudio.pl/oferta/"
+            href="/offer"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Client space"
