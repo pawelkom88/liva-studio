@@ -12,7 +12,7 @@ const client = createClient({
 });
 
 export async function getStaticPaths() {
-  const response = await client.getEntries();
+  const response = await client.getEntries({ content_type: "photographyBlog" });
   const paths = response.items.map(item => {
     return {
       params: { slug: item?.fields?.slug || "" },
