@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         aboutUs: "url('/assets/images/loading.webp')",
-        offer: "url('/assets/images/contact-section-image.webp')",
+        maternity: "url('/assets/images/contact-section-image.webp')",
       },
       colors: {
         "primary-clr": "var(--primary-clr)",
