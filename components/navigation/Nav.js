@@ -9,13 +9,13 @@ export default function Nav() {
   return (
     <div className="relative p-4 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
-        <ul className="items-center hidden space-x-8 lg:flex">
+        <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
           <li>
             <Link
               href="/offer/"
               aria-label="Our offer"
               title="Our offer"
-              className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
+              className="font-bold  transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Offer
             </Link>
           </li>
@@ -61,7 +61,7 @@ export default function Nav() {
             Liva Studio
           </h1>
         </Link>
-        <ul className="items-center hidden space-x-8 lg:flex">
+        <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
           <li>
             <a
               href="https://wedwojestudio.pl/oferta/"

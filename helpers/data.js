@@ -49,7 +49,7 @@ export const offerList = [
     image: "/assets/images/maternity.webp",
     tiny: "/assets/images/maternity.webp",
     alt: "",
-    link: "link",
+    link: "offer/newborn",
   },
   {
     id: 2,
