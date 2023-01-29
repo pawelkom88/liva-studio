@@ -32,7 +32,7 @@ export default function ReviewCotent({ review }) {
           </div>
           <div className="mt-4 text-[color:var(--primary-clr)]">
             <p className="text-2xl font-bold sm:text-3xl mr-4">{name}</p>
-            <time className="text-sm" datetime={date}>
+            <time className="text-sm" dateTime={date}>
               {date.replace("T", " at ").slice(0, 19)}
             </time>
             <p className="mt-4 italic leading-relaxed">{content}</p>
