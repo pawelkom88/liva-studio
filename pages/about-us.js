@@ -55,7 +55,7 @@ export default function AboutUs() {
             <div
               onClick={() => setIsOpen(true)}
               onKeyDown={onKeyUp}
-              tabindex="0"
+              tabIndex="0"
               aria-label="play video"
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 transition-transform duration-300 bg-white rounded-full shadow-2xl hover:scale-110 cursor-pointer z-30">
               <svg
