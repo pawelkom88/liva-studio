@@ -1,12 +1,12 @@
 import HeroSlider from "@components/hero/HeroSlider";
 import Wrapper from "@components/UI/wrapper/Wrapper";
-import PortfolioOffer from "@components/portfolio-offer/PortfolioOffer";
+import PortfolioOffer from "@components/portfolio/portfolio-offer/PortfolioOffer";
 import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
 
 import dynamic from "next/dynamic";
 
-const DynamicOurOffer = dynamic(() => import("@components/our-offer/OurOffer"), {
+const DynamicOurOffer = dynamic(() => import("@components/offer/our-offer/OurOffer"), {
   loading: () => "Loading...",
 });
 

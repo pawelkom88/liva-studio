@@ -1,5 +1,5 @@
-import Offer from "../offer/Offer";
-import OfferReversed from "../offer/OfferReversed";
+import Offer from "../Offer";
+import OfferReversed from "../OfferReversed";
 import { offerList } from "@helpers/data.js";
 
 export default function OurOffer() {
