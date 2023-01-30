@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReviewCotent from "@components/review-content/ReviewCotent";
+import ReviewCotent from "@components/reviews/review-content/ReviewCotent";
 import SliderBtn from "@components/UI/slider-btn/SliderBtn";
 
 export default function Reviews({ reviews }) {

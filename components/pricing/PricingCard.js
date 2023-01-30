@@ -8,7 +8,7 @@ export default function PricingCard({ offerPackage }) {
     goldPackage
       ? "bg-white text-[var(--primary-clr)] hover:bg-transparent hover:border-white hover:text-white"
       : "bg-[var(--secondary-clr)] text-white hover:bg-transparent hover:border-[var(--primary-clr)] hover:text-[var(--primary-clr)]"
-  } w-1/2 mx-auto px-8 py-3 font-semibold relative overflow-hidden border-2 border-transparent`;
+  } w-1/2 mx-auto px-8 py-3 font-semibold relative overflow-hidden border-2 border-transparent transition-all`;
 
   return (
     <article
