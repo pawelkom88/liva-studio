@@ -8,19 +8,14 @@ export default function Faq() {
       <div className="mx-auto grid grid-cols-1 gap-8 px-4 py-16 sm:max-w-xl sm:grid-cols-3 md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
         <div className="flex-center flex-col">
           <strong className="my-2">Tell us what you need</strong>
-          <a
-            href="/offer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Our offer"
-            title="Our offer">
+          <Link href="/offer" aria-label="Our offer" title="Our offer">
             <Image
               width={70}
               height={70}
               src="/assets/images/speech-bubble-with-emoticon.png"
               alt="icon"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex-center flex-col">
           <strong className="my-2">Book a date</strong>
@@ -30,19 +25,14 @@ export default function Faq() {
         </div>
         <div className="flex-center flex-col">
           <strong className="my-2">Choose your photos</strong>
-          <a
-            href="/offer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Client space"
-            title="Client space">
+          <Link href="/offer" aria-label="Client space" title="Client space">
             <Image
-              width={70}
-              height={70}
+              width={60}
+              height={60}
               src="/assets/images/calendar-page-with-upper-spring.png"
               alt="icon"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </article>
