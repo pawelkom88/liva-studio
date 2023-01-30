@@ -1,9 +1,8 @@
-import OfferBanner from "@components/UI/offer-banner/OfferBanner";
-import OfferImage from "@components/offer-image/OfferImage";
+import OfferBanner from "@components/offer/offer-banner/OfferBanner";
+import OfferImage from "@components/offer/offer-image/OfferImage";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Hero from "@components/hero/Hero";
 import { offerBannerData } from "@helpers/data";
-
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
