@@ -28,6 +28,7 @@ export default function Press() {
               </svg>
             </div>
           </div>
+          {/* COMPONENT */}
           {pressImage && (
             <div className="flex-center order-1">
               <div className="flex flex-col items-end ">

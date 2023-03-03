@@ -1,7 +1,7 @@
 import useMatchMedia from "@hooks/useMatchMedia";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { projectList as sliderImages } from "@helpers/data";
+import { sliderData as sliderImages } from "@helpers/data";
 import Image from "next/legacy/image";
 import "swiper/css";
 import "swiper/css/pagination";

@@ -1,4 +1,10 @@
-export const images = [
+interface Image {
+  src: string;
+  original: string;
+  category: string;
+}
+
+export const images: Image[] = [
   {
     src: "/assets/images/portfolio/BABY/K-6.webp",
 

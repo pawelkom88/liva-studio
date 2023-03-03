@@ -1,4 +1,12 @@
-export const projectList = [
+interface Slide {
+  title: string;
+  image: string;
+  tiny: string;
+  alt: string;
+  description: string;
+}
+
+export const sliderData: Slide[] = [
   {
     title: "Maternity",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp",
@@ -33,7 +41,17 @@ export const projectList = [
   },
 ];
 
-export const offerList = [
+interface Offer {
+  id: number;
+  title: string;
+  content: string;
+  image: string;
+  tiny: string;
+  alt: string;
+  link: string;
+}
+
+export const offerDetails: Offer[] = [
   {
     id: 1,
     title: "NEWBORN",
@@ -96,7 +114,13 @@ export const offerList = [
   },
 ];
 
-export const faqImage = {
+interface FaqImage {
+  original: string;
+  tiny: string;
+  alt: string;
+}
+
+export const faqImage: FaqImage = {
   original: "/assets/images/MAINPAGE/OUROFFER_",
   tiny: '"/assets/images/MAINPAGE/OUROFFER_"',
   alt: "",
@@ -118,31 +142,33 @@ export const pressImage = [
   {
     original: "/assets/images/maternity.webp",
     tiny: "/assets/images/maternity.webp",
-    alt: "",
     alt: "desc",
   },
   {
     original: "/assets/images/maternity.webp",
     tiny: "/assets/images/maternity.webp",
-    alt: "",
     alt: "desc",
   },
   {
     original: "/assets/images/maternity.webp",
     tiny: "/assets/images/maternity.webp",
-    alt: "",
     alt: "desc",
   },
 ];
 
-export const faqElements = [
-  { id: 1, content: "lorem ipsum 123" },
-  { id: 2, content: "lorem ipsum 123" },
-  { id: 3, content: "lorem ipsum 123" },
-  { id: 4, content: "lorem ipsum 123" },
-];
+// export const faqElements = [
+//   { id: 1, content: "lorem ipsum 123" },
+//   { id: 2, content: "lorem ipsum 123" },
+//   { id: 3, content: "lorem ipsum 123" },
+//   { id: 4, content: "lorem ipsum 123" },
+// ];
 
-export const portfolioCategories = [
+interface PortfolioCategory {
+  id: number;
+  name: string;
+}
+
+export const portfolioCategories: PortfolioCategory[] = [
   { id: 1, name: "Maternity" },
   { id: 2, name: "Newborn" },
   { id: 3, name: "Boudoir" },
@@ -153,7 +179,15 @@ export const portfolioCategories = [
   { id: 8, name: "All" },
 ];
 
-export const offerBannerData = [
+interface OfferBanner {
+  id: number;
+  text: string;
+  number: number;
+  time: number;
+  svg: JSX.Element;
+}
+
+export const offerBannerData: OfferBanner[] = [
   {
     id: 1,
     text: "ZADOWOLONYCH KLIENTÓW",

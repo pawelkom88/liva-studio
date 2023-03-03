@@ -96,7 +96,7 @@ body {
 
 @layer components {
   .heading-styles {
-    @apply font-bold font-steelfish text-7xl uppercase text-gray-800 tracking-wider;
+    @apply font-bold font-steelfish text-6xl uppercase text-gray-800 tracking-wider;
   }
 
   .flex-center {

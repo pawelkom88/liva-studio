@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FooterDescription({}) {
+export default function FooterDescription() {
   return (
     <div className="sm:col-span-2">
       <Image

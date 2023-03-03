@@ -1,76 +1,46 @@
 import Link from "next/link";
+import { menuMobileLinks } from "constants/constants";
+
+const horizontalLine = (
+  <hr className="mx-auto mb-5 w-3/4 border-[color:var(--teriary-clr)] opacity-70" />
+);
 
 export function MenuMobile({ setIsOpen }) {
   return (
-    <div className="fixed inset-0 z-40 w-full h-full flex justify-center items-center bg-[color:var(--secondary-clr)] opacity-100 duration-700">
-      <nav className="w-full  flex flex-col text-white text-center text-xl font-light space-y-3">
+    <div className="fixed inset-0 z-40 flex h-full w-full items-center justify-center bg-[color:var(--secondary-clr)] opacity-100 duration-700">
+      <nav className="flex  w-full flex-col space-y-3 text-center text-xl font-light text-white">
         <ul
           className="space-y-4 overflow-hidden text-2xl tracking-wider text-white
 ">
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <Link
-              href="/offer/"
-              aria-label="Our offer"
-              title="Our offer"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Offer
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <a
-              href="/offer/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Client space"
-              title="Client space"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Client space
-            </a>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li onClick={() => setIsOpen(false)} className="fade-in-link ">
-            <Link
-              href="/portfolio"
-              aria-label="Our portfolio"
-              title="Our portfolio"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Portfolio
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-
-          <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <Link
-              href="/about-us"
-              aria-label="About us"
-              title="About us"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              About us
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <Link
-              href="/contact"
-              aria-label="Contact"
-              title="Contact"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Contact
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
-          <li onClick={() => setIsOpen(false)} className="fade-in-link">
-            <Link
-              href="/blog"
-              aria-label="Blog"
-              title="Blog"
-              className=" transition-colors duration-200 hover:text-deep-purple-accent-400">
-              Blog
-            </Link>
-          </li>
-          <hr className="w-3/4 mb-5 mx-auto opacity-70 border-[color:var(--teriary-clr)]" />
+          {menuMobileLinks.map(link => {
+            return (
+              <>
+                {horizontalLine}
+                <li key={link.id} onClick={() => setIsOpen(false)} className="fade-in-link">
+                  {!link.isInternal ? (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={link.href}
+                      aria-label={link.aria}
+                      title={link.title}
+                      className={link.className}>
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      aria-label={link.aria}
+                      title={link.title}
+                      className={link.className}>
+                      {link.name}
+                    </Link>
+                  )}
+                </li>
+              </>
+            );
+          })}
+          {horizontalLine}
         </ul>
       </nav>
     </div>

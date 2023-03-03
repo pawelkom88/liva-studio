@@ -1,12 +1,7 @@
 import Button from "@components/UI/button/Button";
 import Image from "next/legacy/image";
 import { aboutUsPage } from "@helpers/data";
-
-const btnStyles = {
-  background: "bg-[color:var(--secondary-clr)]",
-  border: "border-[color:var(--secondary-clr)]",
-  textHover: "hover:text-[color:var(--secondary-clr)]",
-};
+import { btnStyles } from "constants/constants";
 
 export default function About() {
   return (

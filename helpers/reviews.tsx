@@ -1,4 +1,14 @@
-export const reviews = [
+interface Review {
+  id: number;
+  name: string;
+  image: string;
+  alt: string;
+  joined: string;
+  stars: number[];
+  content: string;
+}
+
+export const reviews: Review[] = [
   {
     id: 0,
     name: "John Smith",
