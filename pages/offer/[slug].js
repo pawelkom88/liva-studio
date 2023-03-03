@@ -3,6 +3,8 @@ import Hero from "@components/hero/Hero";
 import PricingCard from "@components/pricing/PricingCard";
 import SkeletonLoader from "@components/UI/skeleton/Skeleton";
 import { createClient } from "contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { offerOptions } from "@helpers/contentful";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -42,8 +44,17 @@ export async function getStaticProps({ params }) {
 export default function Package({ offerDetails }) {
   if (!offerDetails) return <SkeletonLoader />;
 
-  const { title, description, packageDetails, packageIntro, packagePrice, goldPackage,bronzePackage,silverPackage, image } =
-    offerDetails?.fields;
+  const {
+    title,
+    description,
+    packageDetails,
+    packageIntro,
+    packagePrice,
+    goldPackage,
+    bronzePackage,
+    silverPackage,
+    image,
+  } = offerDetails?.fields;
   const { url } = image.fields?.file;
 
   const cardData = {
@@ -67,7 +78,8 @@ export default function Package({ offerDetails }) {
       <Wrapper>
         <section className="mt-16">
           <h1 className="heading-styles text-center my-8">Package details</h1>
-          <p className="text-center">{description}</p>
+
+          <p className="lg:mx-24">{documentToReactComponents(description, offerOptions)}</p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
             {cardData.details.map(offer => {
               return <PricingCard key={offer.id} offerPackage={offer} />;

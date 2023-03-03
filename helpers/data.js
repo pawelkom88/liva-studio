@@ -1,97 +1,104 @@
 export const projectList = [
   {
-    title: "BRISTOL Photography studio",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
+    title: "Maternity",
+    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDER_MATERNITY_L.webp",
+    alt: "professional maternity photoshoot",
     description:
-      "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
+      "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
   },
   {
-    title: "Baby photography",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "Desc",
+    title: "Newborn",
+    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_L.webp",
+    alt: "professional newborn photoshoot",
     description:
-      "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
+      "Welcome your little one with a professional newborn photoshoot that captures the beauty and innocence of their first moments. With a skilled photographer, you can create heartwarming images that will be cherished for a lifetime.",
   },
   {
-    title: "Interactive AI",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "Desc",
+    title: "Wedding",
+    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_L.webp",
+    alt: "professional wedding photoshoot",
     description:
-      "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. Proin rhoncus magna lectus, nec consequat augue ultricies eu.",
+      "Make your special day last forever with a professional wedding photoshoot. Create beautiful and timeless images that capture the joy and love of your wedding day, with a skilled photographer who can capture every moment and emotion.",
   },
   {
-    title: "Slices of Sky",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "Desc",
+    title: "Lifestyle",
+    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_L.webp",
+    alt: "professional lifestyle photoshoot",
     description:
-      "Praesent quis congue nisi. Vivamus dapibus suscipit magna at imperdiet. Mauris consectetur pharetra metus eu suscipit. Maecenas augue tortor, consequat vitae lacus id, pharetra tempor mauris. Suspendisse sodales commodo erat, non imperdiet nisl scelerisque at. Nulla porttitor gravida diam, in ornare ipsum accumsan bibendum. Morbi ut ante metus. ",
-  },
-  {
-    title: "Micro Worlds",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "Desc",
-    description:
-      "Duis at tellus vitae velit aliquet varius. Fusce luctus libero et ligula tristique lobortis. Vestibulum eu placerat risus, eu semper augue. Integer at purus sit amet elit pretium viverra. Suspendisse id fringilla nibh, nec dictum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ",
+      "Capture the essence of your everyday life with a professional lifestyle photoshoot. Create natural and authentic images that showcase your unique lifestyle and personality, with a photographer who can create a relaxed and comfortable environment for you to be yourself.",
   },
 ];
 
 export const offerList = [
   {
     id: 1,
-    title: "Title1",
+    title: "NEWBORN",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "",
+      "Capture the pure and tender moments of your newborn baby's early days! My photoshoots take place in the comfort of my Home studio, where I create a cozy and safe environment for your baby to feel at ease. During the session, I guide you through different poses and setups, and capture all the tiny details that make your baby unique. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your newborn photoshoot.",
+    image: "/assets/images/MAINPAGE/OUROFFER_NEWBORN_2_HIGH.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_NEWBORN_2_LOW.webp",
+    alt: "newborn baby photoshoot offer",
     link: "offer/newborn",
   },
   {
     id: 2,
-    title: "Title2",
+    title: "MATERNITY",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "",
-    link: "link",
+      "Celebrate the beauty of your pregnancy with a maternity photoshoot. My sessions take place in a location of your choice, whether it's in your home, outdoors, or at my home studio. I aim to create a comfortable and relaxed environment where you can showcase your baby bump and feel beautiful. During the session, I guide you through different poses and setups that highlight the uniqueness of your pregnancy journey. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your maternity photoshoot.",
+    image: "/assets/images/MAINPAGE/OUROFFER_MATERNITY1_HIGH.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_MATERNITY1_HIGH.webp",
+    alt: "maternity photoshoot offer",
+    link: "offer/maternity",
   },
   {
     id: 3,
-    title: "Title3",
+    title: "WEDDING",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "",
-    link: "link",
+      "Your wedding day is one of the most special and memorable days of your life, and I would be honored to capture every moment. As a professional wedding photographer, I specialize in creating timeless and beautiful images that you and your loved ones will cherish for a lifetime.",
+    image: "/assets/images/MAINPAGE/OUROFFER_WEDDING_4_HIGH.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_WEDDING_4_LOW.webp",
+    alt: "wedding photoshoot offer",
+    link: "offer/wedding",
   },
   {
     id: 4,
-    title: "Title4",
+    title: "PORTRAIT",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae sapiente necessitatibus consequatur dolorum mollitia vero eveniet nulla aliquam magni.",
-    image: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
-    alt: "",
-    link: "link",
+      "Celebrate yourself or your loved ones with a professional portrait photoshoot. As a skilled photographer, I specialize in creating beautiful and authentic portraits that showcase your personality and style.",
+    image: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    alt: "portrait photoshoot offer",
+    link: "offer/portrait",
+  },
+  {
+    id: 5,
+    title: "LIFESTYLE",
+    content:
+      "Capture the essence of your everyday life with a professional lifestyle photoshoot. As a skilled photographer, I specialize in creating natural and authentic images that showcase your unique lifestyle and personality.",
+    image: "/assets/images/MAINPAGE/OUROFFER_LIFESTYLE_3_HIGH.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_LIFESTYLE_3_LOW.webp",
+    alt: "lifestyle photoshoot offer",
+    link: "offer/lifestyle",
+  },
+  {
+    id: 6,
+    title: "BABY",
+    content:
+      "Celebrate your little one's milestones with a professional baby and birthday photoshoot. As a skilled photographer, I specialize in capturing the magic and wonder of childhood through beautiful and timeless images.",
+    image: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    tiny: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    alt: "baby photoshoot offer",
+    link: "offer/baby",
   },
 ];
 
 export const faqImage = {
-  original: "/assets/images/maternity.webp",
-  tiny: '"/assets/images/maternity.webp"',
-  alt: "",
-};
-
-export const aboutUsHome = {
-  original: "/assets/images/about-us-main.webp",
-  tiny: "/assets/images/about-us-main.webp",
+  original: "/assets/images/MAINPAGE/OUROFFER_",
+  tiny: '"/assets/images/MAINPAGE/OUROFFER_"',
   alt: "",
 };
 
@@ -141,7 +148,9 @@ export const portfolioCategories = [
   { id: 3, name: "Boudoir" },
   { id: 4, name: "Wedding" },
   { id: 5, name: "Lifestyle" },
-  { id: 6, name: "All" },
+  { id: 6, name: "Baby" },
+  { id: 7, name: "Portrait" },
+  { id: 8, name: "All" },
 ];
 
 export const offerBannerData = [

@@ -49,8 +49,6 @@ html {
 
 body {
   position: relative;
-}
-body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-rendering: optimizeSpeed;
@@ -73,15 +71,7 @@ body {
 }
 
 .swiper-slide {
-  max-width: 80%;
-}
-
-.swiper-slide:nth-child(2n) {
   max-width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  max-width: 40%;
 }
 
 @media (max-width: 860px) {
@@ -106,7 +96,7 @@ body {
 
 @layer components {
   .heading-styles {
-    @apply font-bold font-steelfish text-3xl sm:text-5xl uppercase text-gray-800 tracking-wider;
+    @apply font-bold font-steelfish text-7xl uppercase text-gray-800 tracking-wider;
   }
 
   .flex-center {
@@ -130,20 +120,17 @@ body {
   }
 }
 
-.ReactGridGallery_tile {
-  transition: filter 0.3s ease-in-out;
+.ReactGridGallery * {
+  justify-content: center;
 }
 
-.blur {
-  filter: blur(50px);
+.ReactGridGallery_tile-viewport img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
 }
 
-.ReactGridGallery_tile:hover {
-  filter: brightness(50%);
-  -webkit-transition: 0.3s -webkit-filter ease-in-out;
-  -moz-transition: 0.3s -moz-filter ease-in-out;
-  -moz-transition: 0.3s filter ease-in-out;
-  -ms-transition: 0.3s -ms-filter ease-in-out;
-  -o-transition: 0.3s -o-filter ease-in-out;
-  transition: filter 0.3s ease-in-out;
+.ReactGridGallery_tile-viewport img {
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.3s linear;
 }

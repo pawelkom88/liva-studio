@@ -1,6 +1,6 @@
 import Button from "@components/UI/button/Button";
 import Image from "next/legacy/image";
-import { aboutUsHome } from "@helpers/data";
+import { aboutUsPage } from "@helpers/data";
 
 const btnStyles = {
   background: "bg-[color:var(--secondary-clr)]",
@@ -18,9 +18,9 @@ export default function About() {
               <Image
                 objectFit="cover"
                 layout="fill"
-                src={aboutUsHome?.original}
+                src={aboutUsPage?.original}
                 placeholder="blur"
-                blurDataURL={aboutUsHome?.tiny}
+                blurDataURL={aboutUsPage?.tiny}
                 alt="Liva studio - Artur and Magda"
               />
             </div>

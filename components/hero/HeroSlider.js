@@ -1,7 +1,7 @@
 import useMatchMedia from "@hooks/useMatchMedia";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { projectList } from "@helpers/data";
+import { projectList as sliderImages } from "@helpers/data";
 import Image from "next/legacy/image";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,7 +11,7 @@ export default function HeroSlider() {
   return (
     <section className="relative">
       <Swiper
-        slidesPerView={matches ? "1" : "auto"}
+        slidesPerView="auto"
         spaceBetween={30}
         pagination={{
           type: "fraction",
@@ -19,19 +19,22 @@ export default function HeroSlider() {
         }}
         modules={[Pagination]}
         className="mySwiper">
-        {projectList.map(item => {
+        {sliderImages.map(item => {
           return (
             <SwiperSlide key={item.title}>
-              <h1 className="absolute m-auto left-0 right-0 top-[50%] z-50  text-white heading-styles">
+              <h1 className="absolute left-0 right-0 top-[40%] z-50 text-white heading-styles">
                 {item.title}
               </h1>
+              <p className="lg:text-xl mx-10 lg:mx-40 absolute top-[50%]  z-50 text-white">
+                {item.description}
+              </p>
               <Image
-                className="brightness-75"
+                className="w-full brightness-75"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
                 src={item.image}
-                alt={item.title}
+                alt={item.alt}
                 placeholder="blur"
                 blurDataURL={item.tiny}
                 quality={100}

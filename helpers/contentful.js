@@ -1,8 +1,19 @@
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 
+function paragraphClass(node) {
+  const className = "my-2";
+  return className;
+}
+
+export const offerOptions = {
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => <p className={paragraphClass(node)}>{children}</p>,
+  },
+};
+
 export const options = {
   renderNode: {
-    [BLOCKS.HEADING_4]: (node, children) => <h4 className=" heading-styles py-4">{children}</h4>,
+    [BLOCKS.HEADING_4]: (node, children) => <h4 className="heading-styles py-4">{children}</h4>,
   },
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,

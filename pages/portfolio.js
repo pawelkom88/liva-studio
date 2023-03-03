@@ -3,11 +3,11 @@ import { useState } from "react";
 import { portfolioCategories } from "@helpers/data";
 import { images } from "@helpers/images";
 
-const slides = images.map(({ original, title }) => ({
-  src: original,
-  alt: title,
+const slides = images.map(({ src, title }) => ({
+  src,
   width: 3840,
   height: 2560,
+  alt: title,
 }));
 
 const btnStyles =

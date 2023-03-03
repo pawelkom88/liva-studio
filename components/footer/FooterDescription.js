@@ -12,12 +12,10 @@ export default function FooterDescription({}) {
       />
       <div className="mt-6 lg:max-w-sm">
         <p className="text-sm hover:teprimary-[color:var(--secondary-clr)]">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam.
-        </p>
-        <p className="mt-4 text-sm hover:text-[color:var(--secondary-primary)]">
-          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo.
+          Based in Bristol, England, Liva Studio is a photography brand specialising in newborn,
+          maternity, and wedding photography. We’re obsessed with documenting and preserving life’s
+          special moments by combining beautiful pictures and cutting-edge technology to create
+          blissful memories for our clients.
         </p>
       </div>
     </div>

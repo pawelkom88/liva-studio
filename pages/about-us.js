@@ -21,9 +21,11 @@ export default function AboutUs() {
 
   return (
     <>
-      <Hero heroImg='bg-aboutUs' heading="Portrait & Lifestyle Photography">
-        Our style is very candid and non-obtrusive. I love to observe my subjects and capture them
-        in a very natural, honest and uncontrived way.
+      <Hero heroImg="bg-aboutUs" heading="Portrait & Lifestyle Photography">
+        Based in Bristol, England, Liva Studio is a photography brand specialising in newborn,
+        maternity, and wedding photography. We’re obsessed with documenting and preserving life’s
+        special moments by combining beautiful pictures and cutting-edge technology to create
+        blissful memories for our clients.
       </Hero>
       <Wrapper>
         <div className="relative flex flex-col px-6 mx-auto space-y-6 lg:h-[30rem] lg:flex-row lg:items-center justify-center xl:justify-start">
@@ -41,10 +43,11 @@ export default function AboutUs() {
             </h2>
           </div>
         </div>
-        <div className="relative flex flex-col-reverse px-4 xl:pt-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-12 md:px-8 sm:max-w-xl md:max-w-full my-16">
-          <div className="relative z-10 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-12 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center order-1">
+
+        <div className="relative flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:py-32 xl:py-12 md:max-w-full my-16">
+          <div className="ml-4">
             <Image
-              className="lg:opacity-75 brightness-75 hover:opacity-100 transition-opacity ease-linear duration-300"
+              className="w-full relative"
               width={500}
               height={750}
               src={aboutUsPage?.original}
@@ -52,12 +55,21 @@ export default function AboutUs() {
               blurDataURL="/assets/images/loading.webp"
               alt="Artur"
             />
-            <div
+            {/* <Image
+              className="relative w-full lg:opacity-75 brightness-75 hover:opacity-100 transition-opacity ease-linear duration-300"
+              width={500}
+              height={750}
+              src={aboutUsPage?.original}
+              placeholder="blur"
+              blurDataURL="/assets/images/loading.webp"
+              alt="Artur"
+            /> */}
+            {/* <div
               onClick={() => setIsOpen(true)}
               onKeyDown={onKeyUp}
               tabIndex="0"
               aria-label="play video"
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 transition-transform duration-300 bg-white rounded-full shadow-2xl hover:scale-110 cursor-pointer z-30">
+              className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 transition-transform duration-300 bg-white rounded-full shadow-2xl hover:scale-110 cursor-pointer z-30">
               <svg
                 role="img"
                 aria-labelledby="play video"
@@ -66,47 +78,66 @@ export default function AboutUs() {
                 viewBox="0 0 24 24">
                 <path d="M16.53,11.152l-8-5C8.221,5.958,7.833,5.949,7.515,6.125C7.197,6.302,7,6.636,7,7v10 c0,0.364,0.197,0.698,0.515,0.875C7.667,17.958,7.833,18,8,18c0.184,0,0.368-0.051,0.53-0.152l8-5C16.822,12.665,17,12.345,17,12 S16.822,11.335,16.53,11.152z" />
               </svg>
-            </div>
+            </div> */}
           </div>
-          <div className="relative flex justify-end max-w-xl mx-auto xl:pr-16 lg:max-w-screen-xl">
-            <div className="lg:pr-5 lg:max-w-lg lg:mb-0">
-              <div className="max-w-xl mb-6">
-                <h3 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none mt-8">
-                  I seek connection, the relationships, the laughs,
-                  <br className="hidden md:block" />
-                  the real you & real me.
-                </h3>
-                <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                  I discovered wedding photography about 7 years ago, after having worked in the
-                  portrait and commercial industry for 2 years. The emotions, the tension and
-                  charming beauty of two people celebrating their love, enjoying time with their
-                  family and close friends - nothing can beat that. I shot my first wedding for fun.
-                </p>
-                <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                  My friend’s photographer got really sick last minute, and they were in panic,
-                  begging me to grab my camera and fly over to Perth, to help them preserve at least
-                  a bit of their Big Day. So I did.
-                </p>
 
-                <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                  7 years later, I still get goosebumps and chills when ever the bride walks down
-                  the aisle and the groom sees her for the first time. Like with anything I do, I’ve
-                  put much heart, work and energy into photography. Traveled the world, won awards
-                  and contests for best wedding photographer, rising star of wedding photography,
-                  etc.
-                </p>
+          <div className="relative basis-3/4 flex-grow flex order-1">
+            <div className="mx-4 lg:mx-0 mb-6">
+              <h1 className="text-center mb-6 text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none mt-8">
+                THE PHOTOGRAPHERS
+              </h1>
 
-                <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                  Yet, the most rewarding part are still the emotions, and happy messages I get from
-                  my clients. Nothing charges and empowers me more.
-                </p>
-              </div>
+              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
+                Our team of skilled photographer and editor is dedicated to creating beautiful and
+                timeless images that you will cherish for a lifetime. We understand that every
+                moment is unique, which is why we work closely with you to understand your vision
+                and style. Whether you want a natural and authentic photoshoot or a more stylized
+                session, we will work with you to create images that stand out.
+              </p>
+              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
+                Our mission is to tell your story through the lens of our camera. We believe that
+                each moment in life is precious and unique, and we strive to capture that essence
+                through our photographs.
+              </p>
+
+              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
+                One of the things that makes us unique is our use of wooden handmade photography
+                props. We have a wide range of props available, and most of them are created by us.
+                We believe that these props add a special touch to our images and make them stand
+                out from the crowd.
+              </p>
+
+              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
+                At Liva Studio, our philosophy is simple: Give our clients photos that are truly
+                one-of-a-kind. One way we do this is by using handmade wooden props — some of which
+                we create ourselves. When we said we were passionate about this, we weren’t
+                exaggerating. Our passion for creating unique, bespoke pieces drives us to find new
+                and inventive ways to produce the perfect photos. We’re always finding new ways to
+                infuse that extra magic into your pictures.
+              </p>
+
+              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
+                We also offer mobile studio services for those busy people who don’t have the time
+                to visit a physical studio or if you feel comfortable working with us in your own
+                home. This also means you don’t have to worry about finding the perfect spot for
+                your shoot. Our mobile studio services come with a complete lighting set-up and
+                backdrops, meaning you don’t have to worry about gathering any equipment. We’ll
+                bring the studio to you so you can relax and focus on making memories with your
+                loved ones.
+              </p>
             </div>
           </div>
         </div>
+        <h2 className="text-center text-3xl font-bold my-2">
+          Experience the Liva Studio’s difference
+        </h2>
+        <p className="mx-4 my-8 text-center">
+          Let us help you create lasting memories. Contact us today to book your photoshoot, and let
+          us capture your unique story through the lens of our camera.
+        </p>
       </Wrapper>
-      <div className="text-center -mt-12">
-        <Button styles={btnStyles} href="/offer">
+      <div className="text-center">
+        <Button styles={btnStyles} href="/contact">
           Book now
         </Button>
       </div>
