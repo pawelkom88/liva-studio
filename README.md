@@ -8,7 +8,7 @@ Liva Studio is a photography website created for one of my clients. I am still w
 
 ## Demo
 
-Here is a working [live demo ](https://liva-studio.netlify.app/) on temporaty domain.
+Here is a working [live demo ](https://livastudio.co.uk/) on temporaty domain.
 
 ## How I worked on this project
 
