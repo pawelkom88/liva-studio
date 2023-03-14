@@ -10,7 +10,7 @@ export const sliderData: Slide[] = [
   {
     title: "Maternity",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDER_MATERNITY_L.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_L.webp",
     alt: "professional maternity photoshoot",
     description:
       "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
@@ -57,8 +57,8 @@ export const offerDetails: Offer[] = [
     title: "NEWBORN",
     content:
       "Capture the pure and tender moments of your newborn baby's early days! My photoshoots take place in the comfort of my Home studio, where I create a cozy and safe environment for your baby to feel at ease. During the session, I guide you through different poses and setups, and capture all the tiny details that make your baby unique. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your newborn photoshoot.",
-    image: "/assets/images/MAINPAGE/OUROFFER_NEWBORN_2_HIGH.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_NEWBORN_2_LOW.webp",
+    image: "/assets/images/offer/NEWBORN_H.webp",
+    tiny: "/assets/images/offer/NEWBORN_L.webp",
     alt: "newborn baby photoshoot offer",
     link: "offer/newborn",
   },
@@ -67,8 +67,8 @@ export const offerDetails: Offer[] = [
     title: "MATERNITY",
     content:
       "Celebrate the beauty of your pregnancy with a maternity photoshoot. My sessions take place in a location of your choice, whether it's in your home, outdoors, or at my home studio. I aim to create a comfortable and relaxed environment where you can showcase your baby bump and feel beautiful. During the session, I guide you through different poses and setups that highlight the uniqueness of your pregnancy journey. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your maternity photoshoot.",
-    image: "/assets/images/MAINPAGE/OUROFFER_MATERNITY1_HIGH.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_MATERNITY1_HIGH.webp",
+    image: "/assets/images/offer/MATERNITY_H.webp",
+    tiny: "/assets/images/offer/MATERNITY_L.webp",
     alt: "maternity photoshoot offer",
     link: "offer/maternity",
   },
@@ -77,8 +77,8 @@ export const offerDetails: Offer[] = [
     title: "WEDDING",
     content:
       "Your wedding day is one of the most special and memorable days of your life, and I would be honored to capture every moment. As a professional wedding photographer, I specialize in creating timeless and beautiful images that you and your loved ones will cherish for a lifetime.",
-    image: "/assets/images/MAINPAGE/OUROFFER_WEDDING_4_HIGH.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_WEDDING_4_LOW.webp",
+    image: "/assets/images/offer/WEDDING_H.webp",
+    tiny: "/assets/images/offer/WEDDING_L.webp",
     alt: "wedding photoshoot offer",
     link: "offer/wedding",
   },
@@ -87,8 +87,8 @@ export const offerDetails: Offer[] = [
     title: "PORTRAIT",
     content:
       "Celebrate yourself or your loved ones with a professional portrait photoshoot. As a skilled photographer, I specialize in creating beautiful and authentic portraits that showcase your personality and style.",
-    image: "/assets/images/MAINPAGE/OUROFFER_.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    image: "/assets/images/offer/PORTRAIT_H.webp",
+    tiny: "/assets/images/offer/PORTRAIT_L.webp",
     alt: "portrait photoshoot offer",
     link: "offer/portrait",
   },
@@ -97,8 +97,8 @@ export const offerDetails: Offer[] = [
     title: "LIFESTYLE",
     content:
       "Capture the essence of your everyday life with a professional lifestyle photoshoot. As a skilled photographer, I specialize in creating natural and authentic images that showcase your unique lifestyle and personality.",
-    image: "/assets/images/MAINPAGE/OUROFFER_LIFESTYLE_3_HIGH.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_LIFESTYLE_3_LOW.webp",
+    image: "/assets/images/offer/LIFESTYLE_H.webp",
+    tiny: "/assets/images/offer/LIFESTYLE_L.webp",
     alt: "lifestyle photoshoot offer",
     link: "offer/lifestyle",
   },
@@ -107,8 +107,8 @@ export const offerDetails: Offer[] = [
     title: "BABY",
     content:
       "Celebrate your little one's milestones with a professional baby and birthday photoshoot. As a skilled photographer, I specialize in capturing the magic and wonder of childhood through beautiful and timeless images.",
-    image: "/assets/images/MAINPAGE/OUROFFER_.webp",
-    tiny: "/assets/images/MAINPAGE/OUROFFER_.webp",
+    image: "/assets/images/offer/BABY_H.webp",
+    tiny: "/assets/images/offer/BABY_L.webp",
     alt: "baby photoshoot offer",
     link: "offer/baby",
   },
