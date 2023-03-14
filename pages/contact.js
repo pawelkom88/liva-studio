@@ -5,21 +5,21 @@ import { contactSectionImage } from "@helpers/data";
 export default function contact() {
   return (
     <Wrapper>
-      <section className="flex large:flex-wrap large:justify-center w-full lg:my-16">
-        <div className="max-h-screen large:mt-4 lg:basis-3/6">
+      <section className="flex w-full lg:my-16 large:flex-wrap large:justify-center">
+        <div className="max-h-screen lg:basis-3/6 large:mt-4">
           <Image
             width={853}
             height={927}
-            className="object-cover h-full w-full"
+            className="h-full w-full object-cover"
             src={contactSectionImage?.original}
             placeholder="blur"
             blurDataURL={contactSectionImage?.tiny}
             alt="Liva studio"
           />
         </div>
-        <div className="w-full md:w-4/6 lg:w-3/6 xl:w-2/6 p-10 min-h-screen flex flex-col justify-center flex-grow large:-my-16">
+        <div className="flex min-h-screen w-full flex-grow flex-col justify-center p-10 md:w-4/6 lg:w-3/6 xl:w-2/6 large:-my-16">
           <div className="mb-10">
-            <h1 className="mt-10 heading-styles font-extrabold">Get in touch</h1>
+            <h1 className="heading-styles mt-10 font-extrabold">Get in touch</h1>
           </div>
           <div className="mb-10">
             <p className="text-sm leading-6">
@@ -31,12 +31,12 @@ export default function contact() {
             action="https://api.web3forms.com/submit"
             method="POST"
             id="form"
-            className="w-full mx-auto space-y-6">
+            className="mx-auto w-full space-y-6">
             <input
               required
               type="hidden"
               name="redirect"
-              value="https://liva-studio.netlify.app/success"
+              value="https://livastudio.co.uk/success"
             />
             <input type="hidden" name="subject" value="New message from your website" />
             <input type="hidden" name="apikey" value="9eb3dd0c-d7da-4ca6-8c63-306b126118f9" />
@@ -46,7 +46,7 @@ export default function contact() {
 
             <div className="flex flex-col">
               <label
-                className="text-sm font-bold text-[color:var(--primary-clr)] mb-1 uppercase"
+                className="mb-1 text-sm font-bold uppercase text-[color:var(--primary-clr)]"
                 htmlFor="name">
                 Name
               </label>
@@ -55,13 +55,13 @@ export default function contact() {
                 type="text"
                 name="name"
                 id="name"
-                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="mt-1 w-full border-2 border-x-0 border-t-0  border-gray-200 px-4 py-2 text-sm focus:border-[color:var(--secondary-clr)]"
                 placeholder="Your name"
               />
             </div>
             <div className="flex flex-col">
               <label
-                className="text-sm font-bold text-[color:var(--primary-clr)] mb-1 uppercase"
+                className="mb-1 text-sm font-bold uppercase text-[color:var(--primary-clr)]"
                 htmlFor="email">
                 Email Address
               </label>
@@ -70,13 +70,13 @@ export default function contact() {
                 type="text"
                 name="email"
                 id="email"
-                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="mt-1 w-full border-2 border-x-0 border-t-0  border-gray-200 px-4 py-2 text-sm focus:border-[color:var(--secondary-clr)]"
                 placeholder="jonn@doe.com"
               />
             </div>
             <div className="flex flex-col">
               <label
-                className="text-sm font-bold text-[color:var(--primary-clr)] mb-1 uppercase"
+                className="mb-1 text-sm font-bold uppercase text-[color:var(--primary-clr)]"
                 htmlFor="message">
                 Message
               </label>
@@ -85,14 +85,14 @@ export default function contact() {
                 type="text"
                 name="message"
                 id="message"
-                className="w-full px-4 py-2 mt-1 text-sm  border-2 border-x-0 border-t-0 border-gray-200 focus:border-[color:var(--secondary-clr)]"
+                className="mt-1 w-full border-2 border-x-0 border-t-0  border-gray-200 px-4 py-2 text-sm focus:border-[color:var(--secondary-clr)]"
                 placeholder="What can we help you with ?"
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="hover:text-[color:var(--primary-clr)] border-[color:var(--primary-clr)] bg-[color:var(--primary-clr)] mt-8 inline-block  px-12 py-3 text-sm text-white font-bold hover:bg-transparent border hover:border  focus: focus:ring active:text-indigo-500 uppercase">
+                className="focus: mt-8 inline-block border border-[color:var(--primary-clr)]  bg-[color:var(--primary-clr)] px-12 py-3 text-sm font-bold uppercase text-white hover:border  hover:bg-transparent hover:text-[color:var(--primary-clr)] focus:ring active:text-indigo-500">
                 Send
               </button>
             </div>

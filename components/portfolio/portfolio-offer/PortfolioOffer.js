@@ -17,8 +17,8 @@ export default function PortfolioOffer() {
           />
 
           <div>
-            <h3 className="text-2xl font-bold my-4 lg:my-8">LIVA STUDIO</h3>
-            <p className="text-lg">
+            <h3 className="my-4 text-2xl font-bold lg:my-8">LIVA STUDIO</h3>
+            <p className="text-md lg:text-lg">
               in Bristol specializes in newborn, maternity, and wedding photography. We use wooden
               handmade photography props to create one-of-a-kind images. Our skilled team works
               closely with clients to understand their vision and style, whether it&apos;s natural
@@ -80,13 +80,12 @@ export default function PortfolioOffer() {
           href="/portfolio">
           more photos
         </Link>
-      {/* COMPONENT */}
+        {/* COMPONENT */}
 
         <svg className="ml-2 inline-block w-2" fill="currentColor" viewBox="0 0 12 12">
           <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
         </svg>
-      {/* COMPONENT */}
-
+        {/* COMPONENT */}
       </div>
     </section>
   );

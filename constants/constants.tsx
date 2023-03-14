@@ -1,4 +1,10 @@
-export const btnStyles = {
+interface BtnStyles {
+  background: string;
+  border: string;
+  textHover: string;
+}
+
+export const btnStyles: BtnStyles = {
   background: "bg-[color:var(--secondary-clr)]",
   border: "border-[color:var(--secondary-clr)]",
   textHover: "hover:text-[color:var(--secondary-clr)]",
@@ -82,4 +88,4 @@ export const btnStylesOtherVariant: string =
   "bg-[var(--secondary-clr)] text-white hover:bg-transparent hover:border-[var(--primary-clr)] hover:text-[var(--primary-clr)]";
 
 export const btnStylesCommonStyles: string =
-  "w-1/2 mx-auto px-8 py-3 font-semibold relative overflow-hidden border-2 border-transparent transition-all";
+  "w-1/2 mx-auto px-8 py-3 font-semibold relative overflow-hidden bg-[color:var(--primary-clr)] hover:bg-[color:var(--secondary-clr)] text-white border-2 border-transparent transition-all";

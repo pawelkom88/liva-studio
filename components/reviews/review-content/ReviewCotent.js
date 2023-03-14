@@ -6,7 +6,7 @@ export default function ReviewCotent({ review }) {
   // const { url } = avatar[0]?.fields?.file || "";
 
   return (
-    <div className="w-full h-[435px] lg:h-[325px] lg:col-span-2 ">
+    <div className="h-[435px] w-full lg:col-span-2 lg:h-[325px] ">
       <blockquote className="flex h-full flex-col justify-between bg-white p-8 shadow-lg">
         <div className="flex items-center justify-start gap-0.5">
           {/* <Image
@@ -30,14 +30,13 @@ export default function ReviewCotent({ review }) {
           })}
         </div>
         <div className="text-[color:var(--primary-clr)]">
-          <p className="text-2xl font-bold sm:text-3xl mr-4">{name}</p>
+          <p className="mr-4 text-2xl font-bold sm:text-3xl">{name}</p>
           <time className="text-sm" dateTime={date}>
             {date.replace("T", " at ").slice(0, 19)}
           </time>
           <p className="mt-4 italic leading-relaxed">{content}</p>
         </div>
-
-        <footer className="mt-8 text-sm text-gray-500">&mdash; {name}</footer>
+        <footer className="mt-8 text-sm text-gray-500"></footer>
       </blockquote>
     </div>
   );

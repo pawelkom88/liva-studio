@@ -47,7 +47,7 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields.file.details.image;
   return (
     <Wrapper>
-      <article className="px-4 md:px-16 break-words">
+      <article className="px-4 md:px-16 break-words my-8">
         <h1 className="heading-styles text-center my-8">{title}</h1>
         <figure>
           <Image

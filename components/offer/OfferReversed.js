@@ -5,17 +5,17 @@ export default function Offer({ details }) {
   const { title, image, content, link, tiny } = details;
 
   return (
-    <article className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12 lg:py-16 my-2">
+    <article className="mx-auto my-2 px-4 py-8 sm:max-w-xl md:max-w-full md:px-24 md:py-12 lg:max-w-screen-xl lg:px-8 lg:py-16">
       <div className="grid gap-10 lg:grid-cols-2">
-        <div className="lg:order-2 large:order-2 lg:pr-10 flex justify-center flex-col">
-          <h3 className="text-gray-800 mb-4 text-4xl font-extrabold font-steelfish leading-none tracking-wide">
+        <div className="flex flex-col justify-center lg:order-2 lg:pr-10 large:order-2">
+          <h3 className="mb-4 font-steelfish text-4xl font-extrabold leading-none tracking-wide text-gray-800">
             {title}
           </h3>
           <hr className="mb-5 border-[color:var(--secondary-clr)]" />
-          <p className="text-lg mb-6 text-gray-900">{content}</p>
+          <p className="text-md mb-6 text-gray-900 lg:text-lg">{content}</p>
           <div className="flex items-center space-x-4">
             <Link
-              className="underline font-medium hover:text-[color:var(--secondary-clr)]"
+              className="font-medium underline hover:text-[color:var(--secondary-clr)]"
               href={link}>
               offer details
             </Link>

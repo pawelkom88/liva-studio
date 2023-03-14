@@ -4,7 +4,8 @@ import Image from "next/image";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Button from "@components/UI/button/Button";
 import Modal from "@components/UI/modal/Modal";
-import { aboutUsPage } from "@helpers/data";
+import Paragraph from "../components/paragraph/Paragraph";
+import { aboutUsPageImg, aboutUsParagraph } from "@helpers/data";
 
 const btnStyles = {
   background: "bg-[color:var(--primary-clr)]",
@@ -21,36 +22,31 @@ export default function AboutUs() {
 
   return (
     <>
-      <Hero heroImg="bg-aboutUs" heading="Portrait & Lifestyle Photography">
-        Based in Bristol, England, Liva Studio is a photography brand specialising in newborn,
-        maternity, and wedding photography. We’re obsessed with documenting and preserving life’s
-        special moments by combining beautiful pictures and cutting-edge technology to create
-        blissful memories for our clients.
-      </Hero>
+      <Hero heroImg="bg-aboutUs" heading="Portrait & Lifestyle Photography"></Hero>
       <Wrapper>
-        <div className="relative flex flex-col px-6 mx-auto space-y-6 lg:h-[30rem] lg:flex-row lg:items-center justify-center xl:justify-start">
-          <div className="hidden xl:block w-full lg:w-1/2 xl:ml-12">
-            <div className="absolute top-28 lg:max-w-lg text-[color:var(--primary-clr)] opacity-75 uppercase">
-              I Can Help You Save The Most Bel And
-              <span className="block py-2">Elegant Moments Of Your Big Day</span>
+        <div className="relative mx-auto flex flex-col justify-center space-y-6 px-6 lg:h-[30rem] lg:flex-row lg:items-center xl:justify-start ">
+          <div className="hidden w-full lg:w-1/2 xl:ml-12 xl:block">
+            <div className="absolute top-28 text-[color:var(--primary-clr)] opacity-75 lg:max-w-lg">
+              We can help you save the most beautiful and
+              <span className="block py-2">elegant moments of your life.</span>
             </div>
           </div>
-          <div className="flex items-center justify-center xl:justify-start w-full lg:h-96 xl:pl-56 pt-16">
-            <h2 className="heading-styles tracking-wider text-7xl lg:text-9xl text-left">
+          <div className="flex w-full items-center justify-center pt-16 lg:h-96 xl:justify-start xl:pl-56">
+            <h2 className="heading-styles text-left text-7xl tracking-wider lg:text-9xl">
               <span>Hello!</span>
-              <span className="block py-2 ml-8">We are Liva</span>
-              <span className="block py-2 ml-16">Studio</span>
+              <span className="ml-8 block py-2">We are Liva</span>
+              <span className="ml-16 block py-2">Studio</span>
             </h2>
           </div>
         </div>
 
-        <div className="relative flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:py-32 xl:py-12 md:max-w-full my-16">
+        <div className="relative my-16 flex flex-wrap items-center justify-center gap-8 md:max-w-full lg:flex-nowrap lg:py-32 xl:py-12">
           <div className="ml-4">
             <Image
-              className="w-full relative"
+              className="relative w-full"
               width={500}
               height={750}
-              src={aboutUsPage?.original}
+              src={aboutUsPageImg.original}
               placeholder="blur"
               blurDataURL="/assets/images/loading.webp"
               alt="Artur"
@@ -81,54 +77,18 @@ export default function AboutUs() {
             </div> */}
           </div>
 
-          <div className="relative basis-3/4 flex-grow flex order-1">
-            <div className="mx-4 lg:mx-0 mb-6">
-              <h1 className="text-center mb-6 text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none mt-8">
+          <div className="relative order-1 flex flex-grow basis-1/2">
+            <div className="mx-4 mb-6 lg:mx-0">
+              <h1 className="mb-6 mt-8 text-center text-3xl font-bold tracking-tight text-[color:var(--primary-clr)] sm:text-4xl sm:leading-none">
                 THE PHOTOGRAPHERS
               </h1>
-
-              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                Our team of skilled photographer and editor is dedicated to creating beautiful and
-                timeless images that you will cherish for a lifetime. We understand that every
-                moment is unique, which is why we work closely with you to understand your vision
-                and style. Whether you want a natural and authentic photoshoot or a more stylized
-                session, we will work with you to create images that stand out.
-              </p>
-              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                Our mission is to tell your story through the lens of our camera. We believe that
-                each moment in life is precious and unique, and we strive to capture that essence
-                through our photographs.
-              </p>
-
-              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                One of the things that makes us unique is our use of wooden handmade photography
-                props. We have a wide range of props available, and most of them are created by us.
-                We believe that these props add a special touch to our images and make them stand
-                out from the crowd.
-              </p>
-
-              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                At Liva Studio, our philosophy is simple: Give our clients photos that are truly
-                one-of-a-kind. One way we do this is by using handmade wooden props — some of which
-                we create ourselves. When we said we were passionate about this, we weren’t
-                exaggerating. Our passion for creating unique, bespoke pieces drives us to find new
-                and inventive ways to produce the perfect photos. We’re always finding new ways to
-                infuse that extra magic into your pictures.
-              </p>
-
-              <p className="indent-5 text-base text-[color:var(--primary-clr)] md:text-lg my-2">
-                We also offer mobile studio services for those busy people who don’t have the time
-                to visit a physical studio or if you feel comfortable working with us in your own
-                home. This also means you don’t have to worry about finding the perfect spot for
-                your shoot. Our mobile studio services come with a complete lighting set-up and
-                backdrops, meaning you don’t have to worry about gathering any equipment. We’ll
-                bring the studio to you so you can relax and focus on making memories with your
-                loved ones.
-              </p>
+              {aboutUsParagraph.map(({ id, content }) => {
+                return <Paragraph key={id}>{content}</Paragraph>;
+              })}
             </div>
           </div>
         </div>
-        <h2 className="text-center text-3xl font-bold my-2">
+        <h2 className="my-2 text-center text-3xl font-bold">
           Experience the Liva Studio’s difference
         </h2>
         <p className="mx-4 my-8 text-center">
@@ -136,7 +96,7 @@ export default function AboutUs() {
           us capture your unique story through the lens of our camera.
         </p>
       </Wrapper>
-      <div className="text-center">
+      <div className="mb-24 text-center">
         <Button styles={btnStyles} href="/contact">
           Book now
         </Button>

@@ -17,18 +17,20 @@ export default function BlogDetails({ post }) {
         width={width}
         height={height}
         src={"https:" + url}
-        className="object-cover w-full h-64"
+        className="h-64 w-full object-cover"
         alt=""
       />
-      <div className="py-5 border-2 border-t-0 p-2 rounded">
-        <div className="mb-2 text-xs font-semibold text-[color:var(--primary-clr)] uppercase">
+      <div className="rounded border-2 border-t-0 p-2 py-5">
+        <div className="mb-2 text-xs font-semibold uppercase text-[color:var(--primary-clr)]">
           {date.replace("T", " at ").slice(0, 19)}
         </div>
-        <h2 className="text-2xl font-bold leading-5 my-4">{title}</h2>
-        <div className="mb-4 text-[color:var(--primary-clr)] p-2">
+        <h2 className="my-4 text-center text-2xl font-bold leading-8">{title}</h2>
+        {/* <div className="mb-4 text-[color:var(--primary-clr)] p-2">
           {documentToReactComponents(content, options)}
-        </div>
-        <Link href={"/blog/" + slug}>read more</Link>
+        </div> */}
+        <Link className="underline" href={"/blog/" + slug}>
+          read more
+        </Link>
       </div>
     </article>
   );

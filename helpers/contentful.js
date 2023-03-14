@@ -5,6 +5,11 @@ function paragraphClass(node) {
   return className;
 }
 
+function headingClass(node) {
+  const className = "heading-styles my-4";
+  return className;
+}
+
 export const offerOptions = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => <p className={paragraphClass(node)}>{children}</p>,
@@ -13,10 +18,10 @@ export const offerOptions = {
 
 export const options = {
   renderNode: {
-    [BLOCKS.HEADING_4]: (node, children) => <h4 className="heading-styles py-4">{children}</h4>,
+    [BLOCKS.HEADING_4]: (node, children) => <h4 className={headingClass(node)}>{children}</h4>,
   },
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
+    [BLOCKS.PARAGRAPH]: (node, children) => <p className={paragraphClass(node)}>{children}</p>,
   },
   renderNode: {
     [INLINES.HYPERLINK]: (node, children) => <a href={node.data.uri}>{children}</a>,

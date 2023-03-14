@@ -6,29 +6,26 @@ import {
   btnStylesOtherVariant,
 } from "constants/constants";
 
-
-
 // REFACTOR!!!!
 
 export default function PricingCard({ offerPackage }) {
-  const isGoldPackage = offerPackage.name === "Gold Package";
+  const isSunflowerPackage = offerPackage.name === "SUNFLOWER";
 
   const btnStyles = `${
-    isGoldPackage ? btnStylesGoldVariant : btnStylesOtherVariant
+    isSunflowerPackage ? btnStylesGoldVariant : btnStylesOtherVariant
   } ${btnStylesCommonStyles}`;
 
   return (
     <article
-      className={`mt-4 flex min-h-[45rem] flex-col shadow-lg ${
-        isGoldPackage
+      className={`mt-4 flex min-h-[40rem] flex-col shadow-lg ${
+        isSunflowerPackage
           ? "transform bg-[var(--primary-clr)] text-white lg:-translate-y-8"
           : "text-[var(--primary-clr)]"
       }`}>
       <div className="flex flex-col space-y-6 p-6 sm:p-8">
         <div className="space-y-2">
-          <h2 className="text-center text-2xl font-bold uppercase">
-            {offerPackage.name}</h2>
-          {isGoldPackage && (
+          <h2 className="text-center text-2xl font-bold uppercase">{offerPackage.name}</h2>
+          {isSunflowerPackage && (
             <Image
               className="mx-auto pt-4"
               width={75}
@@ -45,9 +42,9 @@ export default function PricingCard({ offerPackage }) {
           })}
         </ul>
       </div>
-      <a href="tel:" className={btnStyles}>
-        {isGoldPackage && (
-          <span className="whitespace-no-wrap absolute top-0 right-0 origin-bottom-left -translate-y-full translate-x-1/3 rotate-45 transform bg-[#ecc25d] px-4 py-1 text-center text-[.45rem] uppercase tracking-wider">
+      <a href="tel:07401354839" className={isSunflowerPackage ? btnStyles : btnStylesCommonStyles}>
+        {isSunflowerPackage && (
+          <span className="whitespace-no-wrap absolute top-0 right-0 origin-bottom-left -translate-y-full translate-x-1/3 rotate-45 transform bg-[#ecc25d] px-4 py-1 text-center text-[.4rem] uppercase tracking-wider">
             Best value
           </span>
         )}

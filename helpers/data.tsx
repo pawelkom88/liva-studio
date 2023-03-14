@@ -126,7 +126,7 @@ export const faqImage: FaqImage = {
   alt: "",
 };
 
-export const aboutUsPage = {
+export const aboutUsPageImg = {
   original: "/assets/images/about-us-main.webp",
   tiny: "/assets/images/about-us-main.webp",
   alt: "",
@@ -249,5 +249,39 @@ export const offerBannerData: OfferBanner[] = [
         />
       </svg>
     ),
+  },
+];
+
+interface AboutUs {
+  id: number;
+  content: string;
+}
+
+export const aboutUsParagraph: AboutUs[] = [
+  {
+    id: 1,
+    content:
+      "     Our team of skilled photographer and editor is dedicated to creating beautiful and timeless images that you will cherish for a lifetime. We understand that every moment is unique, which is why we work closely with you to understand your vision and style. Whether you want a natural and authentic photoshoot or a more stylized session, we will work with you to create images that stand out.",
+  },
+
+  {
+    id: 2,
+    content:
+      "Our mission is to tell your story through the lens of our camera. We believe that each moment in life is precious and unique, and we strive to capture that essence through our photographs.",
+  },
+  {
+    id: 3,
+    content:
+      " One of the things that makes us unique is our use of wooden handmade photography props. We have a wide range of props available, and most of them are created by us. We believe that these props add a special touch to our images and make them stand out from the crowd.",
+  },
+  {
+    id: 4,
+    content:
+      "At Liva Studio, our philosophy is simple: Give our clients photos that are truly one-of-a-kind. One way we do this is by using handmade wooden props — some of which we create ourselves. When we said we were passionate about this, we weren’t exaggerating. Our passion for creating unique, bespoke pieces drives us to find new and inventive ways to produce the perfect photos. We’re always finding new ways to infuse that extra magic into your pictures.",
+  },
+  {
+    id: 5,
+    content:
+      "We also offer mobile studio services for those busy people who don’t have the time to visit a physical studio or if you feel comfortable working with us in your own home. This also means you don’t have to worry about finding the perfect spot for your shoot. Our mobile studio services come with a complete lighting set-up and backdrops, meaning you don’t have to worry about gathering any equipment. We’ll bring the studio to you so you can relax and focus on making memories with your loved ones.",
   },
 ];

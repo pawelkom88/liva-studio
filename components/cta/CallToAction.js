@@ -3,12 +3,12 @@ const btnStyles =
 
 export default function CallToAction() {
   return (
-    <section className="flex-center flex-col py-8">
-      <p className="my-8 text-sm lg:text-md">LET&apos;S WORK TOGETHER</p>
-      <h6 className="heading-styles text-4xl lg:text-7xl tracking-widest text-center">
-        I CAN&apos;T WAIT TO HEAR FROM YOU
+    <section className="flex-center mb-24 flex-col py-8">
+      <p className="lg:text-md my-8 text-sm">LET&apos;S WORK TOGETHER</p>
+      <h6 className="heading-styles text-center text-4xl tracking-widest lg:text-7xl">
+        WE CAN&apos;T WAIT TO HEAR FROM YOU
       </h6>
-      <p className="my-8 text-md lg:text-xl">I&apos;LL SHOW YOU HOW BEAUTIFUL THE WORLD IS</p>
+      <p className="text-md my-8 lg:text-xl">I&apos;LL SHOW YOU HOW BEAUTIFUL THE WORLD IS</p>
       <button className={btnStyles} href="/contact">
         get in touch
       </button>
