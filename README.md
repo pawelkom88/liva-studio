@@ -4,7 +4,7 @@
 
 ## About The Project
 
-Liva Studio is a photography website created for one of my clients. I am still waiting for photos, so currently a placeholder images are displayed.
+Liva Studio is a photography website created for one of my clients.
 
 ## Demo
 
