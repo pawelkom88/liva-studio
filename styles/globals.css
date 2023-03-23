@@ -96,11 +96,11 @@ body {
 
 @layer components {
   .heading-styles {
-    @apply font-bold font-steelfish text-6xl uppercase text-gray-800 tracking-wider;
+    @apply font-steelfish text-6xl font-bold uppercase tracking-wider text-gray-800;
   }
 
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
 }
 
@@ -120,9 +120,6 @@ body {
   }
 }
 
-.ReactGridGallery * {
-  justify-content: center;
-}
 
 .ReactGridGallery_tile-viewport img:hover {
   transform: scale(1.1);
@@ -130,7 +127,9 @@ body {
 }
 
 .ReactGridGallery_tile-viewport img {
+  width: 15rem !important;
   object-fit: cover;
   overflow: hidden;
   transition: transform 0.3s linear;
+  margin: 0 !important; 
 }
