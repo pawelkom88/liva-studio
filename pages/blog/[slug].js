@@ -18,7 +18,7 @@ export async function getStaticPaths() {
       params: { slug: item?.fields?.slug || "" },
     };
   });
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
@@ -47,11 +47,11 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields.file.details.image;
   return (
     <Wrapper>
-      <article className="px-4 md:px-16 break-words my-8">
-        <h1 className="heading-styles text-center my-8">{title}</h1>
+      <article className="my-8 break-words px-4 md:px-16">
+        <h1 className="heading-styles my-8 text-center">{title}</h1>
         <figure>
           <Image
-            className="w-full h-[25rem] aspect-video object-cover"
+            className="aspect-video h-[25rem] w-full object-cover"
             src={"https:" + url}
             alt={title}
             width={width}
