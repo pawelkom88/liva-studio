@@ -15,7 +15,7 @@ const btnStyles =
 
 export default function Portfolio() {
   const [category, setCategory] = useState(slides);
-  const [isActive, setIsActive] = useState(0);
+  const [isActive, setIsActive] = useState(8);
 
   function getCategory(selectedCategory) {
     let filteredImages;
@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <div className="flex-center flex-wrap w-full mx-auto py-2">
+      <div className="flex-center mx-auto w-full flex-wrap py-2">
         {portfolioCategories.map(category => {
           return (
             <button
@@ -45,7 +45,7 @@ export default function Portfolio() {
               key={category.id}
               className={`${
                 isActive === category.id
-                  ? "text-[color:var(--secondary-clr)] font-bold transition-colors duration-300 ease"
+                  ? "ease border-b border-[color:var(--secondary-clr)] font-bold text-[color:var(--secondary-clr)] transition-colors duration-300"
                   : ""
               } ${btnStyles}`}>
               {category.name}
@@ -53,7 +53,7 @@ export default function Portfolio() {
           );
         })}
       </div>
-      <PortfolioGrid category={category} />
+      <PortfolioGrid categoryImages={category} />
     </>
   );
 }

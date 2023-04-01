@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function ListItem({ details, iconColor }) {
+
+
+const packageName = iconColor === "SUNFLOWER" || iconColor === 'HALF DAY' 
+
   return (
     <li className="flex mb-2 space-x-2">
       <svg
@@ -8,7 +12,7 @@ export default function ListItem({ details, iconColor }) {
         viewBox="0 0 20 20"
         fill="currentColor"
         className={`flex-shrink-0 w-6 h-6 ${
-          iconColor === "Gold Package" ? "text-white" : "text-[var(--primary-clr)]"
+          packageName ? "text-white" : "text-[var(--primary-clr)]"
         }`}>
         <path
           fillRule="evenodd"

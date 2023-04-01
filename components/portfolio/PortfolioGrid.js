@@ -3,10 +3,9 @@ import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-
 import Wrapper from "@components/UI/wrapper/Wrapper";
 
-export default function PortfolioGrid({ category }) {
+export default function PortfolioGrid({ categoryImages }) {
   const { matches } = useMatchMedia("(max-width: 1024px)");
   const [index, setIndex] = useState(-1);
 
@@ -18,13 +17,18 @@ export default function PortfolioGrid({ category }) {
     <div className="my-8">
       {matches ? (
         <Wrapper>
-          <Gallery images={category} onClick={openFullMode} enableImageSelection={false} />
-          <Lightbox slides={category} open={index >= 0} index={index} close={() => setIndex(-1)} />
+          <Gallery images={categoryImages} onClick={openFullMode} enableImageSelection={false} />
+          <Lightbox
+            slides={categoryImages}
+            open={index >= 0}
+            index={index}
+            close={() => setIndex(-1)}
+          />
         </Wrapper>
       ) : (
         <Wrapper>
           <Gallery
-            images={category}
+            images={categoryImages}
             onClick={openFullMode}
             enableImageSelection={false}
             rowHeight={250}
@@ -35,7 +39,12 @@ export default function PortfolioGrid({ category }) {
               };
             }}
           />
-          <Lightbox slides={category} open={index >= 0} index={index} close={() => setIndex(-1)} />
+          <Lightbox
+            slides={categoryImages}
+            open={index >= 0}
+            index={index}
+            close={() => setIndex(-1)}
+          />
         </Wrapper>
       )}
     </div>

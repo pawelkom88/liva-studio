@@ -8,6 +8,8 @@ import "swiper/css/pagination";
 
 export default function HeroSlider() {
   const { matches } = useMatchMedia("(max-width: 860px)");
+  console.log(matches);
+
   return (
     <section className="relative">
       <Swiper
@@ -19,24 +21,22 @@ export default function HeroSlider() {
         }}
         modules={[Pagination]}
         className="mySwiper">
-        {sliderImages.map(item => {
+        {sliderImages.map(photo => {
           return (
-            <SwiperSlide key={item.title}>
-              <h1 className="heading-styles absolute left-0 right-0 top-[25%] z-50 text-white lg:top-[35%] xl:top-[42%]">
-                {item.title}
-              </h1>
+            <SwiperSlide key={photo.title}>
+              <h1 className="heading-styles z-10 mb-24 text-white lg:text-8xl">{photo.title}</h1>
               <p className="absolute top-[40%] z-50 mx-10 text-white lg:top-[55%] lg:mx-24 lg:text-xl xl:mx-40">
-                {item.description}
+                {photo.description}
               </p>
               <Image
                 className="w-full brightness-75"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                src={item.image}
-                alt={item.alt}
+                src={matches ? photo.tiny : photo.image}
+                alt={photo.alt}
                 placeholder="blur"
-                blurDataURL={item.tiny}
+                blurDataURL={photo.tiny}
                 quality={100}
                 loading="eager"
               />

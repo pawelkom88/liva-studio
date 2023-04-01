@@ -3,7 +3,7 @@ interface Slide {
   image: string;
   tiny: string;
   alt: string;
-  description: string;
+  // description: string;
 }
 
 export const sliderData: Slide[] = [
@@ -12,32 +12,40 @@ export const sliderData: Slide[] = [
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_L.webp",
     alt: "professional maternity photoshoot",
-    description:
-      "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
+    // description:
+    //   "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
+  },
+  {
+    title: "Baby",
+    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_H.webp",
+    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_L.webp",
+    alt: "professional baby photoshoot",
+    // description:
+    //   "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
   },
   {
     title: "Newborn",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_L.webp",
     alt: "professional newborn photoshoot",
-    description:
-      "Welcome your little one with a professional newborn photoshoot that captures the beauty and innocence of their first moments. With a skilled photographer, you can create heartwarming images that will be cherished for a lifetime.",
+    // description:
+    //   "Welcome your little one with a professional newborn photoshoot that captures the beauty and innocence of their first moments. With a skilled photographer, you can create heartwarming images that will be cherished for a lifetime.",
   },
   {
     title: "Wedding",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_L.webp",
     alt: "professional wedding photoshoot",
-    description:
-      "Make your special day last forever with a professional wedding photoshoot. Create beautiful and timeless images that capture the joy and love of your wedding day, with a skilled photographer who can capture every moment and emotion.",
+    // description:
+    //   "Make your special day last forever with a professional wedding photoshoot. Create beautiful and timeless images that capture the joy and love of your wedding day, with a skilled photographer who can capture every moment and emotion.",
   },
   {
     title: "Lifestyle",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_L.webp",
     alt: "professional lifestyle photoshoot",
-    description:
-      "Capture the essence of your everyday life with a professional lifestyle photoshoot. Create natural and authentic images that showcase your unique lifestyle and personality, with a photographer who can create a relaxed and comfortable environment for you to be yourself.",
+    // description:
+    //   "Capture the essence of your everyday life with a professional lifestyle photoshoot. Create natural and authentic images that showcase your unique lifestyle and personality, with a photographer who can create a relaxed and comfortable environment for you to be yourself.",
   },
 ];
 
@@ -133,8 +141,8 @@ export const aboutUsPageImg = {
 };
 
 export const contactSectionImage = {
-  original: "/assets/images/contact-section-image.webp",
-  tiny: "/assets/images/contact-section-image.webp",
+  original: "/assets/images/portfolio/PORTRAIT/a (9 of 58)H.webp",
+  tiny: "/assets/images/portfolio/PORTRAIT/a (9 of 58).webp",
   alt: "",
 };
 

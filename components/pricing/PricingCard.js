@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ListItem from "./list-item/ListItem";
 import {
   btnStylesCommonStyles,
@@ -9,7 +10,7 @@ import {
 // REFACTOR!!!!
 
 export default function PricingCard({ offerPackage }) {
-  const isSunflowerPackage = offerPackage.name === "SUNFLOWER";
+  const isSunflowerPackage = offerPackage.name === "SUNFLOWER" || offerPackage.name === "HALF DAY";
 
   const btnStyles = `${
     isSunflowerPackage ? btnStylesGoldVariant : btnStylesOtherVariant
@@ -42,14 +43,14 @@ export default function PricingCard({ offerPackage }) {
           })}
         </ul>
       </div>
-      <a href="tel:07401354839" className={isSunflowerPackage ? btnStyles : btnStylesCommonStyles}>
+      <Link href="/contact" className={isSunflowerPackage ? btnStyles : btnStylesCommonStyles}>
         {isSunflowerPackage && (
           <span className="whitespace-no-wrap absolute top-0 right-0 origin-bottom-left -translate-y-full translate-x-1/3 rotate-45 transform bg-[#ecc25d] px-4 py-1 text-center text-[.4rem] uppercase tracking-wider">
             Best value
           </span>
         )}
         Book now
-      </a>
+      </Link>
     </article>
   );
 }

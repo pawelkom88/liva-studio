@@ -22,22 +22,20 @@ export async function getStaticProps() {
 }
 
 export default function index({ offer }) {
-
-
   return (
     <>
-      <Hero heroImg="bg-maternity" heading="Our offer">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, error?
+      <Hero heroImg="bg-offer" heading="Our offer">
+        Let us capture your unique story through the lens of our camera.
       </Hero>
 
       <Wrapper>
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 gap-4 cursor-pointer sm:mx-2 xl:m-x-0">
+        <section className="xl:m-x-0 my-16 grid cursor-pointer grid-cols-1 gap-4 sm:mx-2 md:grid-cols-2 lg:grid-cols-3">
           {offer?.map(offer => {
             return <OfferImage key={offer.sys.id} offer={offer} />;
           })}
         </section>
       </Wrapper>
-      <section className="w-full bg-[color:var(--primary-clr)] grid grid-cols-1 md:grid-cols-4 gap-4 py-16">
+      <section className="grid w-full grid-cols-1 gap-4 bg-[color:var(--primary-clr)] py-16 md:grid-cols-4">
         {offerBannerData?.map(item => {
           return (
             <OfferBanner key={item.id} time={item.time} number={item.number} text={item.text}>

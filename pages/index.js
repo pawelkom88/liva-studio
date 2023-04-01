@@ -3,29 +3,11 @@ import Wrapper from "@components/UI/wrapper/Wrapper";
 import PortfolioOffer from "@components/portfolio/portfolio-offer/PortfolioOffer";
 import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
-
-import dynamic from "next/dynamic";
-
-const DynamicOurOffer = dynamic(() => import("@components/offer/our-offer/OurOffer"), {
-  loading: () => "Loading...",
-});
-
-const DynamicReviews = dynamic(() => import("@components/reviews/Reviews"), {
-  loading: () => "Loading...",
-});
-
-const DynamicPress = dynamic(() => import("@components/press/Press"), {
-  loading: () => "Loading...",
-});
-
-const DynamicFaq = dynamic(() => import("@components/faq/Faq"), {
-  loading: () => "Loading...",
-});
-
-const DynamicCallToAction = dynamic(() => import("@components/cta/CallToAction"), {
-  loading: () => "Loading...",
-});
-
+import OurOffer from "@components/offer/our-offer/OurOffer";
+import Reviews from "@components/reviews/Reviews";
+import Press from "@components/press/Press";
+import Faq from "@components/faq/Faq";
+import CallToAction from "@components/cta/CallToAction";
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -51,13 +33,13 @@ export default function Home({ reviews }) {
       <HeroSlider />
       <Wrapper>
         <PortfolioOffer />
-        <DynamicOurOffer />
+        <OurOffer />
       </Wrapper>
-      <DynamicReviews reviews={reviews} />
+      <Reviews reviews={reviews} />
       <Wrapper>
-        <DynamicPress />
-        <DynamicFaq />
-        <DynamicCallToAction />
+        <Press />
+        <Faq />
+        <CallToAction />
       </Wrapper>
     </>
   );

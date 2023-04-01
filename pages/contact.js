@@ -1,8 +1,11 @@
+import useMatchMedia from "@hooks/useMatchMedia";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
 import { contactSectionImage } from "@helpers/data";
 
-export default function contact() {
+export default function Contact() {
+  const { matches } = useMatchMedia();
+
   return (
     <Wrapper>
       <section className="flex w-full lg:my-16 large:flex-wrap large:justify-center">
@@ -11,7 +14,7 @@ export default function contact() {
             width={853}
             height={927}
             className="h-full w-full object-cover"
-            src={contactSectionImage?.original}
+            src={matches ? contactSectionImage?.tiny : contactSectionImage?.original}
             placeholder="blur"
             blurDataURL={contactSectionImage?.tiny}
             alt="Liva studio"
@@ -71,7 +74,7 @@ export default function contact() {
                 name="email"
                 id="email"
                 className="mt-1 w-full border-2 border-x-0 border-t-0  border-gray-200 px-4 py-2 text-sm focus:border-[color:var(--secondary-clr)]"
-                placeholder="jonn@doe.com"
+                placeholder="john@doe.com"
               />
             </div>
             <div className="flex flex-col">

@@ -17,6 +17,7 @@ module.exports = {
       backgroundImage: {
         aboutUs: "url('/assets/images/MAINPAGE/ABOUT_US_HIGH.webp')",
         maternity: "url('/assets/images/contact-section-image.webp')",
+        offer: "url('/assets/images/offer/1_MAIN_H.webp')",
       },
       colors: {
         "primary-clr": "var(--primary-clr)",
