@@ -148,18 +148,18 @@ export const contactSectionImage = {
 
 export const pressImage = [
   {
-    original: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
+    original: "/assets/images/about-us-main.webp",
+    tiny: "/assets/images/about-us-main.webp",
     alt: "desc",
   },
   {
-    original: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
+    original: "/assets/images/about-us-main.webp",
+    tiny: "/assets/images/about-us-main.webp",
     alt: "desc",
   },
   {
-    original: "/assets/images/maternity.webp",
-    tiny: "/assets/images/maternity.webp",
+    original: "/assets/images/about-us-main.webp",
+    tiny: "/assets/images/about-us-main.webp",
     alt: "desc",
   },
 ];

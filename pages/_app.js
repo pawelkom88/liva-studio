@@ -1,14 +1,12 @@
 import Nav from "@components/navigation/Nav";
 import Footer from "@components/footer/Footer";
-
-// import "@styles/globals.css";
 import '../styles/globals.css'
 import "@fontsource/roboto";
 
 import { DefaultSeo } from "next-seo";
 import { SEO, additionalLinkTags } from "../seo/seo.config";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   const { openGraph, twitter } = SEO;
 
   return (

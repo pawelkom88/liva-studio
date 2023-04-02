@@ -9,7 +9,7 @@ export default function OurOffer() {
       {offerDetails.map((offer, idx) => (
         <div key={offer.id}>
           {idx % 2 === 0 ? (
-            <Offer details={offer} />
+            <Offer key={offer.id} details={offer} />
           ) : (
             <OfferReversed key={offer.id} details={offer} />
           )}

@@ -5,7 +5,9 @@ import Wrapper from "@components/UI/wrapper/Wrapper";
 import Button from "@components/UI/button/Button";
 import Modal from "@components/UI/modal/Modal";
 import Paragraph from "../components/paragraph/Paragraph";
+import PageSeo from "../../seo/PageSeo";
 import { aboutUsPageImg, aboutUsParagraph } from "@helpers/data";
+import { aboutUsSeo } from "../seo/seo";
 
 const btnStyles = {
   background: "bg-[color:var(--primary-clr)]",
@@ -22,6 +24,7 @@ export default function AboutUs() {
 
   return (
     <>
+      <PageSeo seo={aboutUsSeo} />
       <Hero heroImg="bg-aboutUs" heading="Portrait & Lifestyle Photography"></Hero>
       <Wrapper>
         <div className="relative mx-auto flex flex-col justify-center space-y-6 px-6 lg:h-[30rem] lg:flex-row lg:items-center xl:justify-start ">

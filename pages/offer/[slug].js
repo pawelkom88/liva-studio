@@ -2,9 +2,11 @@ import Wrapper from "@components/UI/wrapper/Wrapper";
 import Hero from "@components/hero/Hero";
 import PricingCard from "@components/pricing/PricingCard";
 import SkeletonLoader from "@components/UI/skeleton/Skeleton";
+import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { offerOptions } from "@helpers/contentful";
+import { individualOfferSeo } from "../../seo/seo";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -74,13 +76,14 @@ export default function Package({ offerDetails }) {
 
   return (
     <>
+      <PageSeo seo={individualOfferSeo} />
       <Hero backgroundImage={`url(${"https:" + url})`} heading={title} />
       <Wrapper>
         <section className="mt-16">
-          <h1 className="heading-styles text-center my-8">Package details</h1>
+          <h1 className="heading-styles my-8 text-center">Package details</h1>
 
           <p className="lg:mx-24">{documentToReactComponents(description, offerOptions)}</p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
+          <div className="mt-16 grid grid-cols-1 gap-4 lg:grid-cols-3">
             {cardData.details.map(offer => {
               return <PricingCard key={offer.id} offerPackage={offer} />;
             })}

@@ -1,4 +1,3 @@
-import useMatchMedia from "@hooks/useMatchMedia";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import { sliderData as sliderImages } from "@helpers/data";
@@ -7,9 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function HeroSlider() {
-  const { matches } = useMatchMedia("(max-width: 860px)");
-  console.log(matches);
-
   return (
     <section className="relative">
       <Swiper
@@ -28,18 +24,35 @@ export default function HeroSlider() {
               <p className="absolute top-[40%] z-50 mx-10 text-white lg:top-[55%] lg:mx-24 lg:text-xl xl:mx-40">
                 {photo.description}
               </p>
-              <Image
-                className="w-full brightness-75"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-                src={matches ? photo.tiny : photo.image}
-                alt={photo.alt}
-                placeholder="blur"
-                blurDataURL={photo.tiny}
-                quality={100}
-                loading="eager"
-              />
+
+              <div className="md:hidden">
+                <Image
+                  className="w-full brightness-75"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                  src={photo.tiny}
+                  alt={photo.alt}
+                  placeholder="blur"
+                  blurDataURL={photo.tiny}
+                  quality={100}
+                  loading="eager"
+                />
+              </div>
+              <div className="hidden md:block">
+                <Image
+                  className="w-full brightness-75"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                  src={photo.image}
+                  alt={photo.alt}
+                  placeholder="blur"
+                  blurDataURL={photo.tiny}
+                  quality={100}
+                  loading="eager"
+                />
+              </div>
             </SwiperSlide>
           );
         })}

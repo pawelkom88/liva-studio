@@ -2,8 +2,10 @@ import OfferBanner from "@components/offer/offer-banner/OfferBanner";
 import OfferImage from "@components/offer/offer-image/OfferImage";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Hero from "@components/hero/Hero";
+import PageSeo from "../../seo/PageSeo";
 import { offerBannerData } from "@helpers/data";
 import { createClient } from "contentful";
+import { offerSeo } from "../../seo/seo";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -24,6 +26,7 @@ export async function getStaticProps() {
 export default function index({ offer }) {
   return (
     <>
+      <PageSeo seo={offerSeo} />
       <Hero heroImg="bg-offer" heading="Our offer">
         Let us capture your unique story through the lens of our camera.
       </Hero>

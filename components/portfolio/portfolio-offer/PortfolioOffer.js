@@ -51,7 +51,7 @@ export default function PortfolioOffer() {
             className="object-cover"
             width={400}
             height={480}
-            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp"
+            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_L.webp"
             alt="Liva studio - Portfolio"
           />
         </div>
@@ -60,7 +60,7 @@ export default function PortfolioOffer() {
             className="object-cover"
             width={400}
             height={480}
-            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp"
+            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_L.webp"
             alt="Liva studio - Portfolio"
           />
         </div>
@@ -69,7 +69,7 @@ export default function PortfolioOffer() {
             className="object-cover"
             width={400}
             height={480}
-            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp"
+            src="/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_L.webp"
             alt="Liva studio - Portfolio"
           />
         </div>

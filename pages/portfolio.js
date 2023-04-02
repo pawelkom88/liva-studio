@@ -1,7 +1,9 @@
-import PortfolioGrid from "@components/portfolio/PortfolioGrid";
 import { useState } from "react";
+import PortfolioGrid from "@components/portfolio/PortfolioGrid";
+import PageSeo from "../seo/PageSeo";
 import { portfolioCategories } from "@helpers/data";
 import { images } from "@helpers/images";
+import { portfolioSeo } from "../seo/seo";
 
 const slides = images.map(({ src, title }) => ({
   src,
@@ -34,6 +36,7 @@ export default function Portfolio() {
 
   return (
     <>
+      <PageSeo seo={portfolioSeo} />
       <div className="flex-center mx-auto w-full flex-wrap py-2">
         {portfolioCategories.map(category => {
           return (
