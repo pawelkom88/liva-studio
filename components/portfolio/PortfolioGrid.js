@@ -17,7 +17,12 @@ export default function PortfolioGrid({ categoryImages }) {
     <div className="my-8">
       {matches ? (
         <Wrapper>
-          <Gallery images={categoryImages} onClick={openFullMode} enableImageSelection={false} />
+          <Gallery
+            images={categoryImages}
+            onClick={openFullMode}
+            enableImageSelection={false}
+            rowHeight={350}
+          />
           <Lightbox
             slides={categoryImages}
             open={index >= 0}
@@ -31,13 +36,13 @@ export default function PortfolioGrid({ categoryImages }) {
             images={categoryImages}
             onClick={openFullMode}
             enableImageSelection={false}
-            rowHeight={250}
+            rowHeight={350}
             margin={5}
-            tileViewportStyle={() => {
-              return {
-                overflow: "hidden",
-              };
-            }}
+            // tileViewportStyle={() => {
+            //   return {
+            //     height: "400px",
+            //   };
+            // }}
           />
           <Lightbox
             slides={categoryImages}
