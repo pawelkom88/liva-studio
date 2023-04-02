@@ -141,8 +141,8 @@ export const aboutUsPageImg = {
 };
 
 export const contactSectionImage = {
-  original: "/assets/images/portfolio/PORTRAIT/a (9 of 58)H.webp",
-  tiny: "/assets/images/portfolio/PORTRAIT/a (9 of 58).webp",
+  original: "/assets/images/portfolio/PORTRAIT/V-15H.webp",
+  tiny: "/assets/images/portfolio/PORTRAIT/V-15.webp",
   alt: "",
 };
 
