@@ -1,4 +1,3 @@
-import useMatchMedia from "@hooks/useMatchMedia";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
 import { contactSectionImage } from "@helpers/data";
@@ -6,7 +5,6 @@ import { constactSeo } from "../seo/seo";
 import PageSeo from "../seo/PageSeo";
 
 export default function Contact() {
-  const { matches } = useMatchMedia();
 
   return (
     <>
@@ -18,7 +16,7 @@ export default function Contact() {
               width={853}
               height={927}
               className="h-full w-full object-cover"
-              src={matches ? contactSectionImage?.tiny : contactSectionImage?.original}
+              src={contactSectionImage?.tiny}
               placeholder="blur"
               blurDataURL={contactSectionImage?.tiny}
               alt="Liva studio"
