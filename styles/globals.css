@@ -113,6 +113,10 @@ body {
   }
 }
 
+#ReactGridGallery > div:first-of-type {
+  justify-content: center;
+}
+
 .ReactGridGallery_tile-viewport {
   flex-grow: 1;
 }
