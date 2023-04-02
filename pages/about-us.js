@@ -5,7 +5,7 @@ import Wrapper from "@components/UI/wrapper/Wrapper";
 import Button from "@components/UI/button/Button";
 import Modal from "@components/UI/modal/Modal";
 import Paragraph from "../components/paragraph/Paragraph";
-import PageSeo from "../../seo/PageSeo";
+import PageSeo from "../seo/PageSeo";
 import { aboutUsPageImg, aboutUsParagraph } from "@helpers/data";
 import { aboutUsSeo } from "../seo/seo";
 
