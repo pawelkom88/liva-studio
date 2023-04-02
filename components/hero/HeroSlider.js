@@ -24,35 +24,16 @@ export default function HeroSlider() {
               <p className="absolute top-[40%] z-50 mx-10 text-white lg:top-[55%] lg:mx-24 lg:text-xl xl:mx-40">
                 {photo.description}
               </p>
-
-              <div className="md:hidden">
-                <Image
-                  className="w-full brightness-75"
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center"
+              <picture>
+                <source srcset={photo.image} media="(min-width: 600px)" />
+                <img
+                  className="absolute inset-0 h-full w-full object-cover brightness-75"
                   src={photo.tiny}
                   alt={photo.alt}
-                  placeholder="blur"
-                  blurDataURL={photo.tiny}
-                  quality={100}
                   loading="eager"
+                  decoding="async"
                 />
-              </div>
-              <div className="hidden md:block">
-                <Image
-                  className="w-full brightness-75"
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center"
-                  src={photo.image}
-                  alt={photo.alt}
-                  placeholder="blur"
-                  blurDataURL={photo.tiny}
-                  quality={100}
-                  loading="eager"
-                />
-              </div>
+              </picture>
             </SwiperSlide>
           );
         })}
