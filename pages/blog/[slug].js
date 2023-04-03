@@ -1,7 +1,6 @@
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
-import SkeletonLoader from "@components/UI/skeleton/Skeleton";
 import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -42,7 +41,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetails({ post }) {
-  if (!post) return <SkeletonLoader />;
 
   const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
   const { url } = thumbnail.fields?.file;

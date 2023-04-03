@@ -5,18 +5,11 @@ import { portfolioCategories } from "@helpers/data";
 import { images } from "@helpers/images";
 import { portfolioSeo } from "../seo/seo";
 
-const slides = images.map(({ src, title }) => ({
-  src,
-  width: 3840,
-  height: 2560,
-  alt: title,
-}));
-
 const btnStyles =
   "inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-[color:var(--primary-clr)] bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base hover:border-[color:var(--primary-clr)]";
 
 export default function Portfolio() {
-  const [category, setCategory] = useState(slides);
+  const [category, setCategory] = useState(images);
   const [isActive, setIsActive] = useState(8);
 
   function getCategory(selectedCategory) {
@@ -27,6 +20,7 @@ export default function Portfolio() {
     } else {
       filteredImages = images.filter(({ category }) => category === selectedCategory);
     }
+
     setCategory(filteredImages);
   }
 

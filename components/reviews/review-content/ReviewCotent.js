@@ -1,21 +1,10 @@
-import Image from "next/image";
-
 export default function ReviewCotent({ review }) {
-  // if (!review) return <SkeletonLoader />;
   const { name, avatar, content, date, numberOfStars } = review?.fields;
-  // const { url } = avatar[0]?.fields?.file || "";
 
   return (
     <div className="h-[435px] w-full lg:col-span-2 lg:h-[325px] ">
       <blockquote className="flex h-full flex-col justify-between bg-white p-8 shadow-lg">
         <div className="flex items-center justify-start gap-0.5">
-          {/* <Image
-            width={80}
-            height={80}
-            className="rounded-full mr-4"
-            src={"https:" + url}
-            alt="asad"
-          /> */}
           {new Array(numberOfStars).fill("star")?.map((_, idx) => {
             return (
               <svg

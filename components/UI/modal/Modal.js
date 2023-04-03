@@ -1,25 +1,35 @@
-export default function Modal({ setIsOpen, onKeyUp }) {
+export default function Modal({ children, onModalClose, nextSlide, previousSlide }) {
   return (
-    <>
-      <div className="flex-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none px-4 lg:px-0">
-        <div className="relative my-6 mx-auto ">
-          <div className="border-0 rounded-lg shadow-lg relative flex flex-col min-w-[80vw] min-h-[20vh] bg-white outline-none focus:outline-none">
-            <div className="flex items-start justify-between p-5 rounded-t">
-              <video width="1550" height="1300" autoPlay="autoplay" controls>
-                <source src={"/assets/video/video.mp4"} type="video/mp4" />
-              </video>
-            </div>
-            <button
-              className="text-[color:var(--primary-clr)] background-transparent font-bold uppercase px-6 py-2 text-sm mr-1 mb-1"
-              type="button"
-              onClick={() => setIsOpen(false)}
-              onKeyDown={onKeyUp}>
-              Close
-            </button>
-          </div>
-        </div>
+    <div
+      onClick={e => {
+        e.stopPropagation();
+        onModalClose(false);
+      }}
+      className="fixed inset-0 z-30 bg-black">
+      <div className="flex-center overflow-hiddenpx-4 fixed inset-0 z-20 mx-2">
+        {children}
+        <button
+          className="background-transparent absolute top-20 right-5 sm:top-10 sm:right-10"
+          type="button"
+          onClick={() => onModalClose(false)}>
+          <svg width={35} height={35} fill="#fff" viewBox="0 0 24 24" id="close">
+            <path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path>
+          </svg>
+        </button>
       </div>
-      <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
-    </>
+
+      <span
+        onClick={e => {
+          e.stopPropagation();
+          previousSlide();
+        }}
+        className="arrow-left z-80 absolute bottom-20 left-20 sm:top-[50%]"></span>
+      <span
+        onClick={e => {
+          e.stopPropagation();
+          nextSlide();
+        }}
+        className="arrow-right z-80 absolute bottom-20 right-20 sm:top-[50%]"></span>
+    </div>
   );
 }

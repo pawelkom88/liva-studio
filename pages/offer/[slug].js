@@ -1,7 +1,6 @@
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Hero from "@components/hero/Hero";
 import PricingCard from "@components/pricing/PricingCard";
-import SkeletonLoader from "@components/UI/skeleton/Skeleton";
 import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -44,7 +43,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Package({ offerDetails }) {
-  if (!offerDetails) return <SkeletonLoader />;
 
   const {
     title,

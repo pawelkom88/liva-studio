@@ -112,17 +112,46 @@ body {
     transform: translateY(0);
   }
 }
-
+/* 
 #ReactGridGallery > div:first-of-type {
   justify-content: center;
-}
+} */
 
-.ReactGridGallery_tile-viewport img:hover {
+.gallery img:hover {
   transform: scale(1.1);
   transition: transform 0.3s linear;
 }
 
-.ReactGridGallery_tile-viewport img {
-  object-fit: cover;
+.gallery img {
   transition: transform 0.3s linear;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.arrow-left,
+.arrow-right {
+  display: block;
+  width: 60px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+  z-index: 60;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+  position: absolute;
+  transform: scale(3);
+}
+
+.arrow-left::before {
+  left: 0;
+  content: "\2190";
+}
+
+.arrow-right::before {
+  right: 0;
+  content: "\2192";
 }

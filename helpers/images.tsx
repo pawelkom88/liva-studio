@@ -7,7 +7,6 @@ interface Image {
 export const images: Image[] = [
   {
     src: "/assets/images/portfolio/BABY/K-6.webp",
-
     original: "/assets/images/portfolio/BABY/K-6_H.webp",
     category: "Baby",
   },

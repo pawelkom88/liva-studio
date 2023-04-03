@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import SkeletonLoader from "@components/UI/skeleton/Skeleton";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { options } from "@helpers/contentful";
 
 export default function BlogDetails({ post }) {
-  if (!post) return <SkeletonLoader />;
 
   const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
   const { url } = thumbnail?.fields?.file;
