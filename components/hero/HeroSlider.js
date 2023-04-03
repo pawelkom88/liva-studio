@@ -25,7 +25,7 @@ export default function HeroSlider() {
                 {photo.description}
               </p>
               <picture>
-                <source srcset={photo.image} media="(min-width: 600px)" />
+                <source srcSet={photo.image} media="(min-width: 600px)" />
                 <img
                   className="absolute inset-0 h-full w-full object-cover brightness-75"
                   src={photo.tiny}

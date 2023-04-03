@@ -1,11 +1,9 @@
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
-// import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { options } from "@helpers/contentful";
-// import { individualBlogPostSeo } from "../../seo/seo";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -19,7 +17,7 @@ export async function getStaticPaths() {
       params: { slug: item?.fields?.slug || "" },
     };
   });
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
@@ -41,13 +39,12 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetails({ post }) {
+  const { photographyBlog: title, thumbnail, featuredImage, content, date } = post?.fields;
+  const { url } = thumbnail?.fields?.file;
+  const { width, height } = featuredImage?.fields?.file.details.image;
 
-  const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
-  const { url } = thumbnail.fields?.file;
-  const { width, height } = featuredImage?.fields.file.details.image;
   return (
     <>
-      {/* <PageSeo seo={individualBlogPostSeo} /> */}
       <Wrapper>
         <article className="my-8 break-words px-4 md:px-16">
           <h1 className="heading-styles my-8 text-center">{title}</h1>
