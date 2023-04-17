@@ -17,7 +17,7 @@ export default function PortfolioOffer() {
           />
 
           <div>
-            <h3 className="my-4 text-2xl font-bold lg:mt-8">LIVA STUDIO</h3>
+            <h1 className="my-4 text-2xl font-bold lg:mt-8">LIVA STUDIO</h1>
             <p className="text-md lg:text-lg">
               in Bristol specializes in newborn, maternity, and wedding photography. We use wooden
               handmade photography props to create one-of-a-kind images. Our skilled team works

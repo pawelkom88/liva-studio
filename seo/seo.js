@@ -1,12 +1,12 @@
 export const mainPageSeo = {
   pageDescription:
-    "Based in Bristol, England, Liva Studio is a photography brand specialising in newborn, maternity, and wedding photography. We’re obsessed with documenting and preserving life’s special moments by combining beautiful pictures and cutting-edge technology to create blissful memories for our clients.",
+    "Based in Bristol, England, Liva Studio is a photography brand specialising in newborn, maternity, and wedding photography.",
   canonical: "",
   url: "",
   title:
-    "Liva Studio - photography brand specialising in newborn, maternity, and wedding photography",
+    "Liva Studio - newborn photography specialists.",
   description:
-    "Based in Bristol, England, Liva Studio is a photography brand specialising in newborn, maternity, and wedding photography. We’re obsessed with documenting and preserving life’s special moments by combining beautiful pictures and cutting-edge technology to create blissful memories for our clients.",
+    "Based in Bristol, England, Liva Studio is a photography brand specialising in newborn, maternity, and wedding photography.",
 };
 
 export const aboutUsSeo = {
