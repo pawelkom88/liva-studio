@@ -51,7 +51,7 @@ export default function AboutUs() {
               height={750}
               src={aboutUsPageImg.original}
               placeholder="blur"
-              blurDataURL="/assets/images/loading.webp"
+              blurDataURL={aboutUsPageImg.tiny}
               alt="Artur"
             />
             {/* <Image

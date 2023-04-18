@@ -122,17 +122,17 @@ export const offerDetails: Offer[] = [
   },
 ];
 
-interface FaqImage {
-  original: string;
-  tiny: string;
-  alt: string;
-}
+// interface FaqImage {
+//   original: string;
+//   tiny: string;
+//   alt: string;
+// }
 
-export const faqImage: FaqImage = {
-  original: "/assets/images/MAINPAGE/OUROFFER_",
-  tiny: '"/assets/images/MAINPAGE/OUROFFER_"',
-  alt: "",
-};
+// export const faqImage: FaqImage = {
+//   original: "/assets/images/MAINPAGE/OUROFFER_",
+//   tiny: '"/assets/images/MAINPAGE/OUROFFER_"',
+//   alt: "",
+// };
 
 export const aboutUsPageImg = {
   original: "/assets/images/about-us-main.webp",

@@ -28,7 +28,7 @@ export default function HeroSlider() {
                 <source srcSet={photo.image} media="(min-width: 600px)" />
                 <img
                   className="absolute inset-0 h-full w-full object-cover brightness-75"
-                  src={photo.tiny}
+                  src={photo.image}
                   alt={photo.alt}
                   loading="eager"
                   decoding="async"

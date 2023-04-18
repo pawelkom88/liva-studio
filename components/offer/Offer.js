@@ -29,7 +29,7 @@ export default function Offer({ details }) {
             className="object-cover"
             width={600}
             height={450}
-            src={tiny}
+            src={image}
             placeholder="blur"
             blurDataURL={tiny}
             alt={title}

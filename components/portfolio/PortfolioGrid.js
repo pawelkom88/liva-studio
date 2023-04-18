@@ -42,7 +42,7 @@ export default function PortfolioGrid({ categoryImages }) {
                   className="gallery">
                   <Image
                     className="w-full cursor-pointer"
-                    src={image.src}
+                    src={image.original}
                     width={300}
                     height={500}
                     alt={`portfolio image ${index}`}
