@@ -213,7 +213,7 @@ export const offerBannerData: OfferBanner[] = [
   },
   {
     id: 2,
-    text: "POMYSŁÓW NA MINUTĘ",
+    text: "IDEAS PER MINUTE",
     number: 500,
     time: 1,
     svg: (
@@ -225,7 +225,7 @@ export const offerBannerData: OfferBanner[] = [
   },
   {
     id: 3,
-    text: "LAT DOŚWIADCZENIA",
+    text: "YEARS OF EXPERIENCE",
     number: 10,
     time: 100,
     svg: (
@@ -236,7 +236,7 @@ export const offerBannerData: OfferBanner[] = [
   },
   {
     id: 4,
-    text: "WYKONANYCH SESJI",
+    text: "SESSIONS DONE",
     number: 80,
     time: 50,
     svg: (

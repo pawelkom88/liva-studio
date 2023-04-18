@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Modal from "../UI/modal/Modal";
-
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
 import Image from "next/image";
 
 export default function PortfolioGrid({ categoryImages }) {
@@ -47,7 +45,7 @@ export default function PortfolioGrid({ categoryImages }) {
                     src={image.src}
                     width={300}
                     height={500}
-                    alt=""
+                    alt={`portfolio image ${index}`}
                   />
                 </div>
               );

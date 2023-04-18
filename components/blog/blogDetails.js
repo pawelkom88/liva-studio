@@ -16,7 +16,7 @@ export default function BlogDetails({ post }) {
         height={height}
         src={"https:" + url}
         className="h-64 w-full object-cover"
-        alt=""
+        alt="blog post image"
       />
       <div className="rounded border-2 border-t-0 p-2 py-5">
         <div className="mb-2 text-xs font-semibold uppercase text-[color:var(--primary-clr)]">
