@@ -11,7 +11,6 @@ const defaultSEO = {
 };
 
 export default function PageSeo({ seo = defaultSEO }) {
-  console.log(seo.title);
 
   const jsonData = {
     "@context": "http://schema.org",
@@ -62,9 +61,6 @@ export default function PageSeo({ seo = defaultSEO }) {
           siteName: "Liva Studio ",
         }}
       />
-      <meta
-        name="ahrefs-site-verification"
-        content="eed22d1fd101d26bac11c222d7faa28cfa82a8c07ebf38a0be8482d863c862ee"></meta>
       <Script
         id="json"
         key="structured-data"

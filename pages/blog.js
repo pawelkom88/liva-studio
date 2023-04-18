@@ -22,7 +22,6 @@ export default function BlogArticle({ posts }) {
   return (
     <>
       <PageSeo seo={blogSeo} />
-
       <h1 className="heading-styles mt-8 text-center">Welcome to our blog</h1>
       <main className="flex-center mx-auto my-16 max-w-7xl flex-wrap gap-8 px-4 sm:p-0">
         {posts?.length === 0 && <h3>There are no posts</h3>}

@@ -5,7 +5,6 @@ import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { offerOptions } from "@helpers/contentful";
-import { individualOfferSeo } from "../../seo/seo";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -43,7 +42,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Package({ offerDetails }) {
-
   const {
     title,
     description,
@@ -70,6 +68,15 @@ export default function Package({ offerDetails }) {
       { id: 2, name: packageDetails[1], price: +packagePrice[1], content: goldPackage },
       { id: 3, name: packageDetails[2], price: +packagePrice[2], content: silverPackage },
     ],
+  };
+
+
+  const individualOfferSeo = {
+    pageDescription: `Explore our fantastic ${title} packages for every occasion. Affordable prices and friendly atmosphere`,
+    canonical: `offer/${title}`,
+    url: `offer/${title}`,
+    title: `Liva Studio - ${title} photoshoot offer`,
+    description: `Explore our fantastic ${title} packages for every occasion. Affordable prices and friendly atmosphere`,
   };
 
   return (

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { options } from "@helpers/contentful";
+import PageSeo from "../../seo/PageSeo";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -43,8 +44,17 @@ export default function BlogDetails({ post }) {
   const { url } = thumbnail?.fields?.file;
   const { width, height } = featuredImage?.fields?.file.details.image;
 
+   const individualBlogPostSeo = {
+    pageDescription: `${content.slice(0, 70)}...`,
+    canonical: `blog/${title}`,
+    url: `blog/${title}`,
+    title:  `'Liva Studio - Blog Post - ${title}` ,
+    description: `${content.slice(0, 70)}...`,
+  };
+
   return (
     <>
+    <PageSeo seo={individualBlogPostSeo} />
       <Wrapper>
         <article className="my-8 break-words px-4 md:px-16">
           <h1 className="heading-styles my-8 text-center">{title}</h1>
