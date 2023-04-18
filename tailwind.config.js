@@ -14,6 +14,9 @@ module.exports = {
       steelfish: ["steelfish", "sans-serif"],
     },
     extend: {
+      maxWidth: {
+        readable: "75ch",
+      },
       backgroundImage: {
         aboutUs: "url('/assets/images/MAINPAGE/ABOUT_US_HIGH.webp')",
         maternity: "url('/assets/images/contact-section-image.webp')",

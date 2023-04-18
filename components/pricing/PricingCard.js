@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import ListItem from "./list-item/ListItem";
-import {
-  btnStylesCommonStyles,
-  btnStylesGoldVariant,
-  btnStylesOtherVariant,
-} from "constants/constants";
 
-// REFACTOR!!!!
+const btnStylesGoldVariant =
+  "bg-white text-[var(--primary-clr)] hover:border-white hover:text-white hover:bg-[var(--secondary-clr)]";
+
+const btnStylesOtherVariant =
+  "bg-[var(--secondary-clr)] text-white hover:bg-transparent hover:border-[var(--primary-clr)] hover:text-[var(--primary-clr)]";
+
+const btnStylesCommonStyles =
+  "w-1/2 mx-auto px-8 py-3 font-semibold relative overflow-hidden bg-[color:var(--primary-clr)] hover:bg-[color:var(--secondary-clr)] text-white border-2 border-transparent transition-all";
 
 export default function PricingCard({ offerPackage }) {
   const isSunflowerPackage = offerPackage.name === "SUNFLOWER" || offerPackage.name === "HALF DAY";

@@ -1,7 +1,7 @@
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 
 function paragraphClass(node) {
-  const className = "my-2";
+  const className = "max-w-readable mx-auto";
   return className;
 }
 

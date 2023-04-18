@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Faq() {
   return (
-    <article>
+    <article className="mt-24">
       <h5 className="heading-styles text-center">HOW IT WORKS ?</h5>
       <div className="mx-auto grid grid-cols-1 gap-8 px-4 py-16 sm:max-w-xl sm:grid-cols-3 md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
         <div className="flex-center flex-col">

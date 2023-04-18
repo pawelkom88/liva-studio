@@ -198,7 +198,7 @@ interface OfferBanner {
 export const offerBannerData: OfferBanner[] = [
   {
     id: 1,
-    text: "ZADOWOLONYCH KLIENTÓW",
+    text: "HAPPY CUSTOMERS",
     number: 100,
     time: 30,
     svg: (

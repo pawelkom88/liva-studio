@@ -10,7 +10,7 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields?.file.details.image;
 
   return (
-    <article className="overflow-hiddenbg-white lg:max-w-lg">
+    <article className="min-h-[30rem] overflow-hiddenbg-white lg:max-w-lg">
       <Image
         width={width}
         height={height}
@@ -18,7 +18,7 @@ export default function BlogDetails({ post }) {
         className="h-64 w-full object-cover"
         alt="blog post image"
       />
-      <div className="rounded border-2 border-t-0 p-2 py-5">
+      <div className="h-full rounded border-2 border-t-0 p-2 py-5">
         <div className="mb-2 text-xs font-semibold uppercase text-[color:var(--primary-clr)]">
           {date.replace("T", " at ").slice(0, 19)}
         </div>

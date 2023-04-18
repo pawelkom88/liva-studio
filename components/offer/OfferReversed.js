@@ -5,7 +5,7 @@ export default function Offer({ details }) {
   const { title, image, content, link, tiny } = details;
 
   return (
-    <article className="mx-auto my-2 px-4 py-8 sm:max-w-xl md:max-w-full md:px-24 md:py-12 lg:max-w-screen-xl lg:px-8 lg:py-16">
+    <article className="mx-auto my-2 py-8">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center lg:order-2 lg:pr-10 large:order-2">
           <h3 className="mb-4 font-steelfish text-4xl font-extrabold leading-none tracking-wide text-gray-800">

@@ -1,5 +1,5 @@
 export default function ReviewCotent({ review }) {
-  const { name, avatar, content, date, numberOfStars } = review?.fields;
+  const { name, content, date, numberOfStars } = review?.fields;
 
   return (
     <div className="h-[435px] w-full lg:col-span-2 lg:h-[325px] ">
@@ -18,7 +18,7 @@ export default function ReviewCotent({ review }) {
             );
           })}
         </div>
-        <div className="text-[color:var(--primary-clr)]">
+        <div className="translate-x-0 transform text-[color:var(--primary-clr)] transition-all duration-1000 ease-in-out">
           <p className="mr-4 text-2xl font-bold sm:text-3xl">{name}</p>
           <time className="text-sm" dateTime={date}>
             {date.replace("T", " at ").slice(0, 19)}

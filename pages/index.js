@@ -9,6 +9,7 @@ import Press from "@components/press/Press";
 import Faq from "@components/faq/Faq";
 import CallToAction from "@components/cta/CallToAction";
 import { createClient } from "contentful";
+import AboutUs from "../components/about-us/AboutUs";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -32,12 +33,13 @@ export default function Home({ reviews }) {
       <PageSeo seo={mainPageSeo} />
       <HeroSlider />
       <Wrapper>
+        <AboutUs />
         <PortfolioOffer />
         <OurOffer />
       </Wrapper>
       <Reviews reviews={reviews} />
       <Wrapper>
-        <Press />
+        {/* <Press /> */}
         <Faq />
         <CallToAction />
       </Wrapper>

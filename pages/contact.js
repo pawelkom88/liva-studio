@@ -10,23 +10,23 @@ export default function Contact() {
     <>
       <PageSeo seo={constactSeo} />
       <Wrapper>
-        <section className="flex w-full lg:my-16 large:flex-wrap large:justify-center">
-          <div className="max-h-screen lg:basis-3/6 large:mt-4">
+        <section className="flex w-full my-8 lg:my-16 large:flex-wrap large:justify-center">
+          <div className="max-h-screen w-full lg:w-1/2 large:mt-4">
             <Image
               width={853}
               height={927}
               className="h-full w-full object-cover"
-              src={contactSectionImage?.tiny}
+              src={contactSectionImage?.original}
               placeholder="blur"
               blurDataURL={contactSectionImage?.tiny}
               alt="Liva studio"
             />
           </div>
-          <div className="flex min-h-screen w-full flex-grow flex-col justify-center p-10 md:w-4/6 lg:w-3/6 xl:w-2/6 large:-my-16">
-            <div className="mb-10">
-              <h1 className="heading-styles mt-10 font-extrabold">Get in touch</h1>
+          <div className="flex h-full w-full flex-grow flex-col justify-center p-2 lg:p-10 md:w-4/6 lg:w-3/6 xl:w-2/6 lg:-my-16">
+            <div>
+              <h1 className="heading-styles mt-10 font-extrabold mb-4">Get in touch</h1>
             </div>
-            <div className="mb-10">
+            <div className="mb-2">
               <p className="text-sm leading-6">
                 IT&apos;S TIME TO CREATE SOMETHING BEAUTIFUL AND UNIQUE. LEAVE YOUR DOUBTS, FEARS
                 AND INHIBITIONS. PHOTOGRAPHY IS LIKE THERAPY. EVEN BETTER{" "}

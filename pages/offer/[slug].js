@@ -70,7 +70,6 @@ export default function Package({ offerDetails }) {
     ],
   };
 
-
   const individualOfferSeo = {
     pageDescription: `Explore our fantastic ${title} packages for every occasion. Affordable prices and friendly atmosphere`,
     canonical: `offer/${title}`,
@@ -84,10 +83,9 @@ export default function Package({ offerDetails }) {
       <PageSeo seo={individualOfferSeo} />
       <Hero backgroundImage={`url(${"https:" + url})`} heading={title} />
       <Wrapper>
-        <section className="mt-16">
+        <section className="mx-auto mt-16">
           <h1 className="heading-styles my-8 text-center">Package details</h1>
-
-          <p className="lg:mx-24">{documentToReactComponents(description, offerOptions)}</p>
+          <div className="mx-4">{documentToReactComponents(description, offerOptions)}</div>
           <div className="mt-16 grid grid-cols-1 gap-4 lg:grid-cols-3">
             {cardData.details.map(offer => {
               return <PricingCard key={offer.id} offerPackage={offer} />;
