@@ -45,11 +45,11 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields?.file.details.image;
 
    const individualBlogPostSeo = {
-    pageDescription: `${content.slice(0, 70)}...`,
+    pageDescription: `Learn more about ${title} and give us a shout what you think !`,
     canonical: `blog/${title}`,
     url: `blog/${title}`,
     title:  `'Liva Studio - Blog Post - ${title}` ,
-    description: `${content.slice(0, 70)}...`,
+    description: `Learn more about ${title} and give us a shout what you think !`,
   };
 
   return (
