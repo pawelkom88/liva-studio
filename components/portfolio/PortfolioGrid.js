@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "../UI/modal/Modal";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Image from "next/image";
+import { useSwipeable } from "react-swipeable";
 
 export default function PortfolioGrid({ categoryImages }) {
   const [activeImage, setActiveImage] = useState(null);
@@ -15,8 +16,14 @@ export default function PortfolioGrid({ categoryImages }) {
     activeImage === 0 ? setActiveImage(categoryImages.length - 1) : setActiveImage(activeImage - 1);
   }
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => goToNextSlide(),
+    onSwipedRight: () => goToPrevSlide(),
+    swipeDuration: 500,
+  });
+
   return (
-    <div className="z-100 relative">
+    <div {...handlers} className="z-100 relative">
       {showModal && (
         <Modal onModalClose={setShowModal} nextSlide={goToNextSlide} previousSlide={goToPrevSlide}>
           <Image
