@@ -75,7 +75,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              href="blog"
+              href="/blog"
               aria-label="Blog"
               title="Blog"
               className="font-medium uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
