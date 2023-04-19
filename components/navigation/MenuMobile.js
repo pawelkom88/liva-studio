@@ -14,7 +14,7 @@ export function MenuMobile({ setIsOpen }) {
 ">
           {menuMobileLinks.map(link => {
             return (
-              <>
+              <div key={link.href}>
                 {horizontalLine}
                 <li key={link.id} onClick={() => setIsOpen(false)} className="fade-in-link">
                   {!link.isInternal ? (
@@ -37,7 +37,7 @@ export function MenuMobile({ setIsOpen }) {
                     </Link>
                   )}
                 </li>
-              </>
+              </div>
             );
           })}
           {horizontalLine}

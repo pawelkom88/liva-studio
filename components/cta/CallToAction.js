@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const btnStyles =
   "hover:text-[color:var(--primary-clr)] border-[color:var(--primary-clr)] bg-[color:var(--primary-clr)] mt-8 inline-block px-12 py-3 text-sm text-white font-bold hover:bg-transparent border hover:border  focus:ring active:text-indigo-500 uppercase";
 
@@ -9,9 +11,9 @@ export default function CallToAction() {
         WE CAN&apos;T WAIT TO HEAR FROM YOU
       </h6>
       <p className="text-md my-8 lg:text-xl">I&apos;LL SHOW YOU HOW BEAUTIFUL THE WORLD IS</p>
-      <button className={btnStyles} href="/contact">
+      <Link className={btnStyles} href="/contact">
         get in touch
-      </button>
+      </Link>
     </section>
   );
 }

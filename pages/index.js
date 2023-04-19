@@ -5,7 +5,6 @@ import PageSeo from "../seo/PageSeo";
 import { mainPageSeo } from "../seo/seo";
 import OurOffer from "@components/offer/our-offer/OurOffer";
 import Reviews from "@components/reviews/Reviews";
-import Press from "@components/press/Press";
 import Faq from "@components/faq/Faq";
 import CallToAction from "@components/cta/CallToAction";
 import { createClient } from "contentful";

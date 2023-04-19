@@ -19,7 +19,7 @@ export default function PortfolioGrid({ categoryImages }) {
   const handlers = useSwipeable({
     onSwipedLeft: () => goToNextSlide(),
     onSwipedRight: () => goToPrevSlide(),
-    swipeDuration: 500,
+    swipeDuration: 200,
   });
 
   return (

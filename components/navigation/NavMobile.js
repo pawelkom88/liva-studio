@@ -10,7 +10,7 @@ export default function NavMobile({ isOpen, setIsOpen }) {
         title="Open Menu"
         className="relative flex-center flex-col h-12 w-12 group z-50"
         onClick={() => setIsOpen(!isOpen)}>
-        <div
+        <span
           className={`${genericHamburgerLine} ${
             isOpen
               ? "rotate-45 translate-y-[3px] opacity-80 group-hover:opacity-100 bg-white"
