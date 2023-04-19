@@ -7,7 +7,7 @@ const horizontalLine = (
 
 export function MenuMobile({ setIsOpen }) {
   return (
-    <div className="fixed inset-0 z-40 flex h-full w-full items-center justify-center bg-[color:var(--secondary-clr)] opacity-100 duration-700">
+    <div className="fixed inset-0 z-40 flex h-full w-full items-center justify-center bg-[color:var(--primary-clr)] opacity-100 duration-700">
       <nav className="flex  w-full flex-col space-y-3 text-center text-xl font-light text-white">
         <ul
           className="space-y-4 overflow-hidden text-2xl tracking-wider text-white

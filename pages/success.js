@@ -1,6 +1,6 @@
 export default function success() {
   return (
-    <div className="flex-center flex-col my-8 h-[calc(100vh-650px)]">
+    <div className="flex-center flex-col mt-8 mb-24 min-h-[60vh] lg:min-h-[25vh]">
       <svg viewBox="0 0 24 24" className="text-green-600 w-16 h-16 mx-auto my-6">
         <path
           fill="currentColor"

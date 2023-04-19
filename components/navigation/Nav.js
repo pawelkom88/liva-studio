@@ -62,7 +62,7 @@ export default function Nav() {
           </h1>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
-          <li>
+          {/* <li>
             <a
               href="https://wedwojestudio.pl/oferta/"
               target="_blank"
@@ -72,7 +72,7 @@ export default function Nav() {
               className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Client space
             </a>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/blog"
