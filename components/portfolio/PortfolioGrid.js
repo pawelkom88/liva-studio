@@ -28,14 +28,15 @@ export default function PortfolioGrid({ categoryImages }) {
         <Modal onModalClose={setShowModal} nextSlide={goToNextSlide} previousSlide={goToPrevSlide}>
           <Image
             src={categoryImages[activeImage].src || 0}
-            width={600}
-            height={620}
+            width={900}
+            height={600}
+            quality="100"
             alt="portfolio image"
           />
         </Modal>
       )}
 
-      <div className=" mx-auto max-w-7xl p-4 md:p-8">
+      <div className="mx-auto max-w-7xl p-4 md:p-8">
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1200: 4 }}>
           <Masonry gutter="10px">
             {categoryImages.map((image, index) => {
@@ -49,9 +50,9 @@ export default function PortfolioGrid({ categoryImages }) {
                   className="gallery">
                   <Image
                     className="w-full cursor-pointer"
-                    src={image.original}
-                    width={300}
-                    height={500}
+                    src={image.src}
+                    width={1200}
+                    height={800}
                     alt={`portfolio image ${index}`}
                   />
                 </div>

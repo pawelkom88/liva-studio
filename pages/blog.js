@@ -23,7 +23,7 @@ export default function BlogArticle({ posts }) {
     <>
       <PageSeo seo={blogSeo} />
       <h1 className="heading-styles mt-8 text-center">Welcome to our blog</h1>
-      <main className="grid-col-1 mx-auto my-16 grid min-h-[80vh] max-w-2xl gap-8 px-4 sm:p-0 md:grid-cols-2 lg:max-w-5xl">
+      <main className="grid-col-1 mx-auto my-16 grid min-h-[110vh] max-w-2xl gap-8 px-4 sm:p-0 md:min-h-[60vh] md:grid-cols-2 lg:max-w-5xl">
         {posts?.length === 0 && <h3>There are no posts</h3>}
         {posts?.map(post => (
           <BlogDetails key={post.sys.id} post={post} />

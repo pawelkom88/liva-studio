@@ -4,23 +4,39 @@ import PageSeo from "../seo/PageSeo";
 import { portfolioCategories } from "@helpers/data";
 import { images } from "@helpers/images";
 import { portfolioSeo } from "../seo/seo";
+import { createClient } from "contentful";
 
 const btnStyles =
   "inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-[color:var(--primary-clr)] bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base hover:border-[color:var(--primary-clr)]";
 
-export default function Portfolio() {
-  const [category, setCategory] = useState(images);
+export default function Portfolio({ assets }) {
+  const contentfulImages = assets
+    .map(asset => {
+      const category = asset.fields.description ?? "";
+      const url = `https:${asset.fields.file.url}`;
+
+      const image = {
+        src: url,
+        category,
+      };
+
+      return image;
+    })
+    .filter(contentful => portfolioCategories.find(img => img.name === contentful.category));
+
+  const portfolioImages = [...contentfulImages, ...images];
+  console.log(contentfulImages);
+  const [category, setCategory] = useState(portfolioImages);
   const [isActive, setIsActive] = useState(8);
 
   function getCategory(selectedCategory) {
     let filteredImages;
 
     if (selectedCategory === "All") {
-      filteredImages = images;
+      filteredImages = portfolioImages;
     } else {
-      filteredImages = images.filter(({ category }) => category === selectedCategory);
+      filteredImages = portfolioImages.filter(({ category }) => category === selectedCategory);
     }
-
     setCategory(filteredImages);
   }
 
@@ -32,14 +48,14 @@ export default function Portfolio() {
     <>
       <PageSeo seo={portfolioSeo} />
       <div className="flex-center mx-auto w-full flex-wrap py-2">
-        {portfolioCategories.map(category => {
+        {portfolioCategories?.map(category => {
           return (
             <button
+              key={category.id}
               onClick={() => {
                 handleActiveCategory(category.id);
                 getCategory(category.name);
               }}
-              key={category.id}
               className={`${
                 isActive === category.id
                   ? "ease border-b border-[color:var(--secondary-clr)] font-bold text-[color:var(--secondary-clr)] transition-colors duration-300"
@@ -53,4 +69,20 @@ export default function Portfolio() {
       <PortfolioGrid categoryImages={category} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  });
+
+  const response = await client.getAssets("2PqFR31aw7dk3a6lKQcNYC");
+
+  return {
+    props: {
+      assets: response.items,
+    },
+    revalidate: 60,
+  };
 }
