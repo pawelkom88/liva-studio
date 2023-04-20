@@ -4,7 +4,7 @@ import PricingCard from "@components/pricing/PricingCard";
 import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS, INLINES } from "@contentful/rich-text-types";
+import { BLOCKS } from "@contentful/rich-text-types";
 
 function paragraphClass(node) {
   const className = "max-w-readable mx-auto my-2 indent-3.5";

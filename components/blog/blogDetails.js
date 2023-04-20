@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { options } from "@helpers/contentful";
 
 export default function BlogDetails({ post }) {
   const { photographyBlog: title, slug, thumbnail, featuredImage, content, date } = post?.fields;
@@ -9,7 +7,7 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields?.file.details.image;
 
   return (
-    <article className="overflow-hiddenbg-white h-[15rem] lg:max-w-lg mx-auto">
+    <article className="overflow-hiddenbg-white mx-auto h-[15rem] lg:max-w-lg">
       <Image
         width={width}
         height={height}

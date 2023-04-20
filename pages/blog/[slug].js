@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-// import { options } from "@helpers/contentful";
 import PageSeo from "../../seo/PageSeo";
 
 const client = createClient({
