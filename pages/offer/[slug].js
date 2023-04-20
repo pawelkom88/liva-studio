@@ -4,7 +4,25 @@ import PricingCard from "@components/pricing/PricingCard";
 import PageSeo from "../../seo/PageSeo";
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { offerOptions } from "@helpers/contentful";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
+
+function paragraphClass(node) {
+  const className = "max-w-readable mx-auto my-2 indent-3.5";
+  return className;
+}
+
+function headingClass(node) {
+  const className = "text-xl font-bold max-w-2xl mx-auto";
+  return className;
+}
+
+export const options = {
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => {
+      return <p className={paragraphClass(node)}>{children}</p>;
+    },
+  },
+};
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -85,7 +103,7 @@ export default function Package({ offerDetails }) {
       <Wrapper>
         <section className="mx-auto mt-16">
           <h1 className="heading-styles my-8 text-center">Package details</h1>
-          <div className="mx-4">{documentToReactComponents(description, offerOptions)}</div>
+          <div className="mx-4">{documentToReactComponents(description, options)}</div>
           <div className="mt-16 grid grid-cols-1 gap-4 lg:grid-cols-3">
             {cardData.details.map(offer => {
               return <PricingCard key={offer.id} offerPackage={offer} />;
