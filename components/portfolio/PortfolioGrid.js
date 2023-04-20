@@ -28,7 +28,7 @@ export default function PortfolioGrid({ categoryImages }) {
         <Modal onModalClose={setShowModal} nextSlide={goToNextSlide} previousSlide={goToPrevSlide}>
           <Image
             src={categoryImages[activeImage].src || 0}
-            width={900}
+            width={700}
             height={600}
             quality="100"
             alt="portfolio image"

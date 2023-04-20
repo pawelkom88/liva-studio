@@ -2,7 +2,7 @@ import { useState } from "react";
 import PortfolioGrid from "@components/portfolio/PortfolioGrid";
 import PageSeo from "../seo/PageSeo";
 import { portfolioCategories } from "@helpers/data";
-import { images } from "@helpers/images";
+import { localImages } from "@helpers/images";
 import { portfolioSeo } from "../seo/seo";
 import { createClient } from "contentful";
 
@@ -10,22 +10,12 @@ const btnStyles =
   "inline-flex items-center h-10 px-4 -mb-px text-sm text-center text-[color:var(--primary-clr)] bg-transparent border-b-2 border-transparent sm:text-base whitespace-nowrap cursor-base hover:border-[color:var(--primary-clr)]";
 
 export default function Portfolio({ assets }) {
-  const contentfulImages = assets
-    .map(asset => {
-      const category = asset.fields.description ?? "";
-      const url = `https:${asset.fields.file.url}`;
+  const filteredByCategoryFetchedImages = assets.filter(contentfulImages =>
+    portfolioCategories.find(category => category.name === contentfulImages.category)
+  );
 
-      const image = {
-        src: url,
-        category,
-      };
+  const portfolioImages = [...filteredByCategoryFetchedImages, ...localImages];
 
-      return image;
-    })
-    .filter(contentful => portfolioCategories.find(img => img.name === contentful.category));
-
-  const portfolioImages = [...contentfulImages, ...images];
-  console.log(contentfulImages);
   const [category, setCategory] = useState(portfolioImages);
   const [isActive, setIsActive] = useState(8);
 
@@ -79,9 +69,21 @@ export async function getStaticProps() {
 
   const response = await client.getAssets("2PqFR31aw7dk3a6lKQcNYC");
 
+  const contentfulImages = response?.items.map(asset => {
+    const category = asset.fields.description ?? "";
+    const url = `https:${asset.fields.file.url}`;
+
+    const image = {
+      src: url,
+      category,
+    };
+
+    return image;
+  });
+
   return {
     props: {
-      assets: response.items,
+      assets: contentfulImages,
     },
     revalidate: 60,
   };
