@@ -12,7 +12,7 @@ export default function SocialMedia({}) {
           className="text-[color:var(--primary-clr)] transition-colors duration-300 hover:text-[color:var(--secondary-clr)]">
           <svg
             role="img"
-            aria-labelledby="InstagramDesc Instagram"
+            aria-labelledby="InstagramDesc"
             viewBox="0 0 30 30"
             fill="var(--primary-clr)"
             className="h-10">
@@ -30,7 +30,7 @@ export default function SocialMedia({}) {
           className="text-[color:var(--primary-clr)] transition-colors duration-300 hover:text-[color:var(--secondary-clr)]">
           <svg
             role="img"
-            aria-labelledby="FacebookDesc Facebook"
+            aria-labelledby="FacebookDesc"
             viewBox="0 0 24 24"
             fill="var(--primary-clr)"
             className="h-8">

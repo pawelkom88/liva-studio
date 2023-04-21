@@ -7,7 +7,7 @@ export default function BlogDetails({ post }) {
   const { width, height } = featuredImage?.fields?.file.details.image;
 
   return (
-    <article className="overflow-hiddenbg-white mx-auto h-[15rem] lg:max-w-lg">
+    <article className="my-12 mx-2 bg-white lg:max-w-lg">
       <Image
         width={width}
         height={height}
@@ -15,7 +15,7 @@ export default function BlogDetails({ post }) {
         className="h-full w-full object-cover"
         alt="blog post image"
       />
-      <div className="flex h-full flex-col justify-evenly rounded border-2 border-t-0 p-2">
+      <div className="flex h-full flex-col justify-evenly gap-4 rounded border-2 border-t-0 p-2">
         <h2 className="text-xl font-bold leading-8">{title}</h2>
         <Link className="underline" href={"/blog/" + slug}>
           read more
