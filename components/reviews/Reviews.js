@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReviewCotent from "@components/reviews/review-content/ReviewCotent";
 import SliderBtn from "@components/UI/slider-btn/SliderBtn";
+import { useSwipeable } from "react-swipeable";
 
 export default function Reviews({ reviews }) {
   const reviewsData = reviews || {};
@@ -21,6 +22,13 @@ export default function Reviews({ reviews }) {
       setCurrentSlide(reviewsData?.length - 1);
     }
   }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => previousSlide(),
+    swipeDuration: 200,
+  });
+
   return (
     <section className="mx-auto bg-[color:var(--teriary-clr)] py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 sm:py-24 md:py-16  lg:pl-8 ">
@@ -32,7 +40,7 @@ export default function Reviews({ reviews }) {
               <SliderBtn onClick={nextSlide} aria="Next slide" iconDirection="next" />
             </div>
           </article>
-          <ReviewCotent review={reviewsData[currentSlide]} />
+          <ReviewCotent review={reviewsData[currentSlide]} handlers={handlers} />
         </div>
         <div className="mt-8 flex justify-center gap-4 lg:hidden">
           <SliderBtn onClick={previousSlide} aria="Previous slide" iconDirection="previous" />

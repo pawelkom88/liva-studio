@@ -1,3 +1,5 @@
+import Intro from "@components/intro/Intro";
+import PortfolioOfferMobile from "@components/portfolio-offer-mobile/PortfolioOfferMobile";
 import HeroSlider from "@components/hero/HeroSlider";
 import Wrapper from "@components/UI/wrapper/Wrapper";
 import PortfolioOffer from "@components/portfolio/portfolio-offer/PortfolioOffer";
@@ -32,8 +34,10 @@ export default function Home({ reviews }) {
       <PageSeo seo={mainPageSeo} />
       <HeroSlider />
       <Wrapper>
+        <Intro />
         <AboutUs />
         <PortfolioOffer />
+        <PortfolioOfferMobile />
         <OurOffer />
       </Wrapper>
       <Reviews reviews={reviews} />

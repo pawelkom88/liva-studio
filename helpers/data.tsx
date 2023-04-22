@@ -293,3 +293,20 @@ export const aboutUsParagraph: AboutUs[] = [
       "We also offer mobile studio services for those busy people who don’t have the time to visit a physical studio or if you feel comfortable working with us in your own home. This also means you don’t have to worry about finding the perfect spot for your shoot. Our mobile studio services come with a complete lighting set-up and backdrops, meaning you don’t have to worry about gathering any equipment. We’ll bring the studio to you so you can relax and focus on making memories with your loved ones.",
   },
 ];
+
+
+export const portfolioOfferImages = {
+  first : {
+    id: 1,
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp",
+  alt: ''
+  },
+  second : {
+    id: 2,
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp",
+  },
+  third : {
+    id: 3,
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp",
+}
+}

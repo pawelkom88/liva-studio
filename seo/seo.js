@@ -1,11 +1,12 @@
 export const mainPageSeo = {
   pageDescription:
-    "Based in Bristol, England, Liva Studio is a photography specialist offering newborn, maternity, and wedding sessions.",
+    "Looking for a newborn photographer in Bristol? Look no further! We offer natural, affordable, and professional newborn photography services. Book your session today!",
   canonical: "",
   url: "",
-  title: "Liva Studio - Bristol newborn and maternity photography specialists.",
+  title: "Bristol Newborn Photography | Your Baby's First Photos Are Worth the Investment.",
+  // title: "Bristol newborn and maternity photography specialist.",
   description:
-    "Based in Bristol, England, Liva Studio is a photography specialist offering newborn, maternity, and wedding sessions.",
+    "Looking for a newborn photographer in Bristol? Look no further! We offer natural, affordable, and professional newborn photography services. Book your session today!",
 };
 
 export const aboutUsSeo = {

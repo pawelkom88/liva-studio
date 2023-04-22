@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 export default function HeroSlider() {
   return (
-    <section className="relative">
+    <>
       <Swiper
         slidesPerView="auto"
         spaceBetween={30}
@@ -38,6 +38,6 @@ export default function HeroSlider() {
           );
         })}
       </Swiper>
-    </section>
+    </>
   );
 }

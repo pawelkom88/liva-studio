@@ -1,8 +1,8 @@
-export default function ReviewCotent({ review }) {
+export default function ReviewCotent({ review,handlers }) {
   const { name, content, date, numberOfStars } = review?.fields;
 
   return (
-    <div className="h-[435px] w-full lg:col-span-2 lg:h-[325px] ">
+    <div {...handlers} className="h-[435px] w-full lg:col-span-2 lg:h-[325px] ">
       <blockquote className="flex h-full flex-col justify-between bg-white p-8 shadow-lg">
         <div className="flex items-center justify-start gap-0.5">
           {new Array(numberOfStars).fill("star")?.map((_, idx) => {
