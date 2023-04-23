@@ -34,7 +34,7 @@ export default function PricingCard({ offerPackage }) {
               width={75}
               height={75}
               src="/assets/icons/best-value.svg"
-              alt="best value icon"
+              alt="best value banner icon"
             />
           )}
         </div>

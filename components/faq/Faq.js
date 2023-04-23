@@ -13,14 +13,14 @@ export default function Faq() {
               width={70}
               height={70}
               src="/assets/images/speech-bubble-with-emoticon.png"
-              alt="icon"
+              alt="speech-bubble-with-emoticon"
             />
           </Link>
         </div>
         <div className="flex-center flex-col">
           <strong className="my-2">Book a date</strong>
           <Link href="/contact">
-            <Image width={70} height={70} src="/assets/images/add-picture.png" alt="icon" />
+            <Image width={70} height={70} src="/assets/images/add-picture.png" alt="add-picture-icon" />
           </Link>
         </div>
         <div className="flex-center flex-col">
@@ -30,7 +30,7 @@ export default function Faq() {
               width={60}
               height={60}
               src="/assets/images/calendar-page-with-upper-spring.png"
-              alt="icon"
+              alt="calendar-page-with-upper-spring"
             />
           </Link>
         </div>

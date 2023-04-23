@@ -13,7 +13,7 @@ export default function BlogDetails({ post }) {
         height={height}
         src={"https:" + url}
         className="h-full w-full object-cover"
-        alt="blog post image"
+        alt={title}
       />
       <div className="flex h-full flex-col justify-evenly gap-4 rounded border-2 border-t-0 p-2">
         <h2 className="text-xl font-bold leading-8">{title}</h2>

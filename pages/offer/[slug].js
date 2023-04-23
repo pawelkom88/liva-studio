@@ -11,11 +11,6 @@ function paragraphClass(node) {
   return className;
 }
 
-function headingClass(node) {
-  const className = "text-xl font-bold max-w-2xl mx-auto";
-  return className;
-}
-
 export const options = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {

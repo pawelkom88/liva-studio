@@ -19,7 +19,7 @@ export const sliderData: Slide[] = [
     title: "Baby",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_L.webp",
-    alt: "professional baby photoshoot",
+    alt: "A toddler struggle to walk and looking around holding open door",
     // description:
     //   "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
   },
@@ -27,7 +27,7 @@ export const sliderData: Slide[] = [
     title: "Newborn",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_L.webp",
-    alt: "professional newborn photoshoot",
+    alt: "a little baby tucked in a blanket holding a little toy",
     // description:
     //   "Welcome your little one with a professional newborn photoshoot that captures the beauty and innocence of their first moments. With a skilled photographer, you can create heartwarming images that will be cherished for a lifetime.",
   },
@@ -35,7 +35,7 @@ export const sliderData: Slide[] = [
     title: "Wedding",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_L.webp",
-    alt: "professional wedding photoshoot",
+    alt: "black and white photo where a married couple stand by the window and  look into each others eyes",
     // description:
     //   "Make your special day last forever with a professional wedding photoshoot. Create beautiful and timeless images that capture the joy and love of your wedding day, with a skilled photographer who can capture every moment and emotion.",
   },
@@ -43,7 +43,7 @@ export const sliderData: Slide[] = [
     title: "Lifestyle",
     image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp",
     tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_L.webp",
-    alt: "professional lifestyle photoshoot",
+    alt: "a black and white photo with a man who looks very focused",
     // description:
     //   "Capture the essence of your everyday life with a professional lifestyle photoshoot. Create natural and authentic images that showcase your unique lifestyle and personality, with a photographer who can create a relaxed and comfortable environment for you to be yourself.",
   },
@@ -137,7 +137,7 @@ export const offerDetails: Offer[] = [
 export const aboutUsPageImg = {
   original: "/assets/images/about-us-main.webp",
   tiny: "/assets/images/about-us-main.webp",
-  alt: "",
+  alt: "Photographers looking at each other with love",
 };
 
 export const contactSectionImage = {
@@ -299,14 +299,18 @@ export const portfolioOfferImages = {
   first : {
     id: 1,
   src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp",
-  alt: ''
+  alt: '',
   },
   second : {
     id: 2,
   src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp",
+  alt: '',
+
   },
   third : {
     id: 3,
   src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp",
+  alt: '',
+
 }
 }

@@ -52,7 +52,7 @@ export default function AboutUs() {
               src={aboutUsPageImg.original}
               placeholder="blur"
               blurDataURL={aboutUsPageImg.tiny}
-              alt="Artur"
+              alt="Artur and Magda looking into each others eyes"
             />
             {/* <Image
               className="relative w-full lg:opacity-75 brightness-75 hover:opacity-100 transition-opacity ease-linear duration-300"

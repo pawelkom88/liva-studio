@@ -13,7 +13,7 @@ export default function AboutUs() {
             width={760}
             height={507}
             src="/assets/images/MAINPAGE/ABOUT_US_HIGH.webp"
-            alt="liva studio team"
+            alt="liva studio photographers sitting on the floor smiling"
           />
 
           <div>

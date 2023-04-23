@@ -19,7 +19,7 @@ export default function Contact() {
               src={contactSectionImage?.original}
               placeholder="blur"
               blurDataURL={contactSectionImage?.tiny}
-              alt="Liva studio"
+              alt="a lady in a red dress smiling"
             />
           </div>
           <div className="flex h-full w-full flex-grow flex-col justify-center p-2 lg:p-10 md:w-4/6 lg:w-3/6 xl:w-2/6 lg:-my-16">

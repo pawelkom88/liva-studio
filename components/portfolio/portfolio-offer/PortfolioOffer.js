@@ -13,7 +13,7 @@ export default function PortfolioOffer() {
             width={400}
             height={480}
             src={portfolioOfferImages.first.src}
-            alt="Liva studio - Portfolio"
+            alt={portfolioOfferImages.first.alt}
           />
         </div>
         <div className="hidden w-1/3 lg:block">
@@ -22,7 +22,7 @@ export default function PortfolioOffer() {
             width={400}
             height={480}
             src={portfolioOfferImages.second.src}
-            alt="Liva studio - Portfolio"
+            alt={portfolioOfferImages.second.alt}
           />
         </div>
         <div className="hidden w-1/3 lg:block">
@@ -31,7 +31,7 @@ export default function PortfolioOffer() {
             width={400}
             height={480}
             src={portfolioOfferImages.third.src}
-            alt="Liva studio - Portfolio"
+            alt={portfolioOfferImages.third.alt}
           />
         </div>
       </div>

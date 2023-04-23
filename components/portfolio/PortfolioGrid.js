@@ -31,7 +31,7 @@ export default function PortfolioGrid({ categoryImages }) {
             width={700}
             height={600}
             quality="100"
-            alt="portfolio image"
+            alt={`${categoryImages[activeImage]?.category} portfolio image`}
           />
         </Modal>
       )}
@@ -53,7 +53,7 @@ export default function PortfolioGrid({ categoryImages }) {
                     src={image.src}
                     width={1200}
                     height={800}
-                    alt={`portfolio image ${index}`}
+                    alt={`${categoryImages[activeImage]?.category} portfolio image ${index}`}
                   />
                 </div>
               );

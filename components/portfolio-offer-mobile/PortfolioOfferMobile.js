@@ -7,7 +7,7 @@ export default function PortfolioOfferMobile() {
     <section className="mx-auto mt-12 mb-24 block px-8 sm:max-w-xl md:max-w-full lg:hidden lg:max-w-screen-xl lg:py-4">
       <h2 className="heading-styles mb-8 text-center">PORTFOLIO</h2>
 
-      <div className="flex-center order-1 mb-4">
+      <div className="flex-center order-1 mb-8">
         <div className="flex flex-col items-center ">
           <Image
             width={160}
@@ -19,7 +19,7 @@ export default function PortfolioOfferMobile() {
           <Image
             width={228}
             height={228}
-            className="-mr-4 h-32  w-32 rounded object-cover shadow-lg"
+            className="-mr-12 h-40  w-40 rounded object-cover shadow-lg"
             src={portfolioOfferImages.second.src}
             alt={portfolioOfferImages.second.alt}
           />
@@ -27,7 +27,7 @@ export default function PortfolioOfferMobile() {
         <Image
           width={256}
           height={256}
-          className="h-64 w-64 rounded object-cover shadow-lg"
+          className="h-64 w-64 rounded object-cover shadow-lg mb-4"
           src={portfolioOfferImages.third.src}
           alt={portfolioOfferImages.third.alt}
         />
