@@ -50,6 +50,7 @@ export function reportWebVitals(metric) {
     case "Next.js-render":
       // handle render results
       break;
+      console.log(metric);
     default:
       break;
   }

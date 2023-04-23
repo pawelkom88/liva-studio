@@ -298,18 +298,18 @@ export const aboutUsParagraph: AboutUs[] = [
 export const portfolioOfferImages = {
   first : {
     id: 1,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp",
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_L.webp",
   alt: '',
   },
   second : {
     id: 2,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp",
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_L.webp",
   alt: '',
 
   },
   third : {
     id: 3,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp",
+  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_L.webp",
   alt: '',
 
 }
