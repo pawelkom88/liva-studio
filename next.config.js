@@ -6,7 +6,7 @@ const nextConfig = {
     domains: ["images.ctfassets.net"],
   },
   experimental: {
-    webVitalsAttribution: ["CLS", "LCP"],
+    webVitalsAttribution: ["CLS", "LCP", "FCP", "FID,", "TTFB", "INP"],
   },
 };
 

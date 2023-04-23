@@ -1,17 +1,44 @@
-import useCounter from "@hooks/useCounter";
+import { useEffect, useState, useRef } from "react";
 
 export default function OfferBanner({ children, number, time, text }) {
-  const { elementRef, counter } = useCounter(number, time);
+  const [myElementIsVisible, updateMyElementIsVisible] = useState();
+  const [counter, setCounter] = useState(0);
+
+  const elementRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      const entry = entries[0];
+      updateMyElementIsVisible(entry.isIntersecting);
+    });
+    observer.observe(elementRef.current);
+  }, []);
+
+  useEffect(() => {
+    let timer;
+
+    if (myElementIsVisible) {
+      timer = setTimeout(() => {
+        if (counter === number) {
+          return;
+        }
+
+        setCounter(prevCount => prevCount + 1);
+      }, time);
+    }
+
+    return () => clearTimeout(timer);
+  }, [counter, myElementIsVisible, number, time]);
 
   return (
     <div className="flex-center flex-col">
       {children}
-      <span className="block text-white uppercase sm:text-sm md:text-lg font-bold tracking-wide my-2">
+      <span className="my-2 block font-bold uppercase tracking-wide text-white sm:text-sm md:text-lg">
         {counter}
       </span>
       <span
         ref={elementRef}
-        className="block text-white text-center uppercase sm:text-sm md:text-lg tracking-wide">
+        className="block text-center uppercase tracking-wide text-white sm:text-sm md:text-lg">
         {text}
       </span>
     </div>
