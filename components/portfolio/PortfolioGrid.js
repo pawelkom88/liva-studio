@@ -43,11 +43,11 @@ export default function PortfolioGrid({ categoryImages }) {
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column">
-          {categoryImages.map(({ id, width, height, src, blurDataURL }) => {
+          {categoryImages.map(({ id, width, height, src, blurDataURL },idx) => {
             return (
               <div
                 onClick={() => {
-                  setActiveImage(id);
+                  setActiveImage(idx);
                   setShowModal(true);
                 }}
                 key={id}

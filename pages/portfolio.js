@@ -10,7 +10,7 @@ import {
   lifestylePhotosCategoryImages,
   newbornPhotosCategoryImages,
   weddingPhotosCategoryImages,
-  portraitPhotosCategoryImages
+  portraitPhotosCategoryImages,
 } from "@helpers/images";
 import { portfolioSeo } from "../seo/seo";
 import { createClient } from "contentful";
@@ -31,7 +31,7 @@ export default function Portfolio({ assets }) {
     ...lifestylePhotosCategoryImages,
     ...newbornPhotosCategoryImages,
     ...portraitPhotosCategoryImages,
-    ...weddingPhotosCategoryImages
+    ...weddingPhotosCategoryImages,
   ];
 
   const [category, setCategory] = useState(shuffleArray(portfolioImages));
