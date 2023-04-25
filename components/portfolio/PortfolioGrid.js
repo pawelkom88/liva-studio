@@ -43,7 +43,7 @@ export default function PortfolioGrid({ categoryImages }) {
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column">
-          {categoryImages.map(({ id, width, height, src, blurDataURL },idx) => {
+          {categoryImages.map(({ id, category, width, height, src, blurDataURL }, idx) => {
             return (
               <div
                 onClick={() => {
@@ -62,7 +62,7 @@ export default function PortfolioGrid({ categoryImages }) {
                   sizes="(max-width: 640px) 100vw,
                     (max-width: 1024px) 50vw,
                     33vw"
-                  alt={`${categoryImages[0]?.category} image ${id}`}
+                  alt={`image ${id} - ${category}`}
                 />
               </div>
             );

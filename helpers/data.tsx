@@ -4,7 +4,7 @@ import slide3 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp
 import slide4 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp"
 import slide5 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp"
 import aboutUs from "/public/assets/images/about-us-main.webp"
-import contactUsImage from "/public/assets/images/portfolio/PORTRAIT/portrait (25).webp"
+import contactUsImage from "/public/assets/images/portfolio/PORTRAIT/portrait(25).webp"
  import portfolioOffer1 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp"
 import portfolioOffer2 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp"
 import portfolioOffer3 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp"
