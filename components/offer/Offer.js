@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function Offer({ details }) {
-  const { title, image, content, link, tiny } = details;
+  const { title, image, content, link, alt } = details;
 
   return (
     <article className="mx-auto my-2 py-8">
@@ -29,11 +29,12 @@ export default function Offer({ details }) {
           <Image
             className="object-cover"
             width={600}
-            height={450}
-            src={image}
+            height={430}
+            src={image.src}
             placeholder="blur"
-            blurDataURL={tiny}
-            alt={title}
+            blurDataURL={image.blurDataURL}
+            sizes="100vw"
+            alt={alt}
           />
         </div>
       </div>

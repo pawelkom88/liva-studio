@@ -1,65 +1,73 @@
-import { useState } from "react";
-import Modal from "../UI/modal/Modal";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useState, useRef } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Image from "next/image";
-import { useSwipeable } from "react-swipeable";
+import CustomImage from "../custom-image/CustomImage";
+import Masonry from "react-masonry-css";
+
+const breakpointColumnsObj = {
+  default: 4,
+  1100: 3,
+  700: 2,
+  500: 1,
+};
 
 export default function PortfolioGrid({ categoryImages }) {
-  const [activeImage, setActiveImage] = useState(null);
   const [showModal, setShowModal] = useState(false);
-
-  function goToNextSlide() {
-    activeImage === categoryImages.length - 1 ? setActiveImage(0) : setActiveImage(activeImage + 1);
-  }
-
-  function goToPrevSlide() {
-    activeImage === 0 ? setActiveImage(categoryImages.length - 1) : setActiveImage(activeImage - 1);
-  }
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () => goToNextSlide(),
-    onSwipedRight: () => goToPrevSlide(),
-    swipeDuration: 200,
-  });
+  const [activeImage, setActiveImage] = useState(0);
+  const thumbnailsRef = useRef(null);
 
   return (
-    <div {...handlers} className="z-100 relative">
-      {showModal && (
-        <Modal onModalClose={setShowModal} nextSlide={goToNextSlide} previousSlide={goToPrevSlide}>
-          <Image
-            src={categoryImages[activeImage].src || 0}
-            width={700}
-            height={600}
-            quality="100"
-            alt={`${categoryImages[activeImage]?.category} portfolio image`}
-          />
-        </Modal>
-      )}
+    <div className="z-100 relative">
+      <Lightbox
+        plugins={[Thumbnails]}
+        thumbnails={{ ref: thumbnailsRef }}
+        on={{
+          click: () => {
+            (thumbnailsRef.current?.visible
+              ? thumbnailsRef.current?.hide
+              : thumbnailsRef.current?.show)?.();
+          },
+        }}
+        index={activeImage}
+        open={showModal}
+        close={() => setShowModal(false)}
+        slides={categoryImages.map(({ src }) => src)}
+        render={{ slide: CustomImage }}
+      />
 
       <div className="mx-auto max-w-7xl p-4 md:p-8">
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1200: 4 }}>
-          <Masonry gutter="10px">
-            {categoryImages.map((image, index) => {
-              return (
-                <div
-                  onClick={() => {
-                    setShowModal(true);
-                    setActiveImage(index);
-                  }}
-                  key={image.src}
-                  className="gallery">
-                  <Image
-                    className="w-full cursor-pointer"
-                    src={image.src}
-                    width={1200}
-                    height={800}
-                    alt={`${categoryImages[activeImage]?.category} portfolio image ${index}`}
-                  />
-                </div>
-              );
-            })}
-          </Masonry>
-        </ResponsiveMasonry>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column">
+          {categoryImages.map(({ id, width, height, src, blurDataURL }) => {
+            return (
+              <div
+                onClick={() => {
+                  setActiveImage(id);
+                  setShowModal(true);
+                }}
+                key={id}
+                className="gallery ">
+                <Image
+                  className="cursor-pointer object-cover"
+                  src={src}
+                  width={width}
+                  height={height}
+                  placeholder="blur"
+                  blurDataURL={blurDataURL}
+                  sizes="(max-width: 640px) 100vw,
+                    (max-width: 1024px) 50vw,
+                    33vw"
+                  alt={`${categoryImages[0]?.category} image ${id}`}
+                />
+              </div>
+            );
+          })}
+        </Masonry>
       </div>
     </div>
   );

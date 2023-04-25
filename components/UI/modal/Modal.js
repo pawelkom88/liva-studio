@@ -1,4 +1,10 @@
-export default function Modal({ children, onModalClose, nextSlide, previousSlide }) {
+export default function Modal({
+  children,
+  onModalClose,
+  nextSlide,
+  previousSlide,
+  className = "",
+}) {
   return (
     <div
       onClick={e => {
@@ -6,7 +12,7 @@ export default function Modal({ children, onModalClose, nextSlide, previousSlide
         onModalClose(false);
       }}
       className="fixed inset-0 z-30 bg-black">
-      <div className="flex-center overflow-hiddenpx-4 fixed inset-0 z-20 mx-2">
+      <div className={`flex-center overflow-hidden px-4 fixed inset-0 z-20 mx-2 ${className}`}>
         {children}
         <button
           className="background-transparent absolute top-20 right-5 sm:top-10 sm:right-10"

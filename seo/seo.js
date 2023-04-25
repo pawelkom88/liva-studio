@@ -1,12 +1,11 @@
 export const mainPageSeo = {
   pageDescription:
-    "Looking for a newborn photographer in Bristol? Look no further! We offer natural, affordable, and professional newborn photography services. Book your session today!",
+    "Looking for a newborn photographer in Bristol? Look no further! We offer natural, affordable, and professional newborn and maternity photography services. Book your session today!",
   canonical: "",
   url: "",
-  title: "Bristol Newborn Photography | Your Baby's First Photos Are Worth the Investment.",
-  // title: "Bristol newborn and maternity photography specialist.",
+  title: "Bristol Newborn and Maternity Photography Near You | (Instant pricing) ",
   description:
-    "Looking for a newborn photographer in Bristol? Look no further! We offer natural, affordable, and professional newborn photography services. Book your session today!",
+    "Looking for a newborn or maternity photographer in Bristol? We offer natural, affordable, and professional photography services. Book your session today!",
 };
 
 export const aboutUsSeo = {

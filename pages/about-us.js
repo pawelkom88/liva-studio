@@ -21,7 +21,6 @@ export default function AboutUs() {
   function onKeyUp(e) {
     if (e.key === "Enter") setIsOpen(true);
   }
-
   return (
     <>
       <PageSeo seo={aboutUsSeo} />
@@ -42,16 +41,15 @@ export default function AboutUs() {
             </h2>
           </div>
         </div>
-
         <div className="relative my-16 flex flex-wrap items-center justify-center gap-8 md:max-w-full lg:flex-nowrap lg:py-32 xl:py-12">
           <div className="ml-4 w-full lg:w-auto">
             <Image
               className="relative w-full"
-              width={500}
-              height={750}
-              src={aboutUsPageImg.original}
+              width={aboutUsPageImg.original.width}
+              height={aboutUsPageImg.original.height}
+              src={aboutUsPageImg.original.src}
               placeholder="blur"
-              blurDataURL={aboutUsPageImg.tiny}
+              blurDataURL={aboutUsPageImg.original.blurDataURL}
               alt="Artur and Magda looking into each others eyes"
             />
             {/* <Image

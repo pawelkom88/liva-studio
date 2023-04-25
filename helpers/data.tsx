@@ -1,7 +1,26 @@
+import slide1 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp"
+import slide2 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_H.webp"
+import slide3 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp"
+import slide4 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp"
+import slide5 from "/public/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp"
+import aboutUs from "/public/assets/images/about-us-main.webp"
+import contactUsImage from "/public/assets/images/portfolio/PORTRAIT/portrait (25).webp"
+ import portfolioOffer1 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_H.webp"
+import portfolioOffer2 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_H.webp"
+import portfolioOffer3 from "/public/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_H.webp"
+import newbornOffer from "/public/assets/images/offer/NEWBORN_H.webp"
+import maternityOffer from "/public/assets/images/offer/MATERNITY_H.webp"
+import weddingOffer from "/public/assets/images/offer/WEDDING_H.webp"
+import portraitOffer from "/public/assets/images/offer/PORTRAIT_H.webp"
+import lifestyleOffer from "/public/assets/images/offer/LIFESTYLE_H.webp"
+import babyOffer from "/public/assets/images/offer/BABY_H.webp"
+
+
+import { StaticImageData } from "next/image"
+
 interface Slide {
   title: string;
-  image: string;
-  tiny: string;
+  image: StaticImageData;
   alt: string;
   // description: string;
 }
@@ -9,43 +28,30 @@ interface Slide {
 export const sliderData: Slide[] = [
   {
     title: "Maternity",
-    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_MATERNITY_L.webp",
+    image: slide1,
     alt: "professional maternity photoshoot",
-    // description:
-    //   "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
   },
   {
     title: "Baby",
-    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_BABY_L.webp",
+    image: slide2,
     alt: "A toddler struggle to walk and looking around holding open door",
-    // description:
-    //   "Capture the beauty of motherhood with a professional maternity photoshoot. Create lasting memories of this special time in your life with natural and authentic images that showcase your unique glow and radiance.",
+
   },
   {
     title: "Newborn",
-    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_NEWBORN_L.webp",
+    image: slide3,
     alt: "a little baby tucked in a blanket holding a little toy",
-    // description:
-    //   "Welcome your little one with a professional newborn photoshoot that captures the beauty and innocence of their first moments. With a skilled photographer, you can create heartwarming images that will be cherished for a lifetime.",
   },
   {
     title: "Wedding",
-    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_WEDDINGS_L.webp",
+    image: slide4,
     alt: "black and white photo where a married couple stand by the window and  look into each others eyes",
-    // description:
-    //   "Make your special day last forever with a professional wedding photoshoot. Create beautiful and timeless images that capture the joy and love of your wedding day, with a skilled photographer who can capture every moment and emotion.",
+  
   },
   {
     title: "Lifestyle",
-    image: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_H.webp",
-    tiny: "/assets/images/MAINPAGE/SLIDERS/SLIDER_PORTRAIT_L.webp",
+    image: slide5,
     alt: "a black and white photo with a man who looks very focused",
-    // description:
-    //   "Capture the essence of your everyday life with a professional lifestyle photoshoot. Create natural and authentic images that showcase your unique lifestyle and personality, with a photographer who can create a relaxed and comfortable environment for you to be yourself.",
   },
 ];
 
@@ -53,8 +59,7 @@ interface Offer {
   id: number;
   title: string;
   content: string;
-  image: string;
-  tiny: string;
+  image: StaticImageData;
   alt: string;
   link: string;
 }
@@ -65,9 +70,8 @@ export const offerDetails: Offer[] = [
     title: "NEWBORN",
     content:
       "Capture the pure and tender moments of your newborn baby's early days! My photoshoots take place in the comfort of my Home studio, where I create a cozy and safe environment for your baby to feel at ease. During the session, I guide you through different poses and setups, and capture all the tiny details that make your baby unique. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your newborn photoshoot.",
-    image: "/assets/images/offer/NEWBORN_H.webp",
-    tiny: "/assets/images/offer/NEWBORN_L.webp",
-    alt: "newborn baby photoshoot offer",
+    image: newbornOffer,
+    alt: "little baby tucked in a blue blaket wearing funny glasses",
     link: "offer/newborn",
   },
   {
@@ -75,9 +79,8 @@ export const offerDetails: Offer[] = [
     title: "MATERNITY",
     content:
       "Celebrate the beauty of your pregnancy with a maternity photoshoot. My sessions take place in a location of your choice, whether it's in your home, outdoors, or at my home studio. I aim to create a comfortable and relaxed environment where you can showcase your baby bump and feel beautiful. During the session, I guide you through different poses and setups that highlight the uniqueness of your pregnancy journey. After the photoshoot, I present the best images to you in a beautiful online gallery, and offer a variety of print and digital options to fit your needs and budget. Contact me today to book your maternity photoshoot.",
-    image: "/assets/images/offer/MATERNITY_H.webp",
-    tiny: "/assets/images/offer/MATERNITY_L.webp",
-    alt: "maternity photoshoot offer",
+    image: maternityOffer,
+    alt: "pregnant woman portrait",
     link: "offer/maternity",
   },
   {
@@ -85,9 +88,8 @@ export const offerDetails: Offer[] = [
     title: "WEDDING",
     content:
       "Your wedding day is one of the most special and memorable days of your life, and I would be honored to capture every moment. As a professional wedding photographer, I specialize in creating timeless and beautiful images that you and your loved ones will cherish for a lifetime.",
-    image: "/assets/images/offer/WEDDING_H.webp",
-    tiny: "/assets/images/offer/WEDDING_L.webp",
-    alt: "wedding photoshoot offer",
+    image: weddingOffer,
+    alt: "a bride looking somewhere and thinking",
     link: "offer/wedding",
   },
   {
@@ -95,9 +97,8 @@ export const offerDetails: Offer[] = [
     title: "PORTRAIT",
     content:
       "Celebrate yourself or your loved ones with a professional portrait photoshoot. As a skilled photographer, I specialize in creating beautiful and authentic portraits that showcase your personality and style.",
-    image: "/assets/images/offer/PORTRAIT_H.webp",
-    tiny: "/assets/images/offer/PORTRAIT_L.webp",
-    alt: "portrait photoshoot offer",
+    image: portraitOffer,
+    alt: "a woman in red dress smiling",
     link: "offer/portrait",
   },
   {
@@ -105,9 +106,8 @@ export const offerDetails: Offer[] = [
     title: "LIFESTYLE",
     content:
       "Capture the essence of your everyday life with a professional lifestyle photoshoot. As a skilled photographer, I specialize in creating natural and authentic images that showcase your unique lifestyle and personality.",
-    image: "/assets/images/offer/LIFESTYLE_H.webp",
-    tiny: "/assets/images/offer/LIFESTYLE_L.webp",
-    alt: "lifestyle photoshoot offer",
+    image: lifestyleOffer,
+    alt: "a happy family with their toddler",
     link: "offer/lifestyle",
   },
   {
@@ -115,60 +115,38 @@ export const offerDetails: Offer[] = [
     title: "BABY",
     content:
       "Celebrate your little one's milestones with a professional baby and birthday photoshoot. As a skilled photographer, I specialize in capturing the magic and wonder of childhood through beautiful and timeless images.",
-    image: "/assets/images/offer/BABY_H.webp",
-    tiny: "/assets/images/offer/BABY_L.webp",
-    alt: "baby photoshoot offer",
+    image: babyOffer,
+    alt: "a little baby laying in a basket with funny hat",
     link: "offer/baby",
   },
 ];
 
-// interface FaqImage {
-//   original: string;
-//   tiny: string;
-//   alt: string;
-// }
-
-// export const faqImage: FaqImage = {
-//   original: "/assets/images/MAINPAGE/OUROFFER_",
-//   tiny: '"/assets/images/MAINPAGE/OUROFFER_"',
-//   alt: "",
-// };
-
 export const aboutUsPageImg = {
-  original: "/assets/images/about-us-main.webp",
-  tiny: "/assets/images/about-us-main.webp",
+  original: aboutUs,
   alt: "Photographers looking at each other with love",
 };
 
 export const contactSectionImage = {
-  original: "/assets/images/portfolio/PORTRAIT/V-15H.webp",
-  tiny: "/assets/images/portfolio/PORTRAIT/V-15.webp",
-  alt: "",
+  original: contactUsImage,
+  alt: "young lady in a red dress looking into camera",
 };
 
-export const pressImage = [
-  {
-    original: "/assets/images/about-us-main.webp",
-    tiny: "/assets/images/about-us-main.webp",
-    alt: "desc",
-  },
-  {
-    original: "/assets/images/about-us-main.webp",
-    tiny: "/assets/images/about-us-main.webp",
-    alt: "desc",
-  },
-  {
-    original: "/assets/images/about-us-main.webp",
-    tiny: "/assets/images/about-us-main.webp",
-    alt: "desc",
-  },
-];
-
-// export const faqElements = [
-//   { id: 1, content: "lorem ipsum 123" },
-//   { id: 2, content: "lorem ipsum 123" },
-//   { id: 3, content: "lorem ipsum 123" },
-//   { id: 4, content: "lorem ipsum 123" },
+// export const pressImage = [
+//   {
+//     original: "/assets/images/about-us-main.webp",
+//     tiny: "/assets/images/about-us-main.webp",
+//     alt: "desc",
+//   },
+//   {
+//     original: "/assets/images/about-us-main.webp",
+//     tiny: "/assets/images/about-us-main.webp",
+//     alt: "desc",
+//   },
+//   {
+//     original: "/assets/images/about-us-main.webp",
+//     tiny: "/assets/images/about-us-main.webp",
+//     alt: "desc",
+//   },
 // ];
 
 interface PortfolioCategory {
@@ -294,23 +272,26 @@ export const aboutUsParagraph: AboutUs[] = [
   },
 ];
 
+type PortfolioImage = {
+  img: StaticImageData;
+  alt:string;
+}
+interface PortfolioOfferImages {
+  [key:string] : PortfolioImage
+}
 
-export const portfolioOfferImages = {
+export const portfolioOfferImages:PortfolioOfferImages = {
   first : {
-    id: 1,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_1_L.webp",
-  alt: '',
+  img: portfolioOffer1,
+  alt: 'xxx',
   },
   second : {
-    id: 2,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_2_L.webp",
-  alt: '',
+  img: portfolioOffer2,
+  alt: 'xxx',
 
   },
   third : {
-    id: 3,
-  src: "/assets/images/MAINPAGE/PORTFOLIO/PORTFOLIO_3_L.webp",
-  alt: '',
-
+  img: portfolioOffer3,
+  alt: 'xxx',
 }
 }

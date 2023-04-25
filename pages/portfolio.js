@@ -2,7 +2,16 @@ import { useState } from "react";
 import PortfolioGrid from "@components/portfolio/PortfolioGrid";
 import PageSeo from "../seo/PageSeo";
 import { portfolioCategories } from "@helpers/data";
-import { localImages } from "@helpers/images";
+import {
+  shuffleArray,
+  babiesPhotosCategoryImages,
+  boudoirPhotosCategoryImages,
+  maternityPhotosCategoryImages,
+  lifestylePhotosCategoryImages,
+  newbornPhotosCategoryImages,
+  weddingPhotosCategoryImages,
+  portraitPhotosCategoryImages
+} from "@helpers/images";
 import { portfolioSeo } from "../seo/seo";
 import { createClient } from "contentful";
 
@@ -14,9 +23,18 @@ export default function Portfolio({ assets }) {
     portfolioCategories.find(category => category.name === contentfulImages.category)
   );
 
-  const portfolioImages = [...filteredByCategoryFetchedImages, ...localImages];
+  const portfolioImages = [
+    ...filteredByCategoryFetchedImages,
+    ...babiesPhotosCategoryImages,
+    ...boudoirPhotosCategoryImages,
+    ...maternityPhotosCategoryImages,
+    ...lifestylePhotosCategoryImages,
+    ...newbornPhotosCategoryImages,
+    ...portraitPhotosCategoryImages,
+    ...weddingPhotosCategoryImages
+  ];
 
-  const [category, setCategory] = useState(portfolioImages);
+  const [category, setCategory] = useState(shuffleArray(portfolioImages));
   const [isActive, setIsActive] = useState(8);
 
   function getCategory(selectedCategory) {

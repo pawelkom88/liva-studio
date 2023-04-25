@@ -1,30 +1,32 @@
 import Wrapper from "@components/UI/wrapper/Wrapper";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { contactSectionImage } from "@helpers/data";
 import { constactSeo } from "../seo/seo";
 import PageSeo from "../seo/PageSeo";
 
 export default function Contact() {
-
   return (
     <>
       <PageSeo seo={constactSeo} />
       <Wrapper>
-        <section className="flex w-full my-8 lg:my-16 large:flex-wrap large:justify-center">
+        <section className="my-8 flex w-full lg:my-16 large:flex-wrap large:justify-center">
           <div className="max-h-screen w-full lg:w-1/2 large:mt-4">
-            <Image
-              width={853}
-              height={927}
-              className="h-full w-full object-cover"
-              src={contactSectionImage?.original}
-              placeholder="blur"
-              blurDataURL={contactSectionImage?.tiny}
-              alt="a lady in a red dress smiling"
-            />
+            <div className="relative h-96 w-full sm:h-[650px] lg:h-[800px]">
+              <Image
+                width={contactSectionImage.original.width}
+                height={contactSectionImage.original.height}
+                sizes="100vw"
+                placeholder="blur"
+                blurDataURL={contactSectionImage.original.blurDataURL}
+                className="object-cover"
+                src={contactSectionImage.original.src}
+                alt={contactSectionImage.alt}
+              />
+            </div>
           </div>
-          <div className="flex h-full w-full flex-grow flex-col justify-center p-2 lg:p-10 md:w-4/6 lg:w-3/6 xl:w-2/6 lg:-my-16">
+          <div className="flex h-full w-full flex-grow flex-col justify-center p-2 md:w-4/6 lg:-my-16 lg:w-3/6 lg:p-10 xl:w-2/6">
             <div>
-              <h1 className="heading-styles mt-10 font-extrabold mb-4">Get in touch</h1>
+              <h1 className="heading-styles mt-10 mb-4 font-extrabold">Get in touch</h1>
             </div>
             <div className="mb-2">
               <p className="text-sm leading-6">

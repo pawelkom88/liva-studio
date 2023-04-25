@@ -10,26 +10,31 @@ export default function PortfolioOfferMobile() {
       <div className="flex-center order-1 mb-4">
         <div className="flex flex-col items-center ">
           <Image
-            width={160}
-            height={192}
-            className="relative z-10 -mr-4 mb-6 w-auto h-auto rounded object-cover shadow-lg"
-            src={portfolioOfferImages.first.src}
+            className="w-48 -mr-8 mb-6  rounded object-cover shadow-lg"
+            width={portfolioOfferImages.first.img.width}
+            height={portfolioOfferImages.first.img.height}
+            placeholder="blur"
+            blurDataURL={portfolioOfferImages.first.img.blurDataURL}
+            src={portfolioOfferImages.first.img.src}
             alt={portfolioOfferImages.first.alt}
           />
           <Image
-            width={228}
-            height={228}
-            className="-mr-12 h-48  w-48 sm:w-auto sm:h-auto rounded object-cover shadow-lg"
-            src={portfolioOfferImages.second.src}
+            className="-mr-12 mt-8  w-48 rounded object-cover shadow-lg"
+            width={portfolioOfferImages.second.img.width}
+            height={portfolioOfferImages.second.img.height}
+            placeholder="blur"
+            blurDataURL={portfolioOfferImages.second.img.blurDataURL}
+            src={portfolioOfferImages.second.img.src}
             alt={portfolioOfferImages.second.alt}
           />
         </div>
         <Image
-          width={256}
-          height={256}
-          priority
-          className="h-64 w-64 sm:w-auto sm:h-auto rounded object-cover shadow-lg"
-          src={portfolioOfferImages.third.src}
+          className="w-40 sm:w-48 h-64 sm:h-80 rounded object-cover shadow-lg flex-shrink"
+          width={portfolioOfferImages.third.img.width}
+          height={portfolioOfferImages.third.img.height}
+          placeholder="blur"
+          blurDataURL={portfolioOfferImages.third.img.blurDataURL}
+          src={portfolioOfferImages.third.img.src}
           alt={portfolioOfferImages.third.alt}
         />
       </div>

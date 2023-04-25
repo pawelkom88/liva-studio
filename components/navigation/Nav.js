@@ -53,13 +53,13 @@ export default function Nav() {
           />
         </Link>
         <Link className="hidden large:block" href="/">
-          <h1
+          <span
             onClick={() => setIsOpen(false)}
             className={`${
               isOpen ? "text-white" : "text-[color:var(--primary-clr)]"
             } relative z-50 heading-styles text-2xl tracking-widest transition-colors ease-in-out duration-200`}>
             Liva Studio
-          </h1>
+          </span>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
           {/* <li>

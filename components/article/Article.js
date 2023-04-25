@@ -1,7 +1,14 @@
-export default function Article({ heading = "", children }) {
+export default function Article({ heading = "", children, important = false }) {
+  const headingImportance =
+    heading && !important ? (
+      <h2 className="heading-styles my-8 text-center">{heading}</h2>
+    ) : (
+      <h1 className="heading-styles my-8 text-center">{heading}</h1>
+    );
+
   return (
     <article>
-      {heading ? <h2 className="heading-styles mb-8 mt-12 text-center">{heading}</h2> : ""}
+      {headingImportance}
       <p className="text-md mx-auto max-w-readable indent-5 text-gray-900 lg:text-lg">{children}</p>
     </article>
   );
