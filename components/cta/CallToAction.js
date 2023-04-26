@@ -5,7 +5,7 @@ const btnStyles =
 
 export default function CallToAction() {
   return (
-    <section className="flex-center mb-24 flex-col py-8">
+    <section className="flex-center mb-20 flex-col py-8">
       <p className="lg:text-md my-8 text-sm">LET&apos;S WORK TOGETHER</p>
       <h6 className="heading-styles text-center text-4xl tracking-widest lg:text-7xl">
         WE CAN&apos;T WAIT TO HEAR FROM YOU

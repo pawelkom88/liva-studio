@@ -9,22 +9,20 @@ export default function Contact() {
     <>
       <PageSeo seo={constactSeo} />
       <Wrapper>
-        <section className="my-8 flex w-full lg:my-16 large:flex-wrap large:justify-center">
-          <div className="max-h-screen w-full lg:w-1/2 large:mt-4">
-            <div className="relative h-96 w-full sm:h-[650px] lg:h-[800px]">
-              <Image
-                width={contactSectionImage.original.width}
-                height={contactSectionImage.original.height}
-                sizes="100vw"
-                placeholder="blur"
-                blurDataURL={contactSectionImage.original.blurDataURL}
-                className="object-cover"
-                src={contactSectionImage.original.src}
-                alt={contactSectionImage.alt}
-              />
-            </div>
+        <section className="mb-8 flex lg:my-16 large:flex-wrap large:justify-center gap-8">
+          <div className="w-full p-2 lg:p-0 lg:w-1/2 large:mt-4">
+            <Image
+              width={400}
+              height={600}
+              sizes="100vw"
+              placeholder="blur"
+              blurDataURL={contactSectionImage.original.blurDataURL}
+              className="object-cover"
+              src={contactSectionImage.original.src}
+              alt={contactSectionImage.alt}
+            />
           </div>
-          <div className="flex h-full w-full flex-grow flex-col justify-center p-2 md:w-4/6 lg:-my-16 lg:w-3/6 lg:p-10 xl:w-2/6">
+          <div className="flex flex-col flex-grow justify-center p-2 basis-[50%]">
             <div>
               <h1 className="heading-styles mt-10 mb-4 font-extrabold">Get in touch</h1>
             </div>
@@ -104,7 +102,7 @@ export default function Contact() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="focus: mt-8 inline-block border border-[color:var(--primary-clr)]  bg-[color:var(--primary-clr)] px-12 py-3 text-sm font-bold uppercase text-white hover:border  hover:bg-transparent hover:text-[color:var(--primary-clr)] focus:ring active:text-indigo-500">
+                  className="border border-[color:var(--primary-clr)]  bg-[color:var(--primary-clr)] px-12 py-3 text-sm font-bold uppercase text-white hover:border hover:bg-transparent hover:text-[color:var(--primary-clr)] ">
                   Send
                 </button>
               </div>

@@ -119,7 +119,7 @@ body {
 
 @media (max-width: 1024px) {
   .swiper {
-    height: calc(100vh - 85px)
+    height: calc(100vh - 105px)
   }
 }
 

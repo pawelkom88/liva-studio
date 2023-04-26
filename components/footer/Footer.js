@@ -5,8 +5,8 @@ import { currentYear } from "constants/constants";
 
 export default function Footer() {
   return (
-    <footer className="mx-auto border-t-2 bg-[var(--teriary-clr)] px-4  pt-4 md:px-24 lg:px-8">
-      <div className="row-gap-6 mx-auto my-8 grid items-center gap-10 sm:max-w-xl sm:grid-cols-2 md:max-w-full lg:max-w-screen-xl lg:grid-cols-4">
+    <footer className="mx-auto border-t-2 bg-[var(--teriary-clr)] p-4 md:px-8">
+      <div className="row-gap-6 mx-auto my-8 lg:px-8 grid items-center gap-10 sm:max-w-xl sm:grid-cols-2 md:max-w-full lg:max-w-screen-xl lg:grid-cols-4">
         <FooterDescription />
         <ContactDetails />
         <SocialMedia />

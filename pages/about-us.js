@@ -42,7 +42,7 @@ export default function AboutUs() {
           </div>
         </div>
         <div className="relative my-16 flex flex-wrap items-center justify-center gap-8 md:max-w-full lg:flex-nowrap lg:py-32 xl:py-12">
-          <div className="ml-4 w-full lg:w-auto">
+          <div className="lg:ml-4 w-full lg:w-auto">
             <Image
               className="relative w-full"
               width={aboutUsPageImg.original.width}

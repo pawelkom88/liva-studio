@@ -19,6 +19,8 @@ export default function PortfolioGrid({ categoryImages }) {
   const [activeImage, setActiveImage] = useState(0);
   const thumbnailsRef = useRef(null);
 
+ 
+
   return (
     <div className="z-100 relative">
       <Lightbox

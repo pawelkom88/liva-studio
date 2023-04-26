@@ -20,7 +20,6 @@ export default function HeroSlider() {
         {sliderImages.map(photo => {
           return (
             <SwiperSlide key={photo.title}>
-              {/* <p className="heading-styles z-10 mb-12 text-white lg:text-6xl">{photo.title}</p> */}
               <Image
                 className="absolute inset-0 h-full w-full object-cover"
                 src={photo.image.src}

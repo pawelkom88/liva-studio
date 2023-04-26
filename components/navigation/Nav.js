@@ -8,8 +8,9 @@ export default function Nav() {
 
   return (
     <div className="relative p-4 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4">
-        <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
+      <nav className="relative flex justify-between items-center lg:grid lg:grid-cols-custom ">
+      {/* <nav className="relative flex justify-between items-center lg:justify-center lg:space-x-16 px-4"> */}
+        <ul className="items-center justify-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
           <li>
             <Link
               href="/offer/"
@@ -61,18 +62,18 @@ export default function Nav() {
             Liva Studio
           </span>
         </Link>
-        <ul className="items-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
-          {/* <li>
-            <a
-              href="https://wedwojestudio.pl/oferta/"
-              target="_blank"
-              rel="noopener noreferrer"
+        <ul className="items-center justify-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
+          <li>
+            <Link
+              href="/"
+              // target="_blank"
+              // rel="noopener noreferrer"
               aria-label="Client space"
               title="Client space"
               className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
               Client space
-            </a>
-          </li> */}
+            </Link>
+          </li>
           <li>
             <Link
               href="/blog"

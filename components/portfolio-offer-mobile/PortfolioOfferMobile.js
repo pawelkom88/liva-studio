@@ -10,7 +10,7 @@ export default function PortfolioOfferMobile() {
       <div className="flex-center order-1 mb-4">
         <div className="flex flex-col items-center ">
           <Image
-            className="w-48 -mr-8 mb-6  rounded object-cover shadow-lg"
+            className="w-48 rounded -mr-4 object-cover shadow-lg z-30"
             width={portfolioOfferImages.first.img.width}
             height={portfolioOfferImages.first.img.height}
             placeholder="blur"
@@ -19,7 +19,7 @@ export default function PortfolioOfferMobile() {
             alt={portfolioOfferImages.first.alt}
           />
           <Image
-            className="-mr-12 mt-8  w-48 rounded object-cover shadow-lg"
+            className="-mr-12 -mt-2 w-48 rounded object-cover shadow-lg"
             width={portfolioOfferImages.second.img.width}
             height={portfolioOfferImages.second.img.height}
             placeholder="blur"

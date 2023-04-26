@@ -1,4 +1,4 @@
-export default function ReviewCotent({ review,handlers }) {
+export default function ReviewCotent({ review, handlers, currentSlide }) {
   const { name, content, date, numberOfStars } = review?.fields;
 
   return (

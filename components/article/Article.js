@@ -9,7 +9,7 @@ export default function Article({ heading = "", children, important = false }) {
   return (
     <article>
       {headingImportance}
-      <p className="text-md mx-auto max-w-readable indent-5 text-gray-900 lg:text-lg">{children}</p>
+      <p className="text-md mx-auto max-w-readable indent-3 text-gray-900 lg:text-lg">{children}</p>
     </article>
   );
 }

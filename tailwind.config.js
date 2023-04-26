@@ -14,6 +14,9 @@ module.exports = {
       steelfish: ["steelfish", "sans-serif"],
     },
     extend: {
+      gridTemplateColumns: { 
+        custom: '1fr, auto,1fr'
+      },
       maxWidth: {
         readable: "75ch",
       },

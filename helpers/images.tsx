@@ -356,3 +356,13 @@ export const lifestylePhotosCategoryImages: CategoryImage[] = getCategories(
 //   maternityPhotos,
 //   "Maternity"
 // );
+
+export const staticImages = [
+  ...babiesPhotosCategoryImages,
+  ...boudoirPhotosCategoryImages,
+  // maternityPhotosCategoryImages,
+  ...lifestylePhotosCategoryImages,
+  ...newbornPhotosCategoryImages,
+  ...weddingPhotosCategoryImages,
+  ...portraitPhotosCategoryImages,
+];

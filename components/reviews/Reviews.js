@@ -5,7 +5,6 @@ import { useSwipeable } from "react-swipeable";
 
 export default function Reviews({ reviews }) {
   const reviewsData = reviews || {};
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   function nextSlide() {
@@ -29,10 +28,13 @@ export default function Reviews({ reviews }) {
     swipeDuration: 200,
   });
 
+
+
   return (
     <section className="mx-auto bg-[color:var(--teriary-clr)] py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 sm:py-24 md:py-16  lg:pl-8 ">
-        <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
+        <div
+          className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
           <article className="mx-auto max-w-xl text-center sm:text-left">
             <h2 className="heading-styles text-center">Read reviews from our customers</h2>
             <div className="lg:flex-center hidden lg:mt-8 lg:gap-4">
@@ -40,7 +42,11 @@ export default function Reviews({ reviews }) {
               <SliderBtn onClick={nextSlide} aria="Next slide" iconDirection="next" />
             </div>
           </article>
-          <ReviewCotent review={reviewsData[currentSlide]} handlers={handlers} />
+          <ReviewCotent
+            currentSlide={currentSlide}
+            review={reviewsData[currentSlide]}
+            handlers={handlers}
+          />
         </div>
         <div className="mt-8 flex justify-center gap-4 lg:hidden">
           <SliderBtn onClick={previousSlide} aria="Previous slide" iconDirection="previous" />
