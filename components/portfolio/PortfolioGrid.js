@@ -59,8 +59,8 @@ export default function PortfolioGrid({ categoryImages }) {
                   src={src}
                   width={width}
                   height={height}
-                  placeholder="blur"
-                  blurDataURL={blurDataURL}
+                  // placeholder="blur"
+                  // blurDataURL={blurDataURL}
                   sizes="(max-width: 640px) 100vw,
                     (max-width: 1024px) 50vw,
                     33vw"

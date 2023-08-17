@@ -25,7 +25,7 @@ export default function Faq() {
         </div>
         <div className="flex-center flex-col">
           <strong className="my-2">Choose your photos</strong>
-          <Link href="/offer" aria-label="Client space" title="Client space">
+          <Link href="/offer" aria-label="Offer" title="Offer">
             <Image
               width={60}
               height={60}

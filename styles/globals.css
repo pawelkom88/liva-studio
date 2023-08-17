@@ -114,15 +114,14 @@ body {
 }
 
 .swiper {
-  height: calc(100vh - 145px)
+  height: calc(100vh - 145px);
 }
 
 @media (max-width: 1024px) {
   .swiper {
-    height: calc(100vh - 105px)
+    height: calc(100vh - 105px);
   }
 }
-
 
 .gallery img:hover {
   transform: scale(1.1);
@@ -137,10 +136,9 @@ body {
   overflow: hidden;
 }
 
-
 .my-masonry-grid {
   display: flex;
-  margin-left: -15px; 
+  margin-left: -15px;
   width: auto;
 }
 .my-masonry-grid_column {
@@ -149,12 +147,13 @@ body {
 }
 
 /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 15px;
 }
 
 @media (min-width: 1024px) {
-.special span {
-  height: 100% !important;
+  .special span {
+    height: 100% !important;
   }
 }

@@ -12,7 +12,7 @@ export default function Modal({
         onModalClose(false);
       }}
       className="fixed inset-0 z-30 bg-black">
-      <div className={`flex-center overflow-hidden px-4 fixed inset-0 z-20 mx-2 ${className}`}>
+      <div className={`flex-center fixed inset-0 z-20 mx-2 overflow-hidden px-4 ${className}`}>
         {children}
         <button
           className="background-transparent absolute top-20 right-5 sm:top-10 sm:right-10"

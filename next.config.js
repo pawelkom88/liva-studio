@@ -7,11 +7,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.ctfassets.net",
+        hostname: "images.pexels.com",
       },
       {
         protocol: "https",
         hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
       },
     ],
 

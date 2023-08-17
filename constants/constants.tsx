@@ -71,15 +71,15 @@ export const menuMobileLinks: MobileMenuLinks[] = [
     name: "Blog",
     isInternal: true,
   },
-  // {
-  //   id: 5,
-  //   href: "/",
-  //   aria: "Client space",
-  //   title: "Client space",
-  //   className: MobileMenuLinksStyles,
-  //   name: "Client space",
-  //   isInternal: false,
-  // },
+  {
+    id: 5,
+    href: "/",
+    aria: "Liva Room",
+    title: "Liva Room",
+    className: MobileMenuLinksStyles,
+    name: "Liva Room",
+    isInternal: false,
+  },
 ];
 
 export const btnStylesGoldVariant: string =

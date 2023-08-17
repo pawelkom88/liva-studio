@@ -72,9 +72,13 @@ export async function getStaticProps() {
   const contentfulImages = response?.items.map(asset => {
     const category = asset.fields.description ?? "";
     const url = `https:${asset.fields.file.url}`;
+    const width = asset.fields.file.details.image.width;
+    const height = asset.fields.file.details.image.height;
 
     const image = {
       src: url,
+      width,
+      height,
       category,
     };
 

@@ -65,13 +65,13 @@ export default function Nav() {
         <ul className="items-center justify-center hidden space-x-8 lg:flex uppercase tracking-wide text-[color:var(--primary-clr)]">
           <li>
             <Link
-              href="/"
+              href="/livaroom"
               // target="_blank"
               // rel="noopener noreferrer"
-              aria-label="Client space"
-              title="Client space"
+              aria-label="Liva Room"
+              title="Liva Room"
               className="font-bold uppercase tracking-wide text-[color:var(--primary-clr)] transition-colors duration-200 hover:text-[color:var(--secondary-clr)]">
-              Client space
+              Liva Room
             </Link>
           </li>
           <li>
